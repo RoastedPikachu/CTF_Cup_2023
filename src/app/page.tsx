@@ -26,8 +26,8 @@ export default function Home() {
 
             </section>
 
-            <section className='relative px-[15%] w-[97.5%] h-[1000px]'>
-                <img src='/static/RaspisanieText.svg' alt='Расписание' className='absolute mt-[-160px] ml-[0%] w-[80vw] h-[140px]'/>
+            <section className='relative px-[15%] w-[97.5%] h-[800px]'>
+                <img src='/static/RaspisanieText.svg' alt='Расписание' className='absolute mt-[-160px] w-[80vw] h-[140px]'/>
 
                 <div className='flex justify-between mt-[200px] w-full h-[670px] text-[#ffffff] font-["Good_Timing"]'>
                     <div className='relative py-[10px] px-[15px] w-[32.5%] h-[660px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px]'>
@@ -63,7 +63,7 @@ export default function Home() {
                                     <p className='text-[2.5rem]'>10</p>
                                 </div>
 
-                                <p className='mt-[30px] w-[100%]'>полуфинал с 9.00 до 19.30 ВДНХ, павилион «Умный город»</p>
+                                <p className='mt-[30px] w-[100%]'>полуфинал с 9.00 до 19.30, «Сколково»</p>
 
                                 <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
                             </div>
@@ -81,7 +81,7 @@ export default function Home() {
                                     <p className='text-[2.5rem]'>11</p>
                                 </div>
 
-                                <p className='mt-[30px] w-[100%]'>финал с 9.00 до 20.00 ВДНХ, павилион «Умный город»</p>
+                                <p className='mt-[30px] w-[100%]'>финал с 9.00 до 20.00, «Сколково»</p>
 
                                 <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
                             </div>
@@ -112,6 +112,34 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className='relative flex justify-between px-[15%] w-[97.5%] h-[700px]'>
+                <img src='/static/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[14%] w-[80vw] h-[240px]'/>
+
+                <img src='/static/SkolkovoLogo.svg' alt='Сколково' className='w-[60%] scale-[1.3]'/>
+
+                <span className='mt-[300px] w-[37.5%] text-[#ffffff] text-[1.5rem] font-["Good_Timing"] whitespace-nowrap'>
+                    <p>Адрес: Большой бул., 42 с1,</p>
+
+                    <p>Сколково, Москва, 143026</p>
+                </span>
+            </section>
+
+            <section className='relative flex justify-between px-[15%] w-[97.5%] h-[500px]'>
+                <img src='/static/WhatIsCTFText.svg' alt='Что такое CTF?' className='absolute w-[85vw] h-[140px]'/>
+
+                <span className='mt-[140px] ml-[20%] text-[#ffffff] text-[1rem] font-["Good_Timing"]'>
+                    <h3 className='text-[#bf5af2] text-[3rem]'>CTF (Capture the Flag)</h3>
+
+                    <p className='mt-[5px]'>— это соревнования по информационной безопасности в форме командной игры, главная цель которой —
+                        захватить флаг у соперника в приближённых к реальности условиях.</p>
+
+                    <p className='mt-[20px]'>Команды решают прикладные задачи, чтобы получить уникальную комбинацию символов (флаг).</p>
+
+                    <p className='mt-[20px]'>Далее участники отправляют флаг в специальную платформу и получают подтверждение, что задача
+                        решена верно или стоит попытаться дать ответ ещё раз.</p>
+                </span>
             </section>
         </main>
 

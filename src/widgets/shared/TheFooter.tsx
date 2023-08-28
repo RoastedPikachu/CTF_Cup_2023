@@ -45,7 +45,7 @@ const TheFooter = () => {
                 </div>
             </div>
 
-            <p className='absolute bottom-[10px] w-[80%] text-[rgba(255,255,255,0.6)] text-[0.5rem] font-["DaMiOne"] text-center'>@CTFCUP2023</p>
+            <p className='absolute bottom-[15px] w-[70%] text-[rgba(255,255,255,0.6)] text-[0.5rem] font-["DaMiOne"] text-center'>@CTFCUP2023</p>
         </footer>
     )
 };
