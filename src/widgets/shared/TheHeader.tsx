@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const TheHeader = () => {
     return (
-        <header className='flex justify-between items-center px-[10%] w-[100%] h-[80px]'>
+        <header className='flex justify-between items-center px-[15%] w-[100%] h-[80px]'>
             <a className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
 
             <nav className='flex justify-between w-[55%] text-[#ffffff] text-[1rem] font-["Good_Timing"] font-semibold'>
