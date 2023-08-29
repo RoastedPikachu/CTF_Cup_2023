@@ -8,40 +8,41 @@ import TheFooter from '@/widgets/shared/TheFooter';
 
 export default function Home() {
   const [video, setVideo] = useState('');
+  const [path, setPath] = useState('');
+
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-      axios.get('https://api.vk.com/method/video.get?access_token=1a68e9d51a68e9d51a68e9d557197d9f1d11a681a68e9d57e8558a77284ad7e8e522141&v=5.131&videos=-153821859_398')
-          .then((response:any) => {
-              console.log(response);
-          })
+      setIsMobile(window.innerWidth < 480);
+      setPath(window.innerWidth < 480 ? '/static/GreetingsBubblesPhoneImage.svg' : '/static/GreetingsBubblesImage.svg');
   }, []);
 
   return (
     <>
         <TheHeader/>
 
-        <main className='w-[100%] h-auto'>
+        <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.5] z-[-1]'/>
 
-            <img src='/static/GreetingsBubblesImage.svg' alt='Пузырьки' className='absolute mt-[5%] ml-[10%] w-[80%] h-[900px] scale-[1.375] z-[-1]'/>
+        <main className='relative w-[100%] h-auto'>
 
-            <section className='relative px-[15%] w-[100%] h-[700px]'>
-                <img src='/static/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-300px)] h-[450px] scale-[0.65]'/>
+            <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
+                <img src='/static/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-300px)] h-[450px] mlarge:h-[400px] scale-[0.65] mlarge:scale-[1.3]'/>
 
-                <div className='relative mt-[-80px]'>
-                    <p className='pt-[270px] text-[#ffffff] text-[2.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
+                <div className='relative mt-[-80px] mlarge:mt-[-240px]'>
+                    <p className='pt-[270px] text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
 
-                    <img src='/static/ArrowsDownIcon.svg' alt='Регистрация' className='ml-[calc(50%-20px)] pt-[5px] w-[40px] h-[40px] cursor-pointer'/>
+                    <img src='/static/ArrowsDownIcon.svg' alt='Регистрация' className='ml-[calc(50%-20px)] mlarge:ml-[calc(50%-12.5px)] pt-[5px] w-[40px] mlarge:w-[25px] h-[40px] mlarge:h-[25px] cursor-pointer'/>
                 </div>
             </section>
 
-            <section className='px-[15%] w-[100%] h-[800px] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.89)_16.01%,#000_28.81%,#000_100%)]'>
+            <section className='px-[15%] mlarge:px-[5%] w-[100%] h-[800px] mlarge:h-[450px] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.89)_16.01%,#000_28.81%,#000_100%)]'>
 
             </section>
 
-            <section className='relative px-[15%] w-[97.5%] h-[800px]'>
-                <img src='/static/RaspisanieText.svg' alt='Расписание' className='absolute mt-[-160px] w-[80vw] h-[140px]'/>
+            <section className='relative px-[15%] mlarge:px-[5%] w-[97.5%] mlarge:w-full h-[800px] mlarge:h-[700px]'>
+                <img src='/static/RaspisanieText.svg' alt='Расписание' className='absolute mt-[-160px] w-[80vw] mlarge:w-[95vw] h-[140px]'/>
 
-                <div className='flex justify-between mt-[200px] w-full h-[670px] text-[#ffffff] font-["Good_Timing"]'>
+                <div className='flex justify-between mlarge:block mt-[200px] mlarge:mt-[150px] w-full h-[670px] text-[#ffffff] font-["Good_Timing"]'>
                     <div className='relative py-[10px] px-[15px] w-[32.5%] h-[660px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px]'>
                         <img src='/static/BubblesBg1.svg' alt='Пузырьки2' className='absolute ml-[-15px] w-full h-[calc(100%-10px)] z-[-1]'/>
 
@@ -126,23 +127,29 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='relative flex justify-between px-[15%] w-[97.5%] h-[700px]'>
-                <img src='/static/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[14%] w-[80vw] h-[240px]'/>
+            <section className='relative flex justify-between px-[15%] mlarge:px-[5%] w-[97.5%] mlarge:w-full h-[700px] mlarge:h-[460px]'>
+                <img src='/static/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[14%] mlarge:right-[0%] w-[80vw] mlarge:w-[92.5vw] h-[240px]'/>
 
-                <img src='/static/SkolkovoLogo.svg' alt='Сколково' className='w-[60%] scale-[1.3]'/>
+                <img src='/static/SkolkovoLogo.svg' alt='Сколково' className='mlarge:mt-[140px] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2]'/>
 
-                <span className='mt-[300px] w-[37.5%] text-[#ffffff] text-[1.5rem] font-["Good_Timing"] whitespace-nowrap'>
-                    <p>Адрес: Большой бул., 42 с1,</p>
+                <span className='mt-[300px] mlarge:mt-[180px] mlarge:ml-[-15%] w-[37.5%] mlarge:w-[50%] text-[#ffffff] text-[1.5rem] mlarge:text-[0.875rem] font-["Good_Timing"] mlarge:text-right whitespace-nowrap mlarge:whitespace-normal'>
+                    {!isMobile && <p>Адрес: Большой бул., 42 с1,</p>}
 
-                    <p>Сколково, Москва, 143026</p>
+                    {!isMobile && <p>Сколково, Москва, 143026</p>}
+
+                    {isMobile && <p className='whitespace-nowrap'>Адрес: Большой бул.,</p>}
+
+                    {isMobile && <p className='whitespace-nowrap'>42 с1, Сколково,</p>}
+
+                    {isMobile && <p className='whitespace-nowrap'>Москва, 143026</p>}
                 </span>
             </section>
 
-            <section className='relative flex justify-between px-[15%] w-[97.5%] h-[500px]'>
-                <img src='/static/WhatIsCTFText.svg' alt='Что такое CTF?' className='absolute w-[85vw] h-[140px]'/>
+            <section className='relative flex justify-between px-[15%] mlarge:px-[5%] w-[97.5%] mlarge:w-full h-[500px] mlarge:h-[550px]'>
+                <img src='/static/WhatIsCTFText.svg' alt='Что такое CTF?' className='absolute w-[85vw] mlarge:w-[92.5vw] h-[140px]'/>
 
-                <span className='mt-[140px] ml-[20%] text-[#ffffff] text-[1rem] font-["Good_Timing"]'>
-                    <h3 className='text-[#bf5af2] text-[3rem]'>CTF (Capture the Flag)</h3>
+                <span className='mt-[140px] mlarge:mt-[110px] ml-[20%] mlarge:ml-[0%] text-[#ffffff] text-[1rem] font-["Good_Timing"]'>
+                    <h3 className='text-[#bf5af2] text-[3rem] mlarge:text-[1.5rem]'>CTF (Capture the Flag)</h3>
 
                     <p className='mt-[5px]'>— это соревнования по информационной безопасности в форме командной игры, главная цель которой —
                         захватить флаг у соперника в приближённых к реальности условиях.</p>
