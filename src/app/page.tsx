@@ -1,9 +1,21 @@
-import Image from 'next/image'
+'use client';
+import React, { useState, useEffect } from 'react';
+
+import axios from 'axios';
 
 import TheHeader from '@/widgets/shared/TheHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
 
 export default function Home() {
+  const [video, setVideo] = useState('');
+
+  useEffect(() => {
+      axios.get('https://api.vk.com/method/video.get?access_token=1a68e9d51a68e9d51a68e9d557197d9f1d11a681a68e9d57e8558a77284ad7e8e522141&v=5.131&videos=-153821859_398')
+          .then((response:any) => {
+              console.log(response);
+          })
+  }, []);
+
   return (
     <>
         <TheHeader/>
@@ -13,7 +25,7 @@ export default function Home() {
             <img src='/static/GreetingsBubblesImage.svg' alt='Пузырьки' className='absolute mt-[5%] ml-[10%] w-[80%] h-[900px] scale-[1.375] z-[-1]'/>
 
             <section className='relative px-[15%] w-[100%] h-[700px]'>
-                <img src='/static/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-400px)] h-[450px] scale-[0.65]'/>
+                <img src='/static/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-300px)] h-[450px] scale-[0.65]'/>
 
                 <div className='relative mt-[-80px]'>
                     <p className='pt-[270px] text-[#ffffff] text-[2.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
