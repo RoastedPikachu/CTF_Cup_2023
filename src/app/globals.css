@@ -18,14 +18,17 @@
 }
 
 body {
+  position: relative;
+  width: 100%;
+  height: auto;
   background-color: #0d0d0d;
   overflow-x: hidden;
 }
 
-@media (max-width: 480px) {
-  body {
-    overflow-x: hidden;
-  }
-}
+/*@media (max-width: 480px) {*/
+/*  body {*/
+/*    overflow-x: hidden;*/
+/*  }*/
+/*}*/
 
 

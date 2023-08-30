@@ -17,7 +17,7 @@ const TheHeader = () => {
             <nav className='flex justify-between w-[55%] mlarge:w-[100%] text-[#ffffff] text-[1rem] mlarge:text-[0.75rem] font-["Good_Timing"] font-semibold'>
                 <Link href='/' className='outline-none no-underline'>информация</Link>
 
-                <Link href='/' className='outline-none no-underline'>команда</Link>
+                <Link href='/team' className='outline-none no-underline'>команда</Link>
 
                 {!isMobile && <Link href='/' className='outline-none no-underline'>жюри</Link>}
 

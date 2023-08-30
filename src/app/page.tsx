@@ -1,5 +1,7 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+
+import { Carousel } from 'react-responsive-carousel';
 
 import axios from 'axios';
 
@@ -10,7 +12,37 @@ export default function Home() {
   const [video, setVideo] = useState('');
   const [path, setPath] = useState('');
 
+  // const [firstSliderMarginLeft, setFirstSliderMarginLeft] = useState('0%');
+  // const [centerSliderItemMarginLeft, setCenterSliderItemMarginLeft] = useState('-10%');
+  // const [lastSliderItemMarginLeft, setLastSliderItemMarginLeft] = useState('-10%');
+
   const [isMobile, setIsMobile] = useState(false);
+  // const [isRight, setIsRight] = useState(true);
+  //
+  // const handleCurrentSlide = (index:number, item) => {
+  //     switch(index) {
+  //         case 0:
+  //             setCenterSliderItemMarginLeft('-10%');
+  //             setLastSliderItemMarginLeft('-10%');
+  //
+  //             setIsRight(true);
+  //             break;
+  //         case 1:
+  //             if(isRight) {
+  //                 setCenterSliderItemMarginLeft('0%');
+  //             } else {
+  //                 setFirstSliderMarginLeft('25%');
+  //                 setCenterSliderItemMarginLeft('15%');
+  //             }
+  //             break;
+  //         case 2:
+  //             setCenterSliderItemMarginLeft('25%');
+  //             setLastSliderItemMarginLeft('15%');
+  //
+  //             setIsRight(false);
+  //             break;
+  //     }
+  // }
 
   useEffect(() => {
       setIsMobile(window.innerWidth < 480);
@@ -39,12 +71,98 @@ export default function Home() {
 
             </section>
 
-            <section className='relative px-[15%] mlarge:px-[5%] w-[97.5%] mlarge:w-full h-[800px] mlarge:h-[700px]'>
-                <img src='/static/RaspisanieText.svg' alt='Расписание' className='absolute mt-[-160px] w-[80vw] mlarge:w-[95vw] h-[140px]'/>
+            <section className='relative px-[15%] mlarge:px-[5%] w-[97.5%] mlarge:w-full h-[800px]'>
+                <img src='/static/RaspisanieText.svg' alt='Расписание' className='absolute mt-[-160px] mlarge:mt-[-120px] w-[80vw] mlarge:w-[95vw] h-[140px]'/>
 
-                <div className='flex justify-between mlarge:block mt-[200px] mlarge:mt-[150px] w-full h-[670px] text-[#ffffff] font-["Good_Timing"]'>
-                    <div className='relative py-[10px] px-[15px] w-[32.5%] h-[660px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px]'>
-                        <img src='/static/BubblesBg1.svg' alt='Пузырьки2' className='absolute ml-[-15px] w-full h-[calc(100%-10px)] z-[-1]'/>
+                {!isMobile && <>
+                    <div className='flex justify-between mlarge:block mt-[200px] mlarge:mt-[110px] w-full h-[670px] text-[#ffffff] font-["Good_Timing"]'>
+                        <div className='relative py-[10px] px-[15px] w-[32.5%] h-[660px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px]'>
+                            <img src='/static/BubblesBg1.svg' alt='Пузырьки2' className='absolute ml-[-15px] w-full h-[calc(100%-10px)] z-[-1]'/>
+
+                            <div className='flex justify-end items-center h-[50px]'>
+                                <div className='pr-[2.5px] text-[1rem]'>
+                                    <p className='text-[#bf5af2]'>Task based</p>
+
+                                    <p className='mt-[-7.5px] text-right'>ноября</p>
+                                </div>
+
+                                <p className='text-[2.5rem]'>19–20</p>
+                            </div>
+
+                            <p className='mt-[30px] w-[100%]'>отборочный этап 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+
+                            <p className='absolute bottom-[-15px] text-[5.5rem]'>online</p>
+                        </div>
+
+                        <div className='w-[63.5%] h-full'>
+                            <div className='flex justify-between w-full'>
+                                <div className='relative py-[10px] px-[15px] w-[47%] h-[400px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden'>
+                                    <img src='/static/BubblesBg2.svg' alt='Пузырьки3' className='absolute mt-[15px] ml-[0px] w-[calc(100%-10px)] h-[calc(100%-10px)] z-[-1] scale-[1.15]'/>
+
+                                    <div className='flex justify-end items-center h-[50px]'>
+                                        <div className='pr-[2.5px] text-[1rem]'>
+                                            <p className='text-[#bf5af2]'>Attack/Defence</p>
+
+                                            <p className='mt-[-7.5px] text-right'>декабря</p>
+                                        </div>
+
+                                        <p className='text-[2.5rem]'>10</p>
+                                    </div>
+
+                                    <p className='mt-[30px] w-[100%]'>полуфинал с 9.00 до 19.30, «Сколково»</p>
+
+                                    <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
+                                </div>
+
+                                <div className='relative py-[10px] px-[15px] w-[47%] h-[400px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden'>
+                                    <img src='/static/BubblesBg3.svg' alt='Пузырьки4' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
+
+                                    <div className='flex justify-end items-center h-[50px]'>
+                                        <div className='pr-[2.5px] text-[1rem] text-right'>
+                                            <p className='text-[#bf5af2]'>Final</p>
+
+                                            <p className='mt-[-7.5px]'>декабря</p>
+                                        </div>
+
+                                        <p className='text-[2.5rem]'>11</p>
+                                    </div>
+
+                                    <p className='mt-[30px] w-[100%]'>финал с 9.00 до 20.00, «Сколково»</p>
+
+                                    <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
+                                </div>
+                            </div>
+
+                            <div className='relative mt-[40px] w-full h-[210px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] '>
+                                <div className='relative py-[10px] pl-[30px] pr-[15px] w-full h-full overflow-hidden'>
+                                    <img src='/static/BubblesBg4.svg' alt='Пузырьки5' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
+
+                                    <div className='flex justify-between mt-[10px] w-full text-[#ffffff] text-[1rem] font-["Good_Timing"]'>
+                                        <p className='w-[50%]'>полуфинал 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+
+                                        <div className='flex justify-end items-center h-[50px]'>
+                                            <div className='pr-[2.5px] text-[1rem]'>
+                                                <p className='text-[#bf5af2]'>Semi-final</p>
+
+                                                <p className='mt-[-7.5px] text-right'>декабря</p>
+                                            </div>
+
+                                            <p className='text-[2.5rem]'>10</p>
+                                        </div>
+                                    </div>
+
+                                    <p className='absolute bottom-[-20px] right-[15px] text-[5.25rem]'>offline</p>
+                                </div>
+
+                                <p className='absolute bottom-[-20px] left-[60px] px-[40px] py-[7.5px] height-[40px] text-[#ffffff] text-[1rem] font-[Good_Timing] font-bold bg-[#111111] border-[1px] border-[#ffffff] rounded-[40px]'>школьники</p>
+                            </div>
+                        </div>
+                    </div>
+                </>}
+
+                {isMobile && <Carousel ariaLabel='div' showThumbs={false} showIndicators={false} showStatus={false} showArrows={false} className='mt-[110px] w-full h-[480px] text-[#ffffff] font-["Good_Timing"]'>
+                    <div className={`absolute py-[10px] px-[20px] w-full h-[480px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden`}>
+                        <img src='/static/BubblesBg1.svg' alt='Пузырьки2' className='absolute mt-[-20%] ml-[-50%] w-full h-[calc(100%-10px)] z-[-1] scale-[1.5]'/>
 
                         <div className='flex justify-end items-center h-[50px]'>
                             <div className='pr-[2.5px] text-[1rem]'>
@@ -56,75 +174,71 @@ export default function Home() {
                             <p className='text-[2.5rem]'>19–20</p>
                         </div>
 
-                        <p className='mt-[30px] w-[100%]'>отборочный этап 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>отборочный этап 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
 
-                        <p className='absolute bottom-[-15px] text-[5.5rem]'>online</p>
+                        <p className='absolute left-[22.5px] bottom-[-25px] text-[6.5rem]'>online</p>
                     </div>
 
-                    <div className='w-[63.5%] h-full'>
-                        <div className='flex justify-between w-full'>
-                            <div className='relative py-[10px] px-[15px] w-[47%] h-[400px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden'>
-                                <img src='/static/BubblesBg2.svg' alt='Пузырьки3' className='absolute mt-[15px] ml-[0px] w-[calc(100%-10px)] h-[calc(100%-10px)] z-[-1] scale-[1.15]'/>
+                    <div className={`absolute py-[10px] px-[20px] w-full h-[480px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden`}>
+                        <img src='/static/BubblesBg2.svg' alt='Пузырьки3' className='absolute mt-[-20%] ml-[-50%] w-full h-[calc(100%-10px)] z-[-1] scale-[1.5]'/>
 
-                                <div className='flex justify-end items-center h-[50px]'>
-                                    <div className='pr-[2.5px] text-[1rem]'>
-                                        <p className='text-[#bf5af2]'>Attack/Defence</p>
+                        <div className='flex justify-end items-center h-[50px]'>
+                            <div className='pr-[2.5px] text-[1rem]'>
+                                <p className='text-[#bf5af2]'>Attack/Defence</p>
 
-                                        <p className='mt-[-7.5px] text-right'>декабря</p>
-                                    </div>
-
-                                    <p className='text-[2.5rem]'>10</p>
-                                </div>
-
-                                <p className='mt-[30px] w-[100%]'>полуфинал с 9.00 до 19.30, «Сколково»</p>
-
-                                <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
+                                <p className='mt-[-7.5px] text-right'>декабря</p>
                             </div>
 
-                            <div className='relative py-[10px] px-[15px] w-[47%] h-[400px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden'>
-                                <img src='/static/BubblesBg3.svg' alt='Пузырьки4' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
+                            <p className='text-[2.5rem]'>10</p>
+                        </div>
 
-                                <div className='flex justify-end items-center h-[50px]'>
-                                    <div className='pr-[2.5px] text-[1rem] text-right'>
-                                        <p className='text-[#bf5af2]'>Final</p>
+                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>полуфинал с 9.00 до 19.30, «Сколково»</p>
 
-                                        <p className='mt-[-7.5px]'>декабря</p>
-                                    </div>
+                        <p className='absolute left-[20px] bottom-[-22.5px] text-[6.25rem]'>offline</p>
+                    </div>
 
-                                    <p className='text-[2.5rem]'>11</p>
+                    <div className={`relative py-[10px] px-[20px] w-full h-[480px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden`}>
+                        <img src='/static/BubblesBg3.svg' alt='Пузырьки4' className='absolute mt-[-10%] ml-[-52.5%] w-full h-[calc(100%-10px)] z-[-1] scale-[1.1]'/>
+
+                        <div className='flex justify-end items-center h-[50px]'>
+                            <div className='pr-[2.5px] text-[1rem] text-right'>
+                                <p className='text-[#bf5af2]'>Final</p>
+
+                                <p className='mt-[-7.5px]'>декабря</p>
+                            </div>
+
+                            <p className='text-[2.5rem]'>11</p>
+                        </div>
+
+                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>финал с 9.00 до 20.00, «Сколково»</p>
+
+                        <p className='absolute left-[15px] bottom-[-22.5px] text-[6.25rem]'>offline</p>
+                    </div>
+                </Carousel>}
+
+                {isMobile && <div className='relative mt-[30px] w-full h-[250px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] '>
+                    <div className='relative py-[10px] pl-[30px] pr-[15px] w-full h-full overflow-hidden'>
+                        <img src='/static/BubblesBg4.svg' alt='Пузырьки5' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
+
+                        <div className='flex justify-between mt-[25px] w-full text-[#ffffff] text-[0.875rem] font-["Good_Timing"]'>
+                            <p className='w-[60%] text-[1rem]'>полуфинал 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+
+                            <div className='flex justify-end items-center mt-[-25px] h-[50px]'>
+                                <div className='pr-[2.5px] text-[1rem]'>
+                                    <p className='text-[#bf5af2]'>Semi-final</p>
+
+                                    <p className='mt-[-7.5px] text-right'>декабря</p>
                                 </div>
 
-                                <p className='mt-[30px] w-[100%]'>финал с 9.00 до 20.00, «Сколково»</p>
-
-                                <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
+                                <p className='text-[2.5rem]'>10</p>
                             </div>
                         </div>
 
-                        <div className='relative mt-[40px] w-full h-[210px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] '>
-                            <div className='relative py-[10px] pl-[30px] pr-[15px] w-full h-full overflow-hidden'>
-                                <img src='/static/BubblesBg4.svg' alt='Пузырьки5' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
-
-                                <div className='flex justify-between mt-[10px] w-full text-[#ffffff] text-[1rem] font-["Good_Timing"]'>
-                                    <p className='w-[50%]'>полуфинал 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
-
-                                    <div className='flex justify-end items-center h-[50px]'>
-                                        <div className='pr-[2.5px] text-[1rem]'>
-                                            <p className='text-[#bf5af2]'>Semi-final</p>
-
-                                            <p className='mt-[-7.5px] text-right'>декабря</p>
-                                        </div>
-
-                                        <p className='text-[2.5rem]'>10</p>
-                                    </div>
-                                </div>
-
-                                <p className='absolute bottom-[-20px] right-[15px] text-[5.25rem]'>offline</p>
-                            </div>
-
-                            <p className='absolute bottom-[-20px] left-[60px] px-[40px] py-[7.5px] height-[40px] text-[#ffffff] text-[1rem] font-[Good_Timing] bg-[#111111] border-[1px] border-[#ffffff] rounded-[40px]'>школьники</p>
-                        </div>
+                        <p className='absolute bottom-[-20px] right-[15px] text-[#ffffff] text-[5.25rem] font-bold'>offline</p>
                     </div>
-                </div>
+
+                    <p className='absolute bottom-[-20px] left-[20px] px-[40px] py-[7.5px] height-[40px] text-[#ffffff] text-[1rem] font-[Good_Timing] font-bold bg-[#111111] border-[1px] border-[#ffffff] rounded-[40px]'>школьники</p>
+                </div>}
             </section>
 
             <section className='relative flex justify-between px-[15%] mlarge:px-[5%] w-[97.5%] mlarge:w-full h-[700px] mlarge:h-[460px]'>
@@ -133,15 +247,19 @@ export default function Home() {
                 <img src='/static/SkolkovoLogo.svg' alt='Сколково' className='mlarge:mt-[140px] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2]'/>
 
                 <span className='mt-[300px] mlarge:mt-[180px] mlarge:ml-[-15%] w-[37.5%] mlarge:w-[50%] text-[#ffffff] text-[1.5rem] mlarge:text-[0.875rem] font-["Good_Timing"] mlarge:text-right whitespace-nowrap mlarge:whitespace-normal'>
-                    {!isMobile && <p>Адрес: Большой бул., 42 с1,</p>}
+                    {!isMobile && <>
+                        <p>Адрес: Большой бул., 42 с1,</p>
 
-                    {!isMobile && <p>Сколково, Москва, 143026</p>}
+                        <p>Сколково, Москва, 143026</p>
+                    </>}
 
-                    {isMobile && <p className='whitespace-nowrap'>Адрес: Большой бул.,</p>}
+                    {isMobile && <>
+                        <p className='whitespace-nowrap'>Адрес: Большой бул.,</p>
 
-                    {isMobile && <p className='whitespace-nowrap'>42 с1, Сколково,</p>}
+                        <p className='whitespace-nowrap'>42 с1, Сколково,</p>
 
-                    {isMobile && <p className='whitespace-nowrap'>Москва, 143026</p>}
+                        <p className='whitespace-nowrap'>Москва, 143026</p>
+                    </>}
                 </span>
             </section>
 

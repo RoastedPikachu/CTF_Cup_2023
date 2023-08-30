@@ -12,7 +12,7 @@ const TheFooter = () => {
 
                 <Link href='' className='w-[200px] outline-none no-underline'>правила и результаты</Link>
 
-                <Link href='' className='w-[200px] outline-none no-underline'>команда</Link>
+                <Link href='/team' className='w-[200px] outline-none no-underline'>команда</Link>
 
                 <Link href='' className='w-[200px] outline-none no-underline'>партнеры</Link>
             </nav>
