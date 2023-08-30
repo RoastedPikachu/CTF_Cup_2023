@@ -12,37 +12,7 @@ export default function Home() {
   const [video, setVideo] = useState('');
   const [path, setPath] = useState('');
 
-  // const [firstSliderMarginLeft, setFirstSliderMarginLeft] = useState('0%');
-  // const [centerSliderItemMarginLeft, setCenterSliderItemMarginLeft] = useState('-10%');
-  // const [lastSliderItemMarginLeft, setLastSliderItemMarginLeft] = useState('-10%');
-
   const [isMobile, setIsMobile] = useState(false);
-  // const [isRight, setIsRight] = useState(true);
-  //
-  // const handleCurrentSlide = (index:number, item) => {
-  //     switch(index) {
-  //         case 0:
-  //             setCenterSliderItemMarginLeft('-10%');
-  //             setLastSliderItemMarginLeft('-10%');
-  //
-  //             setIsRight(true);
-  //             break;
-  //         case 1:
-  //             if(isRight) {
-  //                 setCenterSliderItemMarginLeft('0%');
-  //             } else {
-  //                 setFirstSliderMarginLeft('25%');
-  //                 setCenterSliderItemMarginLeft('15%');
-  //             }
-  //             break;
-  //         case 2:
-  //             setCenterSliderItemMarginLeft('25%');
-  //             setLastSliderItemMarginLeft('15%');
-  //
-  //             setIsRight(false);
-  //             break;
-  //     }
-  // }
 
   useEffect(() => {
       setIsMobile(window.innerWidth < 480);
@@ -160,7 +130,7 @@ export default function Home() {
                 </>}
 
                 {isMobile && <Carousel ariaLabel='div' showThumbs={false} showIndicators={false} showStatus={false} showArrows={false} className='mt-[110px] w-full h-[480px] text-[#ffffff] font-["Good_Timing"]'>
-                    <div className={`absolute py-[10px] px-[20px] w-full h-[480px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden`}>
+                    <div className={`absolute py-[10px] px-[20px] w-[95%] h-[480px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden`}>
                         <img src='/static/BubblesBg1.svg' alt='Пузырьки2' className='absolute mt-[-20%] ml-[-50%] w-full h-[calc(100%-10px)] z-[-1] scale-[1.5]'/>
 
                         <div className='flex justify-end items-center h-[50px]'>
@@ -175,10 +145,10 @@ export default function Home() {
 
                         <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>отборочный этап 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
 
-                        <p className='absolute left-[22.5px] bottom-[-25px] text-[6.5rem]'>online</p>
+                        <p className='absolute left-[17.5px] bottom-[-25px] text-[6rem]'>online</p>
                     </div>
 
-                    <div className={`absolute py-[10px] px-[20px] w-full h-[480px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden`}>
+                    <div className={`absolute py-[10px] px-[20px] w-[95%] h-[480px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden`}>
                         <img src='/static/BubblesBg2.svg' alt='Пузырьки3' className='absolute mt-[-20%] ml-[-50%] w-full h-[calc(100%-10px)] z-[-1] scale-[1.5]'/>
 
                         <div className='flex justify-end items-center h-[50px]'>
@@ -193,10 +163,10 @@ export default function Home() {
 
                         <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>полуфинал с 9.00 до 19.30, «Сколково»</p>
 
-                        <p className='absolute left-[20px] bottom-[-22.5px] text-[6.25rem]'>offline</p>
+                        <p className='absolute left-[15px] bottom-[-22.5px] text-[5.75rem]'>offline</p>
                     </div>
 
-                    <div className={`relative py-[10px] px-[20px] w-full h-[480px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden`}>
+                    <div className={`relative py-[10px] px-[20px] w-[95%] h-[480px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] overflow-hidden`}>
                         <img src='/static/BubblesBg3.svg' alt='Пузырьки4' className='absolute mt-[-10%] ml-[-52.5%] w-full h-[calc(100%-10px)] z-[-1] scale-[1.1]'/>
 
                         <div className='flex justify-end items-center h-[50px]'>
@@ -211,7 +181,7 @@ export default function Home() {
 
                         <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>финал с 9.00 до 20.00, «Сколково»</p>
 
-                        <p className='absolute left-[15px] bottom-[-22.5px] text-[6.25rem]'>offline</p>
+                        <p className='absolute left-[15px] bottom-[-22.5px] text-[5.75rem]'>offline</p>
                     </div>
                 </Carousel>}
 
@@ -241,11 +211,11 @@ export default function Home() {
             </section>
 
             <section className='relative flex justify-between px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[700px] mlarge:h-[460px]'>
-                <img src='/static/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[14%] mlarge:right-[0%] w-[80vw] mlarge:w-[92.5vw] h-[240px]'/>
+                <img src='/static/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[14%] mlarge:right-[7.5%] w-[80vw] mlarge:w-[92.5vw] h-[240px]'/>
 
                 <img src='/static/SkolkovoLogo.svg' alt='Сколково' className='mlarge:mt-[140px] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2]'/>
 
-                <span className='mt-[300px] mlarge:mt-[180px] mlarge:ml-[-15%] w-[37.5%] mlarge:w-[50%] text-[#ffffff] text-[1.5rem] mlarge:text-[0.875rem] font-["Good_Timing"] mlarge:text-right whitespace-nowrap mlarge:whitespace-normal'>
+                <span className='mt-[300px] mlarge:mt-[180px] mlarge:ml-[-22.5%] w-[37.5%] mlarge:w-[50%] text-[#ffffff] text-[1.5rem] mlarge:text-[0.875rem] font-["Good_Timing"] mlarge:text-right whitespace-nowrap mlarge:whitespace-normal'>
                     {!isMobile && <>
                         <p>Адрес: Большой бул., 42 с1,</p>
 
