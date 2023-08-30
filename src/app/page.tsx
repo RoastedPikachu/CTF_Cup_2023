@@ -12,7 +12,7 @@ export default function Home() {
   const [video, setVideo] = useState('');
   const [path, setPath] = useState('');
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
       setIsMobile(window.innerWidth < 480);
@@ -23,7 +23,7 @@ export default function Home() {
     <>
         <TheHeader/>
 
-        <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.2] z-[-1] object-cover'/>
+        <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.2] z-[-1] mlarge:object-cover'/>
 
         <main className='relative w-[100vw] h-auto overflow-hidden overflow-y-visible'>
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
