@@ -53,10 +53,9 @@ export default function Home() {
     <>
         <TheHeader/>
 
-        <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.5] z-[-1]'/>
+        <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.2] z-[-1] object-cover'/>
 
-        <main className='relative w-[100%] h-auto'>
-
+        <main className='relative w-[100vw] h-auto overflow-hidden overflow-y-visible'>
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
                 <img src='/static/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-300px)] h-[450px] mlarge:h-[400px] scale-[0.65] mlarge:scale-[1.3]'/>
 
@@ -71,7 +70,7 @@ export default function Home() {
 
             </section>
 
-            <section className='relative px-[15%] mlarge:px-[5%] w-[97.5%] mlarge:w-full h-[800px]'>
+            <section className='relative px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[800px]'>
                 <img src='/static/RaspisanieText.svg' alt='Расписание' className='absolute mt-[-160px] mlarge:mt-[-120px] w-[80vw] mlarge:w-[95vw] h-[140px]'/>
 
                 {!isMobile && <>
@@ -216,12 +215,12 @@ export default function Home() {
                     </div>
                 </Carousel>}
 
-                {isMobile && <div className='relative mt-[30px] w-full h-[250px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] '>
+                {isMobile && <div className='relative mt-[30px] w-full h-[260px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] '>
                     <div className='relative py-[10px] pl-[30px] pr-[15px] w-full h-full overflow-hidden'>
                         <img src='/static/BubblesBg4.svg' alt='Пузырьки5' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
 
                         <div className='flex justify-between mt-[25px] w-full text-[#ffffff] text-[0.875rem] font-["Good_Timing"]'>
-                            <p className='w-[60%] text-[1rem]'>полуфинал 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+                            <p className='w-[55%] text-[0.875rem] leading-[1.75]'>полуфинал 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
 
                             <div className='flex justify-end items-center mt-[-25px] h-[50px]'>
                                 <div className='pr-[2.5px] text-[1rem]'>
@@ -241,7 +240,7 @@ export default function Home() {
                 </div>}
             </section>
 
-            <section className='relative flex justify-between px-[15%] mlarge:px-[5%] w-[97.5%] mlarge:w-full h-[700px] mlarge:h-[460px]'>
+            <section className='relative flex justify-between px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[700px] mlarge:h-[460px]'>
                 <img src='/static/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[14%] mlarge:right-[0%] w-[80vw] mlarge:w-[92.5vw] h-[240px]'/>
 
                 <img src='/static/SkolkovoLogo.svg' alt='Сколково' className='mlarge:mt-[140px] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2]'/>
@@ -263,7 +262,7 @@ export default function Home() {
                 </span>
             </section>
 
-            <section className='relative flex justify-between px-[15%] mlarge:px-[5%] w-[97.5%] mlarge:w-full h-[500px] mlarge:h-[550px]'>
+            <section className='relative flex justify-between px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[500px] mlarge:h-[550px]'>
                 <img src='/static/WhatIsCTFText.svg' alt='Что такое CTF?' className='absolute w-[85vw] mlarge:w-[92.5vw] h-[140px]'/>
 
                 <span className='mt-[140px] mlarge:mt-[110px] ml-[20%] mlarge:ml-[0%] text-[#ffffff] text-[1rem] font-["Good_Timing"]'>
