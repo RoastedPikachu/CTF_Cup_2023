@@ -6,6 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios';
 
 import TheHeader from '@/widgets/shared/TheHeader';
+import TheMobileHeader from '@/widgets/shared/TheMobileHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-        <TheHeader/>
+        {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
 
         <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.2] z-[-1] mlarge:object-cover'/>
 

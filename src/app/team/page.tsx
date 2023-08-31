@@ -2,11 +2,13 @@ import React from 'react';
 
 import TheHeader from '@/widgets/shared/TheHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
+import TheMobileHeader from "@/widgets/shared/TheMobileHeader";
 
 const Page = () => {
+
     return (
         <>
-            <TheHeader/>
+            {/*{!isMobile ? <TheHeader/> : <TheMobileHeader/>}*/}
 
             <main className='px-[15%] w-full h-auto'>
                 <section>
