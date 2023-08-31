@@ -215,7 +215,7 @@ export default function Home() {
                 </div>}
             </section>
 
-            <section className='relative flex justify-between mlarge:block px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[850px] mlarge:h-[460px]'>
+            <section className='relative mlarge:flex mlarge:justify-between px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[850px] mlarge:h-[460px]'>
                 <img src='/static/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[14%] mlarge:right-[7.5%] w-[80vw] mlarge:w-[92.5vw] h-[240px]'/>
 
                 <img src='/static/SkolkovoLogo.svg' alt='Сколково' className='pt-[200px] mlarge:pt-[140px] ml-[5%] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2]'/>
