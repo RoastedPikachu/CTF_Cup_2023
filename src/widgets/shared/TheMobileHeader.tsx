@@ -16,15 +16,17 @@ const TheMobileHeader = () => {
             <a className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
 
             <button onClick={() => setIsModalWindowActive(true)} className='outline-none'>
-                <img src='/static/HamburgerMenu.svg' alt='Гамбургер меню' className='w-[20px] h-[20px]'/>
+                <img src='/static/header/icon/HamburgerMenuIcon.svg' alt='Гамбургер меню' className='w-[20px] h-[20px]'/>
             </button>
 
             <CSSTransition in={isModalWindowActive} nodeRef={nodeRef} timeout={600} classNames='modalHeader' unmountOnExit>
                 <div ref={nodeRef} className='fixed ml-[calc(-5%)] py-[25px] px-[20px] w-full h-[100vh] bg-[#0d0d0d] z-30 ease-in-out'>
-                    <img src='/static/XMarkIcon.svg' alt='Закрыть' onClick={() => setIsModalWindowActive(false)} className='absolute top-[25px] right-[20px] w-[20px] h-[17.5px]'/>
+                    <img src='/static/header/icon/XMarkIcon.svg' alt='Закрыть' onClick={() => setIsModalWindowActive(false)} className='absolute top-[25px] right-[20px] w-[20px] h-[17.5px]'/>
 
-                    <nav className='flex flex-wrap mt-[50px] w-full h-[250px] text-[#ffffff] text-[1.125rem] text-right font-["Good_Timing"] font-semibold'>
+                    <nav className='flex flex-wrap mt-[50px] w-full h-[300px] text-[#ffffff] text-[1.125rem] text-right font-["Good_Timing"] font-semibold'>
                         <a className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
+
+                        <Link href='/' className='w-full outline-none no-underline'>главная</Link>
 
                         <Link href='/' className='w-full outline-none no-underline'>информация</Link>
 

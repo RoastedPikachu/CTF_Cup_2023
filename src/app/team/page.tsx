@@ -12,7 +12,7 @@ const Page = () => {
 
             <main className='px-[15%] w-full h-auto'>
                 <section>
-                    <img src='/static/KomandaOrgText.svg' alt='Команда/оргкомитет' className='w-full'/>
+                    <img src='/static/teamPage/text/KomandaOrgText.svg' alt='Команда/оргкомитет' className='w-full'/>
 
                     <div className='flex justify-between mt-[80px] ml-[200px] w-[380px] h-[220px]'>
                         <img src='/static/avatars/org/PyarinViktorAvatar.svg' alt='Пярин Виктор Анатольевич' className='w-[180px] h-full'/>
@@ -136,7 +136,7 @@ const Page = () => {
                 </section>
 
                 <section className='mt-[150px]'>
-                    <img src='/static/KomandaProjectText.svg' alt='Команда/проектная' className='w-full'/>
+                    <img src='/static/teamPage/text/KomandaProjectText.svg' alt='Команда/проектная' className='w-full'/>
 
                     <div className='flex justify-between mt-[80px] ml-[200px] w-[380px] h-[220px]'>
                         <img src='/static/avatars/project/SobolevaAlisaAvatar.svg' alt='Соболева Алиса' className='w-[180px] h-full'/>
