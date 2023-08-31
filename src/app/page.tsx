@@ -25,7 +25,11 @@ export default function Home() {
 
         <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.2] z-[-1] mlarge:object-cover'/>
 
-        <main className='relative w-[100vw] h-auto overflow-hidden overflow-y-visible'>
+        {!isMobile && <div className='absolute mt-[1990px] w-[100%] h-[2000px] overflow-y-hidden'>
+            <img src='/static/WaterCoolingImage.svg' alt='Водянка задний фон' className='absolute w-full'/>
+        </div>}
+
+        <main className='relative w-[100vw] h-auto overflow-hidden'>
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
                 <img src='/static/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-300px)] h-[450px] mlarge:h-[400px] scale-[0.65] mlarge:scale-[1.3]'/>
 
@@ -40,7 +44,7 @@ export default function Home() {
 
             </section>
 
-            <section className='relative px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[800px]'>
+            <section className='relative px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[750px]'>
                 <img src='/static/RaspisanieText.svg' alt='Расписание' className='absolute mt-[-160px] mlarge:mt-[-120px] w-[80vw] mlarge:w-[95vw] h-[140px]'/>
 
                 {!isMobile && <>
@@ -210,26 +214,24 @@ export default function Home() {
                 </div>}
             </section>
 
-            <section className='relative flex justify-between px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[700px] mlarge:h-[460px]'>
+            <section className='relative flex justify-between mlarge:block px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[850px] mlarge:h-[460px]'>
                 <img src='/static/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[14%] mlarge:right-[7.5%] w-[80vw] mlarge:w-[92.5vw] h-[240px]'/>
 
-                <img src='/static/SkolkovoLogo.svg' alt='Сколково' className='mlarge:mt-[140px] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2]'/>
+                <img src='/static/SkolkovoLogo.svg' alt='Сколково' className='pt-[200px] mlarge:pt-[140px] ml-[5%] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2]'/>
 
-                <span className='mt-[300px] mlarge:mt-[180px] mlarge:ml-[-22.5%] w-[37.5%] mlarge:w-[50%] text-[#ffffff] text-[1.5rem] mlarge:text-[0.875rem] font-["Good_Timing"] mlarge:text-right whitespace-nowrap mlarge:whitespace-normal'>
-                    {!isMobile && <>
-                        <p>Адрес: Большой бул., 42 с1,</p>
-
-                        <p>Сколково, Москва, 143026</p>
-                    </>}
+                <span className='mt-[300px] mlarge:mt-[0px] mlarge:ml-[-22.5%] w-[37.5%] mlarge:w-[50%] text-[#ffffff] text-[1rem] mlarge:text-[0.875rem] font-["Good_Timing"] mlarge:text-right whitespace-nowrap mlarge:whitespace-normal'>
+                    {!isMobile && <p className='mt-[15px] ml-[40px]'>Адрес: Большой бул., 42 с1, Сколково, Москва, 143026</p>}
 
                     {isMobile && <>
-                        <p className='whitespace-nowrap'>Адрес: Большой бул.,</p>
+                        <p className='mt-[-150px] whitespace-nowrap'>Адрес: Большой бул.,</p>
 
                         <p className='whitespace-nowrap'>42 с1, Сколково,</p>
 
                         <p className='whitespace-nowrap'>Москва, 143026</p>
                     </>}
                 </span>
+
+                {isMobile && <img src='/static/WaterCoolingPipeImage.svg' alt='Трубка водяного охлаждения, задний фон' className='absolute left-[0%] bottom-[-60px] w-full'/>}
             </section>
 
             <section className='relative flex justify-between px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[500px] mlarge:h-[550px]'>
