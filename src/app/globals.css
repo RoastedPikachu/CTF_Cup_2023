@@ -26,23 +26,23 @@ body {
 }
 
 .modalHeader-enter {
-  margin-top: -110vh;
+  top: -110vh;
   transition: 400ms ease;
 }
 .modalHeader-enter-active {
-  margin-top: calc(100vh - 80px);
+  top: 0;
   transition: 400ms ease;
 }
 .modalHeader-enter-done {
-  margin-top: calc(100vh - 80px);
+  top: 0;
   transition: 400ms ease;
 }
 .modalHeader-exit {
-  margin-top: calc(100vh - 80px);
+  top: 0;
   transition: 400ms ease;
 }
 .modalHeader-exit-active {
-  margin-top: -110vh;
+  top: -110vh;
   transition: 400ms ease;
 }
 

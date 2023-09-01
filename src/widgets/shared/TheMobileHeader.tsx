@@ -12,7 +12,7 @@ const TheMobileHeader = () => {
     const nodeRef = useRef(null);
 
     return (
-        <header className='flex justify-between items-center px-[5%] w-full h-[80px]'>
+        <header className='relative flex justify-between items-center px-[5%] w-full h-[80px]'>
             <a className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
 
             <button onClick={() => setIsModalWindowActive(true)} className='outline-none'>
