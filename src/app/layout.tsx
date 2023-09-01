@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { ReduxProvider } from '@/store/provider';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -12,13 +13,17 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
+   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="ru">
+        <body className={inter.className}>
+          <ReduxProvider>
+            {children}
+          </ReduxProvider>
+        </body>
+      </html>
   )
 }

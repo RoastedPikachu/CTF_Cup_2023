@@ -1,16 +1,27 @@
-import React from 'react';
+'use client';
+import React, { useEffect } from 'react';
+
+import { useAppDispatch } from "@/store/storeHooks";
+import { mobileSlice } from "@/store/storeReducers/MobileSlice";
 
 import TheHeader from '@/widgets/shared/TheHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
 import TheMobileHeader from "@/widgets/shared/TheMobileHeader";
 
 const Page = () => {
+    const dispatch = useAppDispatch();
+
+    const { isMobile, setIsMobileStatus } = mobileSlice.actions;
+
+    useEffect(() => {
+        dispatch(setIsMobileStatus(window.innerWidth < 480));
+    }, []);
 
     return (
         <>
-            {/*{!isMobile ? <TheHeader/> : <TheMobileHeader/>}*/}
+            {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
 
-            <main className='px-[15%] w-full h-auto'>
+            <main className='mt-[50px] px-[15%] w-full h-auto'>
                 <section>
                     <img src='/static/teamPage/text/KomandaOrgText.svg' alt='Команда/оргкомитет' className='w-full'/>
 

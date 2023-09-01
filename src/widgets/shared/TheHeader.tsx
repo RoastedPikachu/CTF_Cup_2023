@@ -4,11 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const TheHeader = () => {
-    const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-        setIsMobile(window.innerWidth < 480);
-    }, []);
 
     return (
         <header className='flex justify-between items-center px-[15%] w-[100%] h-[80px]'>

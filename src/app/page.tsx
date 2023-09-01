@@ -1,22 +1,25 @@
 'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Carousel } from 'react-responsive-carousel';
 
-import axios from 'axios';
+import { mobileSlice } from '@/store/storeReducers/MobileSlice';
+import { useAppDispatch } from '@/store/storeHooks/index';
 
 import TheHeader from '@/widgets/shared/TheHeader';
 import TheMobileHeader from '@/widgets/shared/TheMobileHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
 
 export default function Home() {
+  const dispatch = useAppDispatch();
+
   const [video, setVideo] = useState('');
   const [path, setPath] = useState('');
 
-  const [isMobile, setIsMobile] = useState(true);
+  const { isMobile, setIsMobileStatus } = mobileSlice.actions;
 
   useEffect(() => {
-      setIsMobile(window.innerWidth < 480);
+      dispatch(setIsMobileStatus(window.innerWidth < 480));
       setPath(window.innerWidth < 480 ? '/static/homePage/background/GreetingsBubblesPhoneImage.svg' : '/static/homePage/background/GreetingsBubblesImage.svg');
   }, []);
 
