@@ -41,8 +41,22 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='px-[15%] mlarge:px-[5%] w-[100%] h-[800px] mlarge:h-[450px] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.89)_16.01%,#000_28.81%,#000_100%)]'>
+            <section className='pt-[200px] px-[10%] mlarge:px-[5%] w-[100%] h-[800px] mlarge:h-[450px] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.89)_16.01%,#000_28.81%,#000_100%)]'>
+                <div className='relative w-full h-[500px] mlarge:h-[210px] border-[1px] border-[#ffffff] rounded-[25px]'>
+                    <p className='absolute top-[-20px] mlarge:top-[-15px] left-[30px] mlarge:left-[20px] py-[5px] px-[20px] mlarge:px-[15px] bg-[#111111] border-[1px] border-[#ffffff] rounded-[40px] text-[#ffffff] text-[1rem] mlarge:text-[0.875rem] font-["Good_Timing"] font-bold'>online</p>
 
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/Sv3cxIWXR0g?si=ELWfjKJE7ti-SvF2"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        className='rounded-[25px]'
+                    >
+                    </iframe>
+                </div>
             </section>
 
             <section className='relative px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[750px]'>
