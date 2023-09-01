@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const TheFooter = () => {
     return (
-        <footer className='flex justify-between mlarge:block relative pt-[70px] mlarge:pt-[50px] px-[15%] w-[100%] h-[350px] mlarge:h-[750px] bg-[#000000]'>
+        <footer className='flex justify-between mlarge:block relative pt-[70px] mlarge:pt-[50px] px-[15%] mlarge:px-[10%] mlarge:px-[5%] w-[100%] h-[350px] mlarge:h-[750px] bg-[#000000]'>
             <nav className='flex flex-wrap w-[200px] h-[210px] text-[#ffffff] text-[1rem] font-["Good_Timing"] font-bold'>
                 <h3 className='text-[1.125rem] font-["DaMiOne"]'>/МЕНЮ</h3>
 
@@ -30,7 +30,7 @@ const TheFooter = () => {
             </div>
 
             <div className='mlarge:mt-[50px]'>
-                <button className='flex justify-between items-top w-[300px] h-[40px] border-b-2 border-[#ffffff]'>
+                <button className='flex justify-between items-top w-[300px] mlarge:w-full h-[40px] border-b-2 border-[#ffffff]'>
                     <p className='text-[#ffffff] text-[1.25rem] font-["DaMiOne"]'>FOLLOW US</p>
 
                     <img src='/static/footer/icon/ArrowRightDownIcon.svg' alt='FOLLOW US' className='mt-[5px] w-[15px] h-[15px]'/>
@@ -47,7 +47,7 @@ const TheFooter = () => {
                 </div>
             </div>
 
-            <div className='absolute bottom-[25px] mlarge:bottom-[40px] w-[70%] h-[60px]'>
+            <div className='absolute bottom-[25px] mlarge:bottom-[40px] w-[70%] mlarge:w-[80%] h-[60px]'>
                 <img src='/static/footer/logo/CTFCupLogo.svg' alt='Логотип Кубка CTF' className='ml-[calc(50%-25px)] w-[50px] h-[50px]'/>
 
                 <p className='mt-[10px] mlarge:mt-[20px] w-full text-[rgba(255,255,255,0.6)] text-[0.5rem] font-["DaMiOne"] text-center'>@CTFCUP2023</p>
