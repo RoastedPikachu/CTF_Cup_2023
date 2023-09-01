@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 
 import { useAppDispatch, useAppSelector } from "@/store/storeHooks";
 import { mobileSlice } from "@/store/storeReducers/MobileSlice";
-import { AppState } from '@/store';
+import { RootState } from '@/store';
 
 import TheHeader from '@/widgets/shared/TheHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
@@ -12,7 +12,7 @@ import TheMobileHeader from "@/widgets/shared/TheMobileHeader";
 const Page = () => {
     const dispatch = useAppDispatch();
 
-    const isMobile = useAppSelector((state:AppState) => state.mobile.isMobile);
+    const isMobile = useAppSelector((state:RootState) => state.mobile.isMobile);
 
     const { setIsMobileStatus } = mobileSlice.actions;
 
