@@ -1,8 +1,9 @@
 'use client';
 import React, { useEffect } from 'react';
 
-import { useAppDispatch } from "@/store/storeHooks";
+import { useAppDispatch, useAppSelector } from "@/store/storeHooks";
 import { mobileSlice } from "@/store/storeReducers/MobileSlice";
+import { AppState } from '@/store';
 
 import TheHeader from '@/widgets/shared/TheHeader';
 import TheMobileHeader from '@/widgets/shared/TheMobileHeader';
@@ -11,7 +12,9 @@ import TheFooter from '@/widgets/shared/TheFooter';
 const Page = () => {
     const dispatch = useAppDispatch();
 
-    const { isMobile, setIsMobileStatus } = mobileSlice.actions;
+    const isMobile = useAppSelector((state:AppState) => state.mobile.isMobile);
+
+    const { setIsMobileStatus } = mobileSlice.actions;
 
     useEffect(() => {
         dispatch(setIsMobileStatus(window.innerWidth < 480));

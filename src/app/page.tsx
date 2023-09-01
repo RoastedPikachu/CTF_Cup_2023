@@ -4,7 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 import { mobileSlice } from '@/store/storeReducers/MobileSlice';
-import { useAppDispatch } from '@/store/storeHooks/index';
+import { useAppDispatch, useAppSelector } from '@/store/storeHooks';
+import { AppState } from '@/store';
 
 import TheHeader from '@/widgets/shared/TheHeader';
 import TheMobileHeader from '@/widgets/shared/TheMobileHeader';
@@ -16,7 +17,9 @@ export default function Home() {
   const [video, setVideo] = useState('');
   const [path, setPath] = useState('');
 
-  const { isMobile, setIsMobileStatus } = mobileSlice.actions;
+  const isMobile = useAppSelector((state:AppState) => state.mobile.isMobile);
+
+  const { setIsMobileStatus } = mobileSlice.actions;
 
   useEffect(() => {
       dispatch(setIsMobileStatus(window.innerWidth < 480));
