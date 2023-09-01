@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const TheFooter = () => {
     return (
-        <footer className='flex justify-between mlarge:block relative pt-[70px] mlarge:pt-[50px] px-[15%] mlarge:px-[10%] mlarge:px-[5%] w-[100%] h-[350px] mlarge:h-[750px] bg-[#000000]'>
+        <footer className='flex justify-between mlarge:block relative pt-[70px] mlarge:pt-[50px] px-[15%] mlarge:px-[10%] mmedium:px-[5%] w-full h-[350px] mlarge:h-[750px] bg-[#000000]'>
             <nav className='flex flex-wrap w-[200px] h-[210px] text-[#ffffff] text-[1rem] font-["Good_Timing"] font-bold'>
                 <h3 className='text-[1.125rem] font-["DaMiOne"]'>/МЕНЮ</h3>
 

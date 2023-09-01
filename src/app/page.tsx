@@ -59,7 +59,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='relative px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[750px]'>
+            <section className='relative px-[15%] mlarge:px-[7.5%] w-full mlarge:w-full h-[750px]'>
                 <img src='/static/homePage/text/RaspisanieText.svg' alt='Расписание' className='absolute mt-[-160px] mlarge:mt-[-120px] w-[80vw] mlarge:w-[95vw] h-[140px]'/>
 
                 {!isMobile && <>
@@ -229,8 +229,8 @@ export default function Home() {
                 </div>}
             </section>
 
-            <section className='relative mlarge:flex mlarge:justify-between px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[850px] mlarge:h-[460px]'>
-                <img src='/static/homePage/text/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[14%] mlarge:right-[7.5%] w-[80vw] mlarge:w-[92.5vw] h-[240px]'/>
+            <section className='relative mlarge:flex mlarge:justify-between px-[15%] mlarge:px-[7.5%] w-full h-[850px] mlarge:h-[460px]'>
+                <img src='/static/homePage/text/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[13.5%] mlarge:right-[7.5%] w-[80vw] mlarge:w-[92.5vw] h-[240px]'/>
 
                 <img src='/static/homePage/logo/SkolkovoLogo.svg' alt='Сколково' className='pt-[200px] mlarge:pt-[60px] ml-[5%] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2]'/>
 
@@ -249,7 +249,7 @@ export default function Home() {
                 {isMobile && <img src='/static/homePage/background/WaterCoolingPipeImage.svg' alt='Трубка водяного охлаждения, задний фон' className='absolute left-[0%] bottom-[-60px] mmedium:bottom-[-50px] msmall:bottom-[-35px] w-full'/>}
             </section>
 
-            <section className='relative flex justify-between px-[15%] mlarge:px-[7.5%] w-[97.5%] mlarge:w-full h-[500px] mlarge:h-[550px] mmedium:h-[525px] msmall:h-[475px]'>
+            <section className='relative flex justify-between px-[15%] mlarge:px-[7.5%] w-full mlarge:w-full h-[500px] mlarge:h-[550px] mmedium:h-[525px] msmall:h-[475px]'>
                 <img src='/static/homePage/text/WhatIsCTFText.svg' alt='Что такое CTF?' className='absolute w-[85vw] mlarge:w-[95vw] mmedium:w-[100vw] h-[140px]'/>
 
                 <span className='mt-[140px] mlarge:mt-[110px] ml-[20%] mlarge:ml-[0%] text-[#ffffff] text-[1rem] mmedium:text-[0.875rem] msmall:text-[0.75rem] font-["Good_Timing"]'>
