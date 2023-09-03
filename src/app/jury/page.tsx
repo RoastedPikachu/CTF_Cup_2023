@@ -34,7 +34,7 @@ const Page = () => {
                     personDescription={'Будников Александр'}
                     personText={'Управляющий директор по информационной безопасности, ПАО АФК «Система»'}
                     mt={'80px'}
-                    ml={'200px'}
+                    ml={'150px'}
                 />
 
                 <PersonInfo
@@ -42,7 +42,7 @@ const Page = () => {
                     personDescription={'Бугров Владимир'}
                     personText={'И. О. начальника Департамента по обеспечению информационной безопасности ПФР'}
                     mt={'-10px'}
-                    ml={'600px'}
+                    ml={'550px'}
                 />
 
                 <PersonInfo
@@ -50,7 +50,7 @@ const Page = () => {
                     personDescription={'Волков Сергей'}
                     personText={'Начальник отдела информационной безопасности, АО «ГОЗНАК»'}
                     mt={'80px'}
-                    ml={'200px'}
+                    ml={'150px'}
                 />
 
                 <PersonInfo
@@ -58,7 +58,7 @@ const Page = () => {
                     personDescription={'Дерлыш Илья'}
                     personText={'Эксперт информационной безопасности, Росатом'}
                     mt={'-80px'}
-                    ml={'800px'}
+                    ml={'750px'}
                 />
 
                 <PersonInfo
@@ -74,7 +74,7 @@ const Page = () => {
                     personDescription={'Кузнецов Андрей'}
                     personText={'Технический директор Национального Киберполигона «Ростелеком-Солар»'}
                     mt={'-80px'}
-                    ml={'600px'}
+                    ml={'550px'}
                 />
 
                 <PersonInfo
@@ -82,7 +82,7 @@ const Page = () => {
                     personDescription={'Марков Алексей'}
                     personText={'Президент группы компаний ГК «Эшелон»'}
                     mt={'50px'}
-                    ml={'200px'}
+                    ml={'150px'}
                 />
 
                 <PersonInfo
@@ -90,7 +90,7 @@ const Page = () => {
                     personDescription={'Минаков Сергей'}
                     personText={'Старший научный сотрудник Академия криптографии РФ'}
                     mt={'-80px'}
-                    ml={'800px'}
+                    ml={'750px'}
                 />
 
                 <PersonInfo
@@ -98,7 +98,7 @@ const Page = () => {
                     personDescription={'Масалович Андрей'}
                     personText={'Генеральный директор ООО «Лавина Пульс»'}
                     mt={'40px'}
-                    ml={'400px'}
+                    ml={'350px'}
                 />
 
                 <PersonInfo
@@ -106,7 +106,7 @@ const Page = () => {
                     personDescription={'Михайленко Наталья'}
                     personText={'Доцент кафедры противодействия преступлениям в сфере ИТТ, к.ю.н.'}
                     mt={'50px'}
-                    ml={'800px'}
+                    ml={'750px'}
                 />
 
                 <PersonInfo
@@ -122,7 +122,7 @@ const Page = () => {
                     personDescription={'Усанов Алексей'}
                     personText={'Технический директор НТЦ «Вулкан»'}
                     mt={'40px'}
-                    ml={'400px'}
+                    ml={'350px'}
                 />
 
                 <PersonInfo
@@ -138,7 +138,7 @@ const Page = () => {
                     personDescription={'Скляров Дмитрий'}
                     personText={'Руководитель отдела анализа приложений, Positive Technologies'}
                     mt={'-160px'}
-                    ml={'600px'}
+                    ml={'550px'}
                 />
 
                 <PersonInfo
@@ -146,7 +146,7 @@ const Page = () => {
                     personDescription={'Царев Григорий'}
                     personText={'Руководитель направления Центра взаимодействия и реагирования Департамента информационной безопасности Банка России'}
                     mt={'120px'}
-                    ml={'200px'}
+                    ml={'150px'}
                 />
             </main>
 
