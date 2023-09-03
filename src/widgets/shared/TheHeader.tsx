@@ -15,7 +15,7 @@ const TheHeader = () => {
 
                 <Link href='/team' className='outline-none no-underline'>команда</Link>
 
-                <Link href='/' className='outline-none no-underline'>жюри</Link>
+                <Link href='/jury' className='outline-none no-underline'>жюри</Link>
 
                 <Link href='/' className='outline-none no-underline'>партнеры</Link>
             </nav>

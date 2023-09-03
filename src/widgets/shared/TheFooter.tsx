@@ -14,7 +14,7 @@ const TheFooter = () => {
 
                 <Link href='/team' className='w-[200px] outline-none no-underline'>команда</Link>
 
-                <Link href='/' className='w-[200px] outline-none no-underline'>жюри</Link>
+                <Link href='/jury' className='w-[200px] outline-none no-underline'>жюри</Link>
 
                 <Link href='' className='w-[200px] outline-none no-underline'>партнеры</Link>
             </nav>
