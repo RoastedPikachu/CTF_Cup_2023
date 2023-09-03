@@ -110,7 +110,7 @@ const Page = () => {
                     <img src='/static/infoPage/text/FAQText.svg' alt='FAQ' className='w-[40%] pb-[50px]'/>
 
                     {paragraphs.map((paragraph:Paragraph) => (
-                        <div className='mt-[30px] pb-[20px] h-auto border-b-2 border-[#bf5af2]'>
+                        <div key={paragraph.id} className='mt-[30px] pb-[20px] h-auto border-b-2 border-[#bf5af2]'>
                             <div className='flex justify-between items-center w-[calc(100%-12.5px)] h-[50px]'>
                                 <h3 className='w-[70%] text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>{paragraph.title}</h3>
 
