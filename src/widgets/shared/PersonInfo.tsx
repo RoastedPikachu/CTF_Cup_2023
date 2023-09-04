@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 interface PersonProps {
     imgPath: string,
     personDescription: string,
@@ -12,8 +14,8 @@ const PersonInfo: React.FC<PersonProps> = ({imgPath, personDescription, personTe
         <div className={`flex justify-between ${styles} w-[390px] h-[220px]`}>
             {imgPath ?
                 <div className='relative w-[180px] h-[220px]'>
-                    <img src={imgPath} alt={personDescription} className='absolute w-full h-full z-10'/>
-                    <img src={imgPath} alt={personDescription} className='absolute w-full h-full duration-700 ease-in-out grayscale hover:opacity-0 z-20'/>
+                    <Image src={imgPath} alt={personDescription} width={180} height={220} className='absolute z-10'/>
+                    <Image src={imgPath} alt={personDescription} width={180} height={220} className='absolute duration-700 ease-in-out grayscale hover:opacity-0 z-20'/>
                 </div>
                 :
                 <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
