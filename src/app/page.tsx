@@ -77,13 +77,13 @@ export default function Home() {
                                 <div className='pr-[2.5px] text-[1rem]'>
                                     <p className='text-[#bf5af2]'>Task based</p>
 
-                                    <p className='mt-[-7.5px] text-right'>ноября</p>
+                                    <p className='mt-[-7.5px] text-right'>октября</p>
                                 </div>
 
-                                <p className='text-[2.5rem]'>19–20</p>
+                                <p className='text-[2.5rem]'>28-29</p>
                             </div>
 
-                            <p className='mt-[30px] w-[100%]'>отборочный этап 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+                            <p className='mt-[30px] w-[100%]'>отборочный этап 24ч с 12:00 до 12:00 В 11:00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
 
                             <p className='absolute bottom-[-15px] text-[5.5rem]'>online</p>
                         </div>
@@ -100,10 +100,10 @@ export default function Home() {
                                             <p className='mt-[-7.5px] text-right'>декабря</p>
                                         </div>
 
-                                        <p className='text-[2.5rem]'>10</p>
+                                        <p className='text-[2.5rem]'>09</p>
                                     </div>
 
-                                    <p className='mt-[30px] w-[100%]'>полуфинал с 9.00 до 19.30, «Сколково»</p>
+                                    <p className='mt-[30px] w-[100%]'>полуфинал с 9:00 до 19:30, «Сколково»</p>
 
                                     <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
                                 </div>
@@ -118,10 +118,10 @@ export default function Home() {
                                             <p className='mt-[-7.5px]'>декабря</p>
                                         </div>
 
-                                        <p className='text-[2.5rem]'>11</p>
+                                        <p className='text-[2.5rem]'>10</p>
                                     </div>
 
-                                    <p className='mt-[30px] w-[100%]'>финал с 9.00 до 20.00, «Сколково»</p>
+                                    <p className='mt-[30px] w-[100%]'>финал с 9:00 до 20:00, «Сколково»</p>
 
                                     <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
                                 </div>
@@ -132,16 +132,16 @@ export default function Home() {
                                     <img src='/static/homePage/background/BubblesBg4.svg' alt='Пузырьки5' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
 
                                     <div className='flex justify-between mt-[10px] w-full text-[#ffffff] text-[1rem] font-["Good_Timing"]'>
-                                        <p className='w-[50%]'>полуфинал 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+                                        <p className='w-[50%]'>финал для школьных команд с 9:00 до 19:30, «Сколково»</p>
 
                                         <div className='flex justify-end items-center h-[50px]'>
                                             <div className='pr-[2.5px] text-[1rem]'>
-                                                <p className='text-[#bf5af2]'>Semi-final</p>
+                                                <p className='text-[#bf5af2]'>Final</p>
 
                                                 <p className='mt-[-7.5px] text-right'>декабря</p>
                                             </div>
 
-                                            <p className='text-[2.5rem]'>10</p>
+                                            <p className='text-[2.5rem]'>09</p>
                                         </div>
                                     </div>
 
