@@ -155,7 +155,7 @@ const Page = () => {
                     />
 
                     <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/RublevaMargarita.svg'}
+                        imgPath={'/static/teamPage/avatars/project/RublevaMargaritaAvatar.svg'}
                         personDescription={'Рублёва Маргарита'}
                         personText={'Web-дизайнер'}
                         mt={'-10px'}
@@ -211,74 +211,26 @@ const Page = () => {
                     />
 
                     <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/MukovkinDmitriyAvatar.svg'}
-                        personDescription={'Муковкин Дмитрий'}
-                        personText={'Разработчик, ЦФТ'}
+                        imgPath={'/static/teamPage/avatars/project/AvdeevaElizavetaAvatar.svg'}
+                        personDescription={'Авдеева Елизавета'}
+                        personText={'Разработчик'}
                         mt={'-10px'}
                         ml={'150px'}
                     />
 
                     <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/ZaitsevGeorgiyAvatar.svg'}
-                        personDescription={'Зайцев Георгий'}
-                        personText={'Разработчик, <strong>KKS</strong>'}
+                        imgPath={'/static/teamPage/avatars/project/FedotovIvanAvatar.svg'}
+                        personDescription={'Федотов Аватар'}
+                        personText={'Разработчик'}
                         mt={'-60px'}
                         ml={'550px'}
                     />
 
                     <PersonInfo
-                        imgPath={''}
-                        personDescription={'Анфиногенов Максим'}
-                        personText={'Разработчик, <strong>KKS</strong>'}
-                        mt={'-10px'}
-                        ml={'-50px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/PodobaevMaksimAvatar.svg'}
-                        personDescription={'Подобаев Максим'}
-                        personText={'Разработчик, <strong>UserGate</strong>'}
-                        mt={'-10px'}
-                        ml={'350px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={''}
-                        personDescription={'Бекетов Никита'}
+                        imgPath={'/static/teamPage/avatars/project/PokrovskiyNikitaAvatar.svg'}
+                        personDescription={'Покровский Никита'}
                         personText={'Разработчик'}
                         mt={'-10px'}
-                        ml={'750px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={''}
-                        personDescription={'Бекетов Никита'}
-                        personText={'Разработчик'}
-                        mt={'-10px'}
-                        ml={'750px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/KiguradzeGeorgiyAvatar.svg'}
-                        personDescription={'Кигурадзе Георгий'}
-                        personText={'Разработчик, <strong>CBS</strong>'}
-                        mt={'-10px'}
-                        ml={'150px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/MartensPavelAvatar.svg'}
-                        personDescription={'Мартенс Павел'}
-                        personText={'Разработчик, <strong>UserGate</strong>'}
-                        mt={'-60px'}
-                        ml={'550px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/KedikIlyaAvatar.svg'}
-                        personDescription={'Кедик Илья'}
-                        personText={'Разработчик, <strong>UserGate</strong>'}
-                        mt={'-60px'}
                         ml={'-50px'}
                     />
 
@@ -291,57 +243,41 @@ const Page = () => {
                     />
 
                     <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/ZeunovAntonAvatar.svg'}
-                        personDescription={'Зеунов Антон'}
-                        personText={'Разработчик'}
-                        mt={'100px'}
-                        ml={'150px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/KarginAlexandrAvatar.svg'}
-                        personDescription={'Каргин Александр'}
-                        personText={'Разработчик, <strong>HackerDom</strong>'}
-                        mt={'-60px'}
-                        ml={'550px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/HairutdinovDaniyarAvatar.svg'}
-                        personDescription={'Хайрутдинов Данияр'}
-                        personText={'Разработчик, <strong>HackerDom</strong>'}
-                        mt={'-60px'}
-                        ml={'-50px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={''}
-                        personDescription={'Черепанов Владимир'}
-                        personText={'Разработчик, <strong>HackerDom</strong>'}
-                        mt={'-10px'}
-                        ml={'350px'}
-                    />
-
-                    <PersonInfo
-                        imgPath={''}
-                        personDescription={'Сергеев Андрей'}
-                        personText={'Разработчик, <strong>KKS</strong>'}
+                        imgPath={'/static/teamPage/avatars/project/KhakimovLevAvatar.svg'}
+                        personDescription={'Хакимов Лев'}
+                        personText={'Технический специалист'}
                         mt={'-10px'}
                         ml={'750px'}
                     />
 
                     <PersonInfo
-                        imgPath={'/static/teamPage/avatars/project/KotovAlexandrAvatar.svg'}
-                        personDescription={'Котов Александр'}
-                        personText={'Директор, <strong>HackerDom</strong>'}
-                        mt={'-80px'}
-                        ml={'150px'}
+                        imgPath={'/static/teamPage/avatars/project/ZeunovAntonAvatar.svg'}
+                        personDescription={'Зеунов Антон'}
+                        personText={'Разработчик'}
+                        mt={'100px'}
+                        ml={'0px'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/GrekovIlyaAvatar.svg'}
                         personDescription={'Греков Илья'}
                         personText={'TeamLead, <strong>CBS</strong>'}
+                        mt={'0px'}
+                        ml={'550px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Вячеслав Лукин'}
+                        personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
+                        mt={'80px'}
+                        ml={'150px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/KokorinVsevolodAvatar.svg'}
+                        personDescription={'Кокорин Всеволод'}
+                        personText={'Разработчик, <strong>C4T BuT S4D</strong'}
                         mt={'-60px'}
                         ml={'550px'}
                     />

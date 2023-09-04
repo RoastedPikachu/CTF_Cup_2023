@@ -22,11 +22,11 @@ const TheFooter = () => {
             <div className='mlarge:mt-[50px] text-[#ffffff] text-[1rem] font-["Good_Timing"] font-bold'>
                 <h3 className='text-[1.125rem] font-["DaMiOne"]'>/Контакты</h3>
 
-                <p className='mt-[10px]'>tg: @deviantwish @AlisaSoboleva</p>
+                <p className='mt-[10px]'><strong className='text-[#bf5af2]'>tg:</strong> @deviantwish @AlisaSoboleva</p>
 
-                <p className='mt-[10px]'>phone: +7(495)640-53-30</p>
+                <p className='mt-[10px]'><strong className='text-[#b3b1ff]'>phone:</strong> +7(495)640-53-30</p>
 
-                <p className='mt-[10px]'>e-mail: info@aciso.ru</p>
+                <p className='mt-[10px]'><strong className='text-[#6bf89a]'>e-mail:</strong> info@aciso.ru</p>
             </div>
 
             <div className='mlarge:mt-[50px]'>

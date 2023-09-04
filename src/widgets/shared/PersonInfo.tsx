@@ -12,7 +12,7 @@ const PersonInfo: React.FC<PersonProps> = ({imgPath, personDescription, personTe
     return (
         <div className={`flex justify-between mt-[${mt}] ml-[${ml}] w-[390px] h-[220px]`}>
             {imgPath ?
-                <div className='relative w-[180px] h-[220px]'>
+                <div className={`relative w-[180px] h-[220px]`}>
                     <img src={imgPath} alt={personDescription} className='absolute w-full h-full z-10'/>
                     <img src={imgPath} alt={personDescription} className='absolute w-full h-full duration-700 ease-in-out grayscale hover:opacity-0 z-20'/>
                 </div>
