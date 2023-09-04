@@ -4,15 +4,14 @@ interface PersonProps {
     imgPath: string,
     personDescription: string,
     personText: string,
-    mt: string,
-    ml: string
+    styles: string
 }
 
-const PersonInfo: React.FC<PersonProps> = ({imgPath, personDescription, personText, mt, ml}) => {
+const PersonInfo: React.FC<PersonProps> = ({imgPath, personDescription, personText, styles}) => {
     return (
-        <div className={`flex justify-between mt-[${mt}] ml-[${ml}] w-[390px] h-[220px]`}>
+        <div className={`flex justify-between ${styles} w-[390px] h-[220px]`}>
             {imgPath ?
-                <div className={`relative w-[180px] h-[220px]`}>
+                <div className='relative w-[180px] h-[220px]'>
                     <img src={imgPath} alt={personDescription} className='absolute w-full h-full z-10'/>
                     <img src={imgPath} alt={personDescription} className='absolute w-full h-full duration-700 ease-in-out grayscale hover:opacity-0 z-20'/>
                 </div>

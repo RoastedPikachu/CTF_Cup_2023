@@ -78,13 +78,13 @@ const Page = () => {
                     <img src='/static/infoPage/text/PravilaText.svg' alt='Правила' className='w-[60%]'/>
 
                     <div className='flex justify-between mt-[80px] w-full h-[250px]'>
-                        <span className='flex justyfy-between w-[48%] h-full text-[#ffffff]'>
+                        <span className='flex justyfy-between w-[45%] h-full text-[#ffffff]'>
                             <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>01</p>
 
                             <p className='mt-[10px] w-[85%] font-["Good_Timing"] font-bold'>В отборочном этапе могут участвовать <strong className='text-[#bf5af2]'>студенческие</strong> и <strong className='text-[#bf5af2]'>школьные</strong> команды размером <strong className='text-[#bf5af2]'>5-7</strong> человек</p>
                         </span>
 
-                        <span className='flex justyfy-between w-[48%] h-full text-[#ffffff]'>
+                        <span className='flex justyfy-between w-[45%] h-full text-[#ffffff]'>
                             <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>03</p>
 
                             <p className='w-[85%] font-["Good_Timing"] font-bold'>По итогам отборочных в полуфинал проходит <strong className='text-[#bf5af2]'>10 команд</strong>. В финале примут участие <strong className='text-[#bf5af2]'>4 команды</strong>.</p>
@@ -92,13 +92,13 @@ const Page = () => {
                     </div>
 
                     <div className='flex justify-between w-full h-[110px]'>
-                        <span className='flex justyfy-between w-[48%] text-[#ffffff]'>
+                        <span className='flex justyfy-between w-[45%] text-[#ffffff]'>
                             <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>02</p>
 
                             <p className='mt-[50px] w-[85%] font-["Good_Timing"] font-bold'>Участники должны быть не старше <strong className='text-[#bf5af2]'>25 лет</strong></p>
                         </span>
 
-                        <span className='flex justyfy-between w-[48%] text-[#ffffff]'>
+                        <span className='flex justyfy-between w-[45%] text-[#ffffff]'>
                             <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>04</p>
 
                             <p className='mt-[30px] w-[85%] font-["Good_Timing"] font-bold'>В полуфинале от одного учебного заведения — <strong className='text-[#bf5af2]'>не более 2х команд</strong></p>
