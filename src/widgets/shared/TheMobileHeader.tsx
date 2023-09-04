@@ -28,11 +28,11 @@ const TheMobileHeader = () => {
 
                         <Link href='/' className='w-full outline-none no-underline'>главная</Link>
 
-                        <Link href='/' className='w-full outline-none no-underline'>информация</Link>
+                        <Link href='/info' className='w-full outline-none no-underline'>информация</Link>
 
                         <Link href='/team' className='w-full outline-none no-underline'>команда</Link>
 
-                        <Link href='/' className='w-full outline-none no-underline'>жюри</Link>
+                        <Link href='/jury' className='w-full outline-none no-underline'>жюри</Link>
 
                         <Link href='/' className='w-full outline-none no-underline'>партнеры</Link>
                     </nav>

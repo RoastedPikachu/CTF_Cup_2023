@@ -70,9 +70,9 @@ const Page = () => {
             {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
 
             <main className='relative mt-[50px] w-[100vw] h-auto overflow-hidden'>
-                <img src='/static/infoPage/background/InfoBgImage1.svg' alt='Пузырик' className='absolute mt-[-20px] right-[-60px] z-[-1] scale-[0.9]'/>
+                {!isMobile && <img src='/static/infoPage/background/InfoBgImage1.svg' alt='Пузырик' className='absolute mt-[-20px] right-[-60px] z-[-1] scale-[0.9]'/>}
 
-                <img src='/static/infoPage/background/InfoBgImage2.svg' alt='Пузырик2' className='absolute mt-[1000px] left-[-100px] z-[-1] scale-[0.9]'/>
+                {!isMobile && <img src='/static/infoPage/background/InfoBgImage2.svg' alt='Пузырик2' className='absolute mt-[1000px] left-[-100px] z-[-1] scale-[0.9]'/>}
 
                 <section className='px-[10%] mlarge:px-[5%] w-full'>
                     <img src='/static/infoPage/text/PravilaText.svg' alt='Правила' className='w-[60%] mlarge:w-[50%]'/>
