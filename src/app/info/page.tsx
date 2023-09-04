@@ -28,37 +28,37 @@ const Page = () => {
             id: 1,
             title: 'Могу ли я принять участие в Кубке, если меня отчислили?',
             isOpen: false,
-            text: 'Да, в этом году в Смешанном зачете могут принять участие любые люди не старше <b style="color: #bf5af2;">25 лет (включительно)</b>'
+            text: 'Да, в этом году в Смешанном зачете могут принять участие любые люди не старше <strong style="color: #bf5af2;">25 лет (включительно)</strong>'
         },
         {
             id: 2,
             title: 'Какой зачет нам выбрать, если мы студенты, но у нас есть школьник в составе?',
             isOpen: false,
-            text: 'В любой непонятной ситуации выбирайте <b style="color: #bf5af2;">Смешанный зачет</b>. Школьный только для школьников, а Академический — для студентов одного вуза (или колледжа).'
+            text: 'В любой непонятной ситуации выбирайте <strong style="color: #bf5af2;">Смешанный зачет</strong>. Школьный только для школьников, а Академический — для студентов одного вуза (или колледжа).'
         },
         {
             id: 3,
             title: 'Могут ли пройти на финал иностранные команды',
             isOpen: false,
-            text: 'Теоретически — да. А на практике каждая заявка иностранной команды будет рассматриваться в индивидуальном порядке Национальной Ассоциацией международной информационной безопасности, так что гарантировать <b>100%</b> вероятность прохождения мы, увы, не можем.'
+            text: 'Теоретически — да. А на практике каждая заявка иностранной команды будет рассматриваться в индивидуальном порядке Национальной Ассоциацией международной информационной безопасности, так что гарантировать <strong>100%</strong> вероятность прохождения мы, увы, не можем.'
         },
         {
             id: 4,
             title: 'Приз — один на три зачета?',
             isOpen: false,
-            text: 'А вот и нет — победитель <b style="color: #bf5af2;">каждого из трех</b> зачетов получит и денежный приз, и <b style="color: #bf5af2;">свой экземпляр кубка</b> ;)'
+            text: 'А вот и нет — победитель <strong style="color: #bf5af2;">каждого из трех</strong> зачетов получит и денежный приз, и <strong style="color: #bf5af2;">свой экземпляр кубка</strong> ;)'
         },
         {
             id: 5,
             title: 'Когда будут известны результаты отборочного тура?',
             isOpen: false,
-            text: 'Мы постараемся опубликовать результаты как можно скорее — но обычно нам нужно <b style="color: #bf5af2;">2-3 дня</b>, чтобы точно проверить результаты: за это время убедимся, что <ul><li>никто из команд не спутал зачеты,</li><li>предоставил всю информацию в регистрации,</li><li>не жульничал во время этапа.</li></ul>'
+            text: 'Мы постараемся опубликовать результаты как можно скорее — но обычно нам нужно <strong style="color: #bf5af2;">2-3 дня</strong>, чтобы точно проверить результаты: за это время убедимся, что <ul><li>никто из команд не спутал зачеты,</li><li>предоставил всю информацию в регистрации,</li><li>не жульничал во время этапа.</li></ul>'
         },
         {
             id: 6,
             title: 'Сколько этапов ждут школьников?',
             isOpen: false,
-            text: 'В школьном зачете всего <b style="color: #bf5af2;">два этапа</b>: общий с остальными участниками <b style="color: #bf5af2;">отборочный этап</b>, а также <b style="color: #bf5af2;">очный финал в декабре</b>.'
+            text: 'В школьном зачете всего <strong style="color: #bf5af2;">два этапа</strong>: общий с остальными участниками <strong style="color: #bf5af2;">отборочный этап</strong>, а также <strong style="color: #bf5af2;">очный финал в декабре</strong>.'
         }
     ] as Paragraph[]);
 
@@ -81,13 +81,13 @@ const Page = () => {
                         <span className='flex justyfy-between w-[48%] h-full text-[#ffffff]'>
                             <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>01</p>
 
-                            <p className='mt-[10px] w-[85%] font-["Good_Timing"] font-bold'>В отборочном этапе могут участвовать <b className='text-[#bf5af2]'>студенческие</b> и <b className='text-[#bf5af2]'>школьные</b> команды размером <b className='text-[#bf5af2]'>5-7</b> человек</p>
+                            <p className='mt-[10px] w-[85%] font-["Good_Timing"] font-bold'>В отборочном этапе могут участвовать <strong className='text-[#bf5af2]'>студенческие</strong> и <strong className='text-[#bf5af2]'>школьные</strong> команды размером <strong className='text-[#bf5af2]'>5-7</strong> человек</p>
                         </span>
 
                         <span className='flex justyfy-between w-[48%] h-full text-[#ffffff]'>
                             <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>03</p>
 
-                            <p className='w-[85%] font-["Good_Timing"] font-bold'>По итогам отборочных в полуфинал проходит <b className='text-[#bf5af2]'>10 команд</b>. В финале примут участие <b className='text-[#bf5af2]'>4 команды</b>.</p>
+                            <p className='w-[85%] font-["Good_Timing"] font-bold'>По итогам отборочных в полуфинал проходит <strong className='text-[#bf5af2]'>10 команд</strong>. В финале примут участие <strong className='text-[#bf5af2]'>4 команды</strong>.</p>
                         </span>
                     </div>
 
@@ -95,17 +95,17 @@ const Page = () => {
                         <span className='flex justyfy-between w-[48%] text-[#ffffff]'>
                             <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>02</p>
 
-                            <p className='mt-[50px] w-[85%] font-["Good_Timing"] font-bold'>Участники должны быть не старше <b className='text-[#bf5af2]'>25 лет</b></p>
+                            <p className='mt-[50px] w-[85%] font-["Good_Timing"] font-bold'>Участники должны быть не старше <strong className='text-[#bf5af2]'>25 лет</strong></p>
                         </span>
 
                         <span className='flex justyfy-between w-[48%] text-[#ffffff]'>
                             <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>04</p>
 
-                            <p className='mt-[30px] w-[85%] font-["Good_Timing"] font-bold'>В полуфинале от одного учебного заведения — <b className='text-[#bf5af2]'>не более 2х команд</b></p>
+                            <p className='mt-[30px] w-[85%] font-["Good_Timing"] font-bold'>В полуфинале от одного учебного заведения — <strong className='text-[#bf5af2]'>не более 2х команд</strong></p>
                         </span>
                     </div>
 
-                    <p className='mt-[50px] w-[50%] text-[#ffffff] text-[1.125rem] font-["Good_Timing"] font-bold'>*подробнее ознакомиться с правилами можно в разделе <b className='text-[#bf5af2]'>«ОФИЦИАЛЬНЫЕ ДОКУМЕНТЫ»</b></p>
+                    <p className='mt-[50px] w-[50%] text-[#ffffff] text-[1.125rem] font-["Good_Timing"] font-bold'>*подробнее ознакомиться с правилами можно в разделе <strong className='text-[#bf5af2]'>«ОФИЦИАЛЬНЫЕ ДОКУМЕНТЫ»</strong></p>
                 </section>
 
                 <section className='mt-[120px] pb-[100px] px-[10%] w-full'>

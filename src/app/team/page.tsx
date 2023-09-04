@@ -9,6 +9,8 @@ import TheHeader from '@/widgets/shared/TheHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
 import TheMobileHeader from "@/widgets/shared/TheMobileHeader";
 
+import PersonInfo from '@/widgets/shared/PersonInfo';
+
 const Page = () => {
     const dispatch = useAppDispatch();
 
@@ -28,409 +30,321 @@ const Page = () => {
                 <section>
                     <img src='/static/teamPage/text/KomandaOrgText.svg' alt='Команда/оргкомитет' className='w-full'/>
 
-                    <div className='flex justify-between mt-[80px] ml-[200px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/PyarinViktorAvatar.svg' alt='Пярин Виктор Анатольевич' className='w-[180px] h-full'/>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/PyarinViktorAnatolievichAvatar.svg'}
+                        personDescription={'Пярин Виктор Анатольевич'}
+                        personText={'Председатель оргкомитета — действительный член АИН, член-корреспондент РАЕН и Академии Криптографии, лауреат Государственной премии, к.ф-м.н'}
+                        mt={'80px'}
+                        ml={'200px'}
+                    />
 
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ПЯРИН ВИКТОР АНАТОЛЬЕВИЧ</p>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/BarhatovDmitriyAvatar.svg'}
+                        personDescription={'Бархатов Дмитрий'}
+                        personText={'Управляющий директор по информационной безопасности, ПАО АФК «Система»'}
+                        mt={'50px'}
+                        ml={'600px'}
+                    />
 
-                            <p className='text-[#ffffff] text-[0.875rem]'>Председатель оргкомитета — действительный член АИН, член-корреспондент РАЕН и Академии Криптографии, лауреат Государственной премии, к.ф-м.н</p>
-                        </span>
-                    </div>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/BenginVladimirAvatar.svg'}
+                        personDescription={'Бенгин Владимир'}
+                        personText={'Директор Департамента обеспечения кибербезопасности, Министерства цифрового развития, связи, массовых коммуникаций Российской Федерации'}
+                        mt={'20px'}
+                        ml={'200px'}
+                    />
 
-                    <div className='flex justify-between mt-[50px] ml-[600px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/BarhatovDmitriyAvatar.svg' alt='Бархатов Дмитрий' className='w-[180px] h-full'/>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/BudnikovAlexandrAvatar.svg'}
+                        personDescription={'Будников Александр'}
+                        personText={'Управляющий директор по информационной безопасности, ПАО АФК «Система»'}
+                        mt={'-20px'}
+                        ml={'700px'}
+                    />
 
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>БАРХАТОВ ДМИТРИЙ</p>
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Войнов Юрий'}
+                        personText={'ВРИО начальника Департамента информационных технологий, связи и защиты информации МВД России'}
+                        mt={'50px'}
+                        ml={'0px'}
+                    />
 
-                            <p className='text-[#ffffff] text-[0.875rem]'>Управляющий директор по информационной безопасности, ПАО АФК «Система»</p>
-                        </span>
-                    </div>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/BykovRomanAvatar.svg'}
+                        personDescription={'Быков Роман'}
+                        personText={'Директор <strong>RuCTF</strong>'}
+                        mt={'-80px'}
+                        ml={'500px'}
+                    />
 
-                    <div className='flex justify-between mt-[20px] ml-[200px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/BenginVladimirAvatar.svg' alt='Бенгин Владимир' className='w-[180px] h-full'/>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/GorbatkoAlexandrAvatar.svg'}
+                        personDescription={'Горбатько Александр'}
+                        personText={'Заместитель руководителя Департамента информационных технологий города Москвы'}
+                        mt={'70px'}
+                        ml={'150px'}
+                    />
 
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>БЕНГИН ВЛАДИМИР</p>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/IzbaenkovArtemAvatar.svg'}
+                        personDescription={'Избаенков Артём'}
+                        personText={'Директор по развитию направления кибербезопасности «<strong>EdgeCenter</strong>»'}
+                        mt={'-140px'}
+                        ml={'700px'}
+                    />
 
-                            <p className='text-[#ffffff] text-[0.875rem]'>Директор Департамента обеспечения кибербезопасности, Министерства цифрового развития, связи, массовых коммуникаций Российской Федерации</p>
-                        </span>
-                    </div>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/MasalovichAndreyAvatar.svg'}
+                        personDescription={'Масалович Андрей'}
+                        personText={'Генеральный директор ООО «Лавина Пульс»'}
+                        mt={'80px'}
+                        ml={'350px'}
+                    />
 
-                    <div className='flex justify-between mt-[-20px] ml-[700px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/BudnikovAlexandrAvatar.svg' alt='Будников Александр' className='w-[180px] h-full'/>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/UliannikovaOksanaAvatar.svg'}
+                        personDescription={'Ульянникова Оксана'}
+                        personText={'Руководитель перспективных проектов в области информационной безопасности Кластер информационных технологий | ФОНД СКОЛКОВО'}
+                        mt={'10px'}
+                        ml={'700px'}
+                    />
 
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>БУДНИКОВ АЛЕКСАНДР</p>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/ChernovMaksimAvatar.svg'}
+                        personDescription={'Чернов Максим'}
+                        personText={'Директор по направлению «Информационная инфраструктура» АНО «Цифровая экономика»'}
+                        mt={'-50px'}
+                        ml={'-50px'}
+                    />
 
-                            <p className='text-[#ffffff] text-[0.875rem]'>Управляющий директор по информационной безопасности, ПАО АФК «Система»</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[50px] w-[380px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ВОЙНОВ ЮРИЙ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>ВРИО начальника Департамента информационных технологий, связи и защиты информации МВД России</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-80px] ml-[500px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/BykovRomanAvatar.svg' alt='Быков Роман' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>БЫКОВ РОМАН</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Директор <strong>RuCTF</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[70px] ml-[150px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/GorbatkoAlexandrAvatar.svg' alt='Горбатько Александр' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ГОРБАТЬКО АЛЕКСАНДР</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Заместитель руководителя Департамента информационных технологий города Москвы</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-140px] ml-[700px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/IzbaenkovArtemAvatar.svg' alt='Избаенков Артём' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ИЗБАЕНКОВ АРТЁМ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Директор по развитию направления кибербезопасности «<strong>EdgeCenter</strong>»</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[80px] ml-[350px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/MasalovichAndreyAvatar.svg' alt='Масалович Андрей' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>МАСАЛОВИЧ АНДРЕЙ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Генеральный директор ООО «Лавина Пульс»</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[10px] ml-[700px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/UliannikovaOksanaAvatar.svg' alt='Ульянникова Оксана' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>УЛЬЯННИКОВА ОКСАНА</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Руководитель перспективных проектов в области информационной безопасности Кластер информационных технологий | ФОНД СКОЛКОВО</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-50px] ml-[-50px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/ChernovMaksimAvatar.svg' alt='Чернов Максим' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ЧЕРНОВ МАКСИМ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Директор по направлению «Информационная инфраструктура» АНО «Цифровая экономика»</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[30px] ml-[350px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/org/MininViktorAvatar.svg' alt='Минин Виктор' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>МИНИН ВИКТОР</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Генеральный директор ООО «Лавина Пульс»</p>
-                        </span>
-                    </div>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/org/MininViktorAvatar.svg'}
+                        personDescription={'Минин Виктор'}
+                        personText={'Генеральный директор ООО «Лавина Пульс»'}
+                        mt={'30px'}
+                        ml={'350px'}
+                    />
                 </section>
 
-                <section className='mt-[150px]'>
+                <section className='mt-[150px] pb-[100px]'>
                     <img src='/static/teamPage/text/KomandaProjectText.svg' alt='Команда/проектная' className='w-full'/>
 
-                    <div className='flex justify-between mt-[80px] ml-[200px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/SobolevaAlisaAvatar.svg' alt='Соболева Алиса' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>СОБОЛЕВА АЛИСА</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Менеджер проектов</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-30px] ml-[600px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/SmirnovMaksimAvatar.svg' alt='Смирнов Максим' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>СМИРНОВ МАКСИМ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Технический директор</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-20px] ml-[0px] w-[380px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ЛОГИНОВА ДАРЬЯ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Руководитель команды разработчиков, <strong>C4T BuT S4D</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[400px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/RublevaMargarita.svg' alt='Рублёва Маргарита' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>РУБЛЕВА МАРГАРИТА</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Web-дизайнер</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[30px] ml-[750px] w-[380px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>МАНУЙЛОВА НАТАЛЬЯ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Web-дизайнер</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[150px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/EmelianovEvgeniyAvatar.svg' alt='Емельянов Евгений' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ЕМЕЛЬЯНОВ ЕВГЕНИЙ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Технический специалист</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-60px] ml-[550px] w-[370px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
-
-                        <span className='w-[180px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>МАРИЯ БЕЛОВА</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Редактор</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[-50px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/SergeyKuznetsovAvatar.svg' alt='Сергей Кузнецов' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>СЕРГЕЙ КУЗНЕЦОВ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Администратор</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[350px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/DanilShirshovAvatar.svg' alt='Даниил Ширшов' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ДАНИИЛ ШИРШОВ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Администратор</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[750px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/ArtyomMicheevAvatar.svg' alt='Артем Михеев' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>АРТЕМ МИХЕЕВ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>CBS</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[150px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/MukovkinDmitriyAvatar.svg' alt='Муковкин Дмитрий' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>МУКОВКИН ДМИТРИЙ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, ЦФТ</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-60px] ml-[550px] w-[370px] h-[220px]'>
-                        <img src='/static/avatars/project/ZaitsevGeorgiyAvatar.svg' alt='Зайцев Георгий' className='w-[180px] h-full bg-[#b8b8b8]'/>
-
-                        <span className='w-[180px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ЗАЙЦЕВ ГЕОРГИЙ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>KKS</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[-50px] w-[380px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>АНФИНОГЕНОВ МАКСИМ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>KKS</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[350px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/PodobaevMaksimAvatar.svg' alt='Подобаев Максим' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ПОДОБАЕВ МАКСИМ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>UserGate</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[750px] w-[380px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>БЕКЕТОВ НИКИТА</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[150px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/KiguradzeGeorgiyAvatar.svg' alt='Кигурадзе Георгий' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>КИГУРАДЗЕ ГЕОРГИЙ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>CBS</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-60px] ml-[550px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/MartensPavelAvatar.svg' alt='Мартенс Павел' className='w-[180px] h-full bg-[#b8b8b8]'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>МАРТЕНС ПАВЕЛ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>UserGate</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-60px] ml-[-50px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/KedikIlyaAvatar.svg' alt='Кедик Илья' className='w-[180px] h-full bg-[#b8b8b8]'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>КЕДИК ИЛЬЯ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>UserGate</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[350px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/NikitinRomanAvatar.svg' alt='Никитин Роман' className='w-[180px] h-full bg-[#b8b8b8]'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>НИКИТИН РОМАН</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>DevOps, <strong>CBS</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[100px] ml-[150px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/ZeunovAntonAvatar.svg' alt='Зеунов Антон' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ЗЕУНОВ АНТОН</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик</p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-60px] ml-[550px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/KarginAlexandrAvatar.svg' alt='Каргин Александр' className='w-[180px] h-full bg-[#b8b8b8]'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>КАРГИН АЛЕКСАНДР</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>HackerDom</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-60px] ml-[-50px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/HairutdinovDaniyarAvatar.svg' alt='Хайрутдинов Данияр' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ХАЙРУТДИНОВ ДАНИЯР</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>HackerDom</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[350px] w-[380px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ЧЕРЕПАНОВ ВЛАДИМИР</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>HackerDom</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] ml-[750px] w-[370px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
-
-                        <span className='w-[180px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>СЕРГЕЕВ АНДРЕЙ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>KKS</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-80px] ml-[150px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/KotovAlexandrAvatar.svg' alt='Котов Александр' className='w-[180px] h-full'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>КОТОВ АЛЕКСАНДР</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Директор <strong>HackerDom</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-60px] ml-[550px] w-[380px] h-[220px]'>
-                        <img src='/static/avatars/project/GrekovIlyaAvatar.svg' alt='Греков Илья' className='w-[180px] h-full bg-[#b8b8b8]'/>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ГРЕКОВ ИЛЬЯ</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>TeamLead, <strong>CBS</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-60px] ml-[-50px] w-[380px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ХАЙРУТДИНОВ ДАНИЯР</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>HackerDom</strong></p>
-                        </span>
-                    </div>
-
-                    <div className='flex justify-between mt-[-10px] mb-[50px] ml-[350px] w-[380px] h-[220px]'>
-                        <div className='w-[180px] h-full bg-[#b8b8b8]'></div>
-
-                        <span className='w-[190px]'>
-                            <p className='text-[#bf5af2] text-[1.25rem] font-["Good_Timing"] font-bold'>ЧЕРЕПАНОВ ВЛАДИМИР</p>
-
-                            <p className='text-[#ffffff] text-[0.875rem]'>Разработчик, <strong>HackerDom</strong></p>
-                        </span>
-                    </div>
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/SobolevaAlisaAvatar.svg'}
+                        personDescription={'Соболева Алиса'}
+                        personText={'Менеджер проектов'}
+                        mt={'80px'}
+                        ml={'200px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/SmirnovMaksimAvatar.svg'}
+                        personDescription={'Смирнов Максим'}
+                        personText={'Технический директор'}
+                        mt={'-30px'}
+                        ml={'600px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Логинова Дарья'}
+                        personText={'Руководитель команды разработчиков, <strong>C4T BuT S4D</strong>'}
+                        mt={'-20px'}
+                        ml={'0px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/RublevaMargarita.svg'}
+                        personDescription={'Рублёва Маргарита'}
+                        personText={'Web-дизайнер'}
+                        mt={'-10px'}
+                        ml={'400px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Мануйлова Наталья'}
+                        personText={'Web-дизайнер'}
+                        mt={'30px'}
+                        ml={'750px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/EmelianovEvgeniyAvatar.svg'}
+                        personDescription={'Емельянов Евгений'}
+                        personText={'Технический специалист'}
+                        mt={'-10px'}
+                        ml={'150px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Мария Белова'}
+                        personText={'Редактор'}
+                        mt={'-60px'}
+                        ml={'550px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/SergeyKuznetsovAvatar.svg'}
+                        personDescription={'Сергей Кузнецов'}
+                        personText={'Администратор'}
+                        mt={'-10px'}
+                        ml={'-50px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/DanilShirshovAvatar.svg'}
+                        personDescription={'Даниил Ширшов'}
+                        personText={'Администратор'}
+                        mt={'-10px'}
+                        ml={'350px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/ArtyomMicheevAvatar.svg'}
+                        personDescription={'Артем Михеев'}
+                        personText={'Разработчик, <strong>CBS</strong>'}
+                        mt={'-10px'}
+                        ml={'750px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/MukovkinDmitriyAvatar.svg'}
+                        personDescription={'Муковкин Дмитрий'}
+                        personText={'Разработчик, ЦФТ'}
+                        mt={'-10px'}
+                        ml={'150px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/ZaitsevGeorgiyAvatar.svg'}
+                        personDescription={'Зайцев Георгий'}
+                        personText={'Разработчик, <strong>KKS</strong>'}
+                        mt={'-60px'}
+                        ml={'550px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Анфиногенов Максим'}
+                        personText={'Разработчик, <strong>KKS</strong>'}
+                        mt={'-10px'}
+                        ml={'-50px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/PodobaevMaksimAvatar.svg'}
+                        personDescription={'Подобаев Максим'}
+                        personText={'Разработчик, <strong>UserGate</strong>'}
+                        mt={'-10px'}
+                        ml={'350px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Бекетов Никита'}
+                        personText={'Разработчик'}
+                        mt={'-10px'}
+                        ml={'750px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Бекетов Никита'}
+                        personText={'Разработчик'}
+                        mt={'-10px'}
+                        ml={'750px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/KiguradzeGeorgiyAvatar.svg'}
+                        personDescription={'Кигурадзе Георгий'}
+                        personText={'Разработчик, <strong>CBS</strong>'}
+                        mt={'-10px'}
+                        ml={'150px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/MartensPavelAvatar.svg'}
+                        personDescription={'Мартенс Павел'}
+                        personText={'Разработчик, <strong>UserGate</strong>'}
+                        mt={'-60px'}
+                        ml={'550px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/KedikIlyaAvatar.svg'}
+                        personDescription={'Кедик Илья'}
+                        personText={'Разработчик, <strong>UserGate</strong>'}
+                        mt={'-60px'}
+                        ml={'-50px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/NikitinRomanAvatar.svg'}
+                        personDescription={'Никитин Роман'}
+                        personText={'DevOps, <strong>CBS</strong>'}
+                        mt={'-10px'}
+                        ml={'350px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/ZeunovAntonAvatar.svg'}
+                        personDescription={'Зеунов Антон'}
+                        personText={'Разработчик'}
+                        mt={'100px'}
+                        ml={'150px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/KarginAlexandrAvatar.svg'}
+                        personDescription={'Каргин Александр'}
+                        personText={'Разработчик, <strong>HackerDom</strong>'}
+                        mt={'-60px'}
+                        ml={'550px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/HairutdinovDaniyarAvatar.svg'}
+                        personDescription={'Хайрутдинов Данияр'}
+                        personText={'Разработчик, <strong>HackerDom</strong>'}
+                        mt={'-60px'}
+                        ml={'-50px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Черепанов Владимир'}
+                        personText={'Разработчик, <strong>HackerDom</strong>'}
+                        mt={'-10px'}
+                        ml={'350px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={''}
+                        personDescription={'Сергеев Андрей'}
+                        personText={'Разработчик, <strong>KKS</strong>'}
+                        mt={'-10px'}
+                        ml={'750px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/KotovAlexandrAvatar.svg'}
+                        personDescription={'Котов Александр'}
+                        personText={'Директор, <strong>HackerDom</strong>'}
+                        mt={'-80px'}
+                        ml={'150px'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/GrekovIlyaAvatar.svg'}
+                        personDescription={'Греков Илья'}
+                        personText={'TeamLead, <strong>CBS</strong>'}
+                        mt={'-60px'}
+                        ml={'550px'}
+                    />
                 </section>
             </main>
 
