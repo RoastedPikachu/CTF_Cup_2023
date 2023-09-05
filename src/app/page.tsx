@@ -38,9 +38,9 @@ export default function Home() {
 
         <main className='relative w-[100vw] h-auto overflow-hidden'>
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
-                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-300px)] h-[450px] mlarge:h-[400px] scale-[0.65] mlarge:scale-[1.3]'/>
+                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-300px)] h-[450px] mlarge:h-[400px] scale-[0.9] mlarge:scale-[1.3]'/>
 
-                <div className='relative mt-[-80px] mlarge:mt-[-240px]'>
+                <div className='relative mt-[-90px] mlarge:mt-[-240px]'>
                     <p className='pt-[270px] text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
 
                     <img src='/static/homePage/icon/ArrowsDownIcon.svg' alt='Регистрация' className='ml-[calc(50%-20px)] mlarge:ml-[calc(50%-12.5px)] pt-[5px] w-[40px] mlarge:w-[25px] h-[40px] mlarge:h-[25px] cursor-pointer'/>
