@@ -38,7 +38,7 @@ const TheFooter = () => {
 
                 <div className='flex justify-between items-center mt-[30px] w-[80px] h-[25px]'>
                     <a href='https://vk.com/ctfcup' className='outline-none'>
-                        <img src='/static/footer/icon/VkIcon.svg' alt='Вконтакты'/>
+                        <img src='/static/footer/icon/VkIcon.svg' alt='Вконтакте'/>
                     </a>
 
                     <a href='' className='outline-none'>
@@ -47,7 +47,7 @@ const TheFooter = () => {
                 </div>
             </div>
 
-            <div className='absolute bottom-[25px] mlarge:bottom-[40px] w-[70%] mlarge:w-[80%] h-[60px]'>
+            <div className='absolute bottom-[25px] mlarge:bottom-[40px] w-[70%] mlarge:w-[80%] mmedium:w-[90%] h-[60px]'>
                 <img src='/static/footer/logo/CTFCupLogo.svg' alt='Логотип Кубка CTF' className='ml-[calc(50%-25px)] w-[50px] h-[50px]'/>
 
                 <p className='mt-[10px] mlarge:mt-[20px] w-full text-[rgba(255,255,255,0.6)] text-[0.5rem] font-["DaMiOne"] text-center'>@CTFCUP2023</p>
