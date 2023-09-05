@@ -41,7 +41,7 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/org/BarhatovDmitriyAvatar.svg'}
                         personDescription={'Бархатов Дмитрий'}
                         personText={'Управляющий директор по информационной безопасности, ПАО АФК «Система»'}
-                        styles={'mt-[50px] mlarge:mt-[50px] ml-[600px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[50px] mlarge:mt-[50px] msmall:mt-[70px] ml-[600px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
@@ -55,7 +55,7 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/org/BudnikovAlexandrAvatar.svg'}
                         personDescription={'Будников Александр'}
                         personText={'Управляющий директор по информационной безопасности, ПАО АФК «Система»'}
-                        styles={'mt-[-20px] mlarge:mt-[50px] ml-[700px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-20px] mlarge:mt-[50px] msmall:mt-[70px] ml-[700px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
