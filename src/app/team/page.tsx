@@ -59,7 +59,7 @@ const Page = () => {
                     />
 
                     <PersonInfo
-                        imgPath={''}
+                        imgPath={'/static/teamPage/avatars/org/VoinovUriyAvatar.svg'}
                         personDescription={'Войнов Юрий'}
                         personText={'ВРИО начальника Департамента информационных технологий, связи и защиты информации МВД России'}
                         styles={'mt-[50px] ml-[0px]'}
@@ -133,7 +133,7 @@ const Page = () => {
                     />
 
                     <PersonInfo
-                        imgPath={''}
+                        imgPath={'/static/teamPage/avatars/project/LoginovaDaryaAvatar.svg'}
                         personDescription={'Логинова Дарья'}
                         personText={'Руководитель команды разработчиков, <strong>C4T BuT S4D</strong>'}
                         styles={'mt-[-20px] ml-[0px]'}
@@ -147,9 +147,9 @@ const Page = () => {
                     />
 
                     <PersonInfo
-                        imgPath={''}
+                        imgPath={'/static/teamPage/avatars/project/ManuilovaNataliaAvatar.svg'}
                         personDescription={'Мануйлова Наталья'}
-                        personText={'Web-дизайнер'}
+                        personText={'Организатор'}
                         styles={'mt-[30px] ml-[750px]'}
                     />
 
@@ -161,7 +161,7 @@ const Page = () => {
                     />
 
                     <PersonInfo
-                        imgPath={''}
+                        imgPath={'/static/teamPage/avatars/project/BelovaMariaAvatar.svg'}
                         personDescription={'Мария Белова'}
                         personText={'Редактор'}
                         styles={'mt-[-60px] ml-[550px]'}
