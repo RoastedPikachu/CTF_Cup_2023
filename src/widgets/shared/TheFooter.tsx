@@ -36,14 +36,18 @@ const TheFooter = () => {
                     <img src='/static/footer/icon/ArrowRightDownIcon.svg' alt='FOLLOW US' className='mt-[5px] w-[15px] h-[15px]'/>
                 </button>
 
-                <div className='flex justify-between items-center mt-[30px] w-[80px] h-[25px]'>
-                    <a href='https://vk.com/ctfcup' className='outline-none'>
-                        <img src='/static/footer/icon/VkIcon.svg' alt='Вконтакте'/>
-                    </a>
+                <div className='flex justify-between items-center mt-[30px] w-[300px] mlarge:w-full h-[25px]'>
+                    <span className='flex justify-between w-[80px]'>
+                        <a href='https://vk.com/ctfcup' className='outline-none'>
+                            <img src='/static/footer/icon/VkIcon.svg' alt='Вконтакте'/>
+                        </a>
 
-                    <a href='' className='outline-none'>
-                        <img src='/static/footer/icon/TelegramIcon.svg' alt='Телеграм'/>
-                    </a>
+                        <a href='' className='outline-none'>
+                            <img src='/static/footer/icon/TelegramIcon.svg' alt='Телеграм'/>
+                        </a>
+                    </span>
+
+                    <a href='https://old.ctfcup.ru/' className='text-[#bf5af2] text-[0.875rem] font-["Good_Timing"] font-bold outline-none'>VI Кубок CTF России</a>
                 </div>
             </div>
 
