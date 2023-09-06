@@ -100,7 +100,7 @@ export default function Home() {
                                             <p className='mt-[-7.5px] text-right'>декабря</p>
                                         </div>
 
-                                        <p className='text-[2.5rem]'>09</p>
+                                        <p className='text-[2.5rem]'>08</p>
                                     </div>
 
                                     <p className='mt-[30px] w-[100%]'>полуфинал с 9:00 до 19:30, «Сколково»</p>
@@ -118,7 +118,7 @@ export default function Home() {
                                             <p className='mt-[-7.5px]'>декабря</p>
                                         </div>
 
-                                        <p className='text-[2.5rem]'>10</p>
+                                        <p className='text-[2.5rem]'>09</p>
                                     </div>
 
                                     <p className='mt-[30px] w-[100%]'>финал с 9:00 до 20:00, «Сколково»</p>
@@ -141,7 +141,7 @@ export default function Home() {
                                                 <p className='mt-[-7.5px] text-right'>декабря</p>
                                             </div>
 
-                                            <p className='text-[2.5rem]'>09</p>
+                                            <p className='text-[2.5rem]'>08</p>
                                         </div>
                                     </div>
 
@@ -162,13 +162,13 @@ export default function Home() {
                             <div className='pr-[2.5px] text-[1rem] msmall:text-[0.875rem]'>
                                 <p className='msmall:mt-[-2.5px] text-[#bf5af2]'>Task based</p>
 
-                                <p className='mt-[-7.5px] text-right'>ноября</p>
+                                <p className='mt-[-7.5px] text-right'>октября</p>
                             </div>
 
-                            <p className='text-[2.5rem] msmall:text-[2.25rem]'>19–20</p>
+                            <p className='text-[2.5rem] msmall:text-[2.25rem]'>28-29</p>
                         </div>
 
-                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>отборочный этап 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>отборочный этап 24ч с 12:00 до 12:00 В 11:00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
 
                         <p className='absolute left-[17.5px] mmedium:left-[15px] msmall:left-[12.5px] bottom-[-25px] mmedium:bottom-[-20px] msmall:bottom-[-15px] text-[6rem] mmedium:text-[5.25rem] msmall:text-[4.5rem]'>online</p>
                     </div>
@@ -183,10 +183,10 @@ export default function Home() {
                                 <p className='mt-[-7.5px] text-right'>декабря</p>
                             </div>
 
-                            <p className='text-[2.5rem] msmall:text-[2.25rem]'>10</p>
+                            <p className='text-[2.5rem] msmall:text-[2.25rem]'>08</p>
                         </div>
 
-                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>полуфинал с 9.00 до 19.30, «Сколково»</p>
+                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>полуфинал с 9:00 до 19:30, «Сколково»</p>
 
                         <p className='absolute left-[15px] msmall:left-[12.5px] bottom-[-22.5px] mmedium:bottom-[-17.5px] msmall:bottom-[-12.5px] text-[5.75rem] mmedium:text-[5rem] msmall:text-[4.25rem]'>offline</p>
                     </div>
@@ -201,10 +201,10 @@ export default function Home() {
                                 <p className='mt-[-7.5px]'>декабря</p>
                             </div>
 
-                            <p className='text-[2.5rem] msmall:text-[2.25rem]'>11</p>
+                            <p className='text-[2.5rem] msmall:text-[2.25rem]'>09</p>
                         </div>
 
-                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>финал с 9.00 до 20.00, «Сколково»</p>
+                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>финал с 9:00 до 20:00, «Сколково»</p>
 
                         <p className='absolute left-[15px] msmall:left-[12.5px] bottom-[-22.5px] mmedium:bottom-[-17.5px] msmall:bottom-[-12.5px] text-[5.75rem] mmedium:text-[5rem] msmall:text-[4.25rem]'>offline</p>
                     </div>
@@ -215,16 +215,16 @@ export default function Home() {
                         <img src='/static/homePage/background/BubblesBg4.svg' alt='Пузырьки5' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
 
                         <div className='flex justify-between mt-[25px] w-full text-[#ffffff] text-[0.875rem] font-["Good_Timing"]'>
-                            <p className='msmall:mt-[10px] w-[55%] mmedium:w-[50%] text-[0.875rem] mmedium:text-[0.75rem] msmall:text-[0.625rem] leading-[1.75] mmedium:leading-[1.875] msmall:leading-[2]'>полуфинал 24ч с 12.00 до 12.00 В 11.00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+                            <p className='msmall:mt-[10px] w-[55%] mmedium:w-[50%] text-[0.875rem] mmedium:text-[0.75rem] msmall:text-[0.625rem] leading-[1.75] mmedium:leading-[1.875] msmall:leading-[2]'>финал для школьных команд с 9:00 до 19:30, «Сколково»</p>
 
                             <div className='flex justify-end items-center mt-[-25px] h-[50px]'>
                                 <div className='pr-[2.5px] text-[1rem] msmall:text-[0.875rem]'>
-                                    <p className='text-[#bf5af2]'>Semi-final</p>
+                                    <p className='text-[#bf5af2]'>Final</p>
 
                                     <p className='mt-[-7.5px] text-right'>декабря</p>
                                 </div>
 
-                                <p className='text-[2.5rem] msmall:text-[2rem]'>10</p>
+                                <p className='text-[2.5rem] msmall:text-[2rem]'>08</p>
                             </div>
                         </div>
 
@@ -271,42 +271,42 @@ export default function Home() {
                 </span>
             </section>
 
-            <section className='relative mt-[100px] mlarge:mt-[20px] px-[15%] w-full h-[670px] mlarge:h-[1250px]'>
+            <section className='relative mt-[100px] mlarge:mt-[20px] px-[15%] mmedium:px-[10%] w-full h-[670px] mlarge:h-[1250px]'>
                 {isMobile && <img src='/static/homePage/background/WaterCoolingPipesImage.svg' alt='Трубки водяного охлаждения, задний фон' className='absolute right-[5%] scale-[1.15] z-[-5]'/>}
 
                 {isMobile && <img src='/static/homePage/background/WaterCoolingPipesImage2.svg' alt='Трубки водяного охлаждения, задний фон' className='absolute top-[540px] right-[5%] scale-[1.15] z-[-5]'/>}
 
                 <img src='/static/homePage/text/OfficialDocumentsText.svg' alt='Официальные документы' className='absolute right-[11.5%] mlarge:right-[7.5%] w-[90vw] mlarge:w-[95vw] mmedium:w-[100vw] h-[250px]'/>
 
-                <div className='pt-[260px] mlarge:pt-[240px] flex mlarge:block justify-between w-full h-[570px] mlarge:h-[900px]'>
+                <div className='pt-[260px] mlarge:pt-[240px] mmedium:pt-[225px] flex mlarge:block justify-between w-full h-[570px] mlarge:h-[900px]'>
                     <div className='relative flex items-center w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
-                        <img src='/static/homePage/background/BubblesBg5.svg' alt='Пузырьки5' className='absolute z-[0]'/>
+                        <img src='/static/homePage/background/BubblesBg5.svg' alt='Пузырьки5' className='absolute msmall:mt-[-40px] z-[0]'/>
 
                         <h3 className='absolute top-[20px] right-[10%] w-full text-[#bf5af2] text-[1.5rem] text-right font-["Good_Timing"] font-bold'>/DOC</h3>
 
                         <p className='px-[10%] w-full text-[0.875rem] font-bold leading-[1.75] z-10'>О проведении Всероссийских соревнований в области информационной безопасности «Кубок CTF России»</p>
 
-                        <p className='absolute bottom-[5px] w-full text-[2.25rem] text-center font-["Good_Timing"] font-bold'>положение</p>
+                        <p className='absolute bottom-[5px] w-full text-[2.25rem] msmall:text-[2rem] text-center font-["Good_Timing"] font-bold'>положение</p>
                     </div>
 
                     <div className='relative flex items-center mlarge:mt-[30px] w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
-                        <img src='/static/homePage/background/BubblesBg6.svg' alt='Пузырьки6' className='absolute z-[0]'/>
+                        <img src='/static/homePage/background/BubblesBg6.svg' alt='Пузырьки6' className='absolute msmall:bottom-[0px] z-[0]'/>
 
                         <h3 className='absolute top-[20px] right-[10%] w-full text-[#bf5af2] text-[1.5rem] text-right font-["Good_Timing"] font-bold'>/DOC</h3>
 
                         <p className='px-[10%] w-full text-[1rem] font-bold leading-[1.75] z-10'>Правила проведения отборочного этапа VII Кубка CTF России</p>
 
-                        <p className='absolute bottom-[5px] w-full text-[2.25rem] text-center font-["Good_Timing"] font-bold'>регламенты</p>
+                        <p className='absolute bottom-[5px] w-full text-[2.25rem] msmall:text-[2rem] text-center font-["Good_Timing"] font-bold'>регламенты</p>
                     </div>
 
                     <div className='relative flex items-center mlarge:mt-[30px] w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
-                        <img src='/static/homePage/background/BubblesBg7.svg' alt='Пузырьки7' className='absolute z-[0]'/>
+                        <img src='/static/homePage/background/BubblesBg7.svg' alt='Пузырьки7' className='absolute msmall:mt-[-40px] z-[0]'/>
 
                         <h3 className='absolute top-[20px] right-[10%] w-full text-[#bf5af2] text-[1.5rem] text-right font-["Good_Timing"] font-bold'>/DOC</h3>
 
                         <p className='px-[10%] w-full text-[1rem] font-bold leading-[1.75] z-10'>Памятка участника. Дата и место проведения соревнований:</p>
                         
-                        <p className='absolute bottom-[5px] w-full text-[2.25rem] text-center font-["Good_Timing"] font-bold'>памятка</p>
+                        <p className='absolute bottom-[5px] w-full text-[2.25rem] msmall:text-[2rem] text-center font-["Good_Timing"] font-bold'>памятка</p>
                     </div>
                 </div>
             </section>
