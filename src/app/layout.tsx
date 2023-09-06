@@ -8,8 +8,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CTF Cup 2023',
-  description: 'Сайт кубка CTF 2023. ',
+  title: 'VII Кубок CTF России 2023',
+  description: 'Сайт VII кубка CTF 2023.',
 }
 
 export default function RootLayout({
