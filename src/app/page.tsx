@@ -271,36 +271,40 @@ export default function Home() {
                 </span>
             </section>
 
-            <section className='relative mt-[100px] px-[15%] mlarge:px-[7.5%] w-full h-[670px]'>
+            <section className='relative mt-[100px] mlarge:mt-[20px] px-[15%] w-full h-[670px] mlarge:h-[1250px]'>
+                {isMobile && <img src='/static/homePage/background/WaterCoolingPipesImage.svg' alt='Трубки водяного охлаждения, задний фон' className='absolute right-[5%] scale-[1.15] z-[-5]'/>}
+
+                {isMobile && <img src='/static/homePage/background/WaterCoolingPipesImage2.svg' alt='Трубки водяного охлаждения, задний фон' className='absolute top-[540px] right-[5%] scale-[1.15] z-[-5]'/>}
+
                 <img src='/static/homePage/text/OfficialDocumentsText.svg' alt='Официальные документы' className='absolute right-[11.5%] mlarge:right-[7.5%] w-[90vw] mlarge:w-[95vw] mmedium:w-[100vw] h-[250px]'/>
 
-                <div className='pt-[260px] flex justify-between w-full h-[570px]'>
-                    <div className='relative flex items-center w-[30%] h-full border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
-                        <img src='/static/homePage/background/BubblesBg5.svg' alt='Пузырьки5' className='absolute z-[-1]'/>
+                <div className='pt-[260px] mlarge:pt-[240px] flex mlarge:block justify-between w-full h-[570px] mlarge:h-[900px]'>
+                    <div className='relative flex items-center w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
+                        <img src='/static/homePage/background/BubblesBg5.svg' alt='Пузырьки5' className='absolute z-[0]'/>
 
                         <h3 className='absolute top-[20px] right-[10%] w-full text-[#bf5af2] text-[1.5rem] text-right font-["Good_Timing"] font-bold'>/DOC</h3>
 
-                        <p className='px-[10%] w-full text-[0.875rem] font-bold leading-[1.75]'>О проведении Всероссийских соревнований в области информационной безопасности «Кубок CTF России»</p>
+                        <p className='px-[10%] w-full text-[0.875rem] font-bold leading-[1.75] z-10'>О проведении Всероссийских соревнований в области информационной безопасности «Кубок CTF России»</p>
 
                         <p className='absolute bottom-[5px] w-full text-[2.25rem] text-center font-["Good_Timing"] font-bold'>положение</p>
                     </div>
 
-                    <div className='relative flex items-center w-[30%] h-full border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
-                        <img src='/static/homePage/background/BubblesBg6.svg' alt='Пузырьки6' className='absolute z-[-1]'/>
+                    <div className='relative flex items-center mlarge:mt-[30px] w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
+                        <img src='/static/homePage/background/BubblesBg6.svg' alt='Пузырьки6' className='absolute z-[0]'/>
 
                         <h3 className='absolute top-[20px] right-[10%] w-full text-[#bf5af2] text-[1.5rem] text-right font-["Good_Timing"] font-bold'>/DOC</h3>
 
-                        <p className='px-[10%] w-full text-[1rem] font-bold leading-[1.75]'>Правила проведения отборочного этапа VII Кубка CTF России</p>
+                        <p className='px-[10%] w-full text-[1rem] font-bold leading-[1.75] z-10'>Правила проведения отборочного этапа VII Кубка CTF России</p>
 
                         <p className='absolute bottom-[5px] w-full text-[2.25rem] text-center font-["Good_Timing"] font-bold'>регламенты</p>
                     </div>
 
-                    <div className='relative flex items-center w-[30%] h-full border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
-                        <img src='/static/homePage/background/BubblesBg7.svg' alt='Пузырьки7' className='absolute z-[-1]'/>
+                    <div className='relative flex items-center mlarge:mt-[30px] w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
+                        <img src='/static/homePage/background/BubblesBg7.svg' alt='Пузырьки7' className='absolute z-[0]'/>
 
                         <h3 className='absolute top-[20px] right-[10%] w-full text-[#bf5af2] text-[1.5rem] text-right font-["Good_Timing"] font-bold'>/DOC</h3>
 
-                        <p className='px-[10%] w-full text-[1rem] font-bold leading-[1.75]'>Памятка участника. Дата и место проведения соревнований:</p>
+                        <p className='px-[10%] w-full text-[1rem] font-bold leading-[1.75] z-10'>Памятка участника. Дата и место проведения соревнований:</p>
                         
                         <p className='absolute bottom-[5px] w-full text-[2.25rem] text-center font-["Good_Timing"] font-bold'>памятка</p>
                     </div>
