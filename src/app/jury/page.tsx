@@ -131,7 +131,7 @@ const Page = () => {
                     imgPath={'/static/juryPage/avatars/TsarevGrigoriyAvatar.svg'}
                     personDescription={'Царев Григорий'}
                     personText={'Руководитель направления Центра взаимодействия и реагирования Департамента информационной безопасности Банка России'}
-                    styles={'mt-[120px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[0px]'}
+                    styles={'mt-[120px] mlarge:mt-[50px] ml-[200px] mlarge:ml-[0px]'}
                 />
             </main>
 

@@ -90,35 +90,28 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/org/MasalovichAndreyAvatar.svg'}
                         personDescription={'Масалович Андрей'}
                         personText={'Генеральный директор ООО «Лавина Пульс»'}
-                        styles={'mt-[80px] mlarge:mt-[50px] ml-[350px] mlarge:ml-[50px]'}
-                    />
-
-                    <PersonInfo
-                        imgPath={'/static/teamPage/avatars/org/ChernovMaksimAvatar.svg'}
-                        personDescription={'Чернов Максим'}
-                        personText={'Директор по направлению «Информационная инфраструктура» АНО «Цифровая экономика»'}
-                        styles={'mt-[100px] mlarge:mt-[50px] ml-[-50px] mlarge:ml-[0px]'}
+                        styles={'mt-[80px] mlarge:mt-[50px] ml-[350px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/BirukovIgorAvatar.svg'}
                         personDescription={'Бирюков Игорь'}
                         personText={'Руководитель перспективных проектов в области информационной безопасности Кластер информационных технологий | ФОНД СКОЛКОВО'}
-                        styles={'mt-[-190px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[100px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/VasilievaVladislavaAnatolievaAvatar.svg'}
                         personDescription={'Васильева Владислава Анатольевна'}
                         personText={'Заместитель директора направления «Безопасная Открытая Инфраструктура»'}
-                        styles={'mt-[150px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[0px]'}
+                        styles={'mt-[-100px] mlarge:mt-[50px] ml-[0px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/MininViktorAvatar.svg'}
                         personDescription={'Минин Виктор'}
-                        personText={'Генеральный директор ООО «Лавина Пульс»'}
-                        styles={'mt-[50px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        personText={'Председатель правления АРСИБ'}
+                        styles={'mt-[100px] mlarge:mt-[50px] ml-[350px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
                 </section>
 
@@ -128,7 +121,7 @@ const Page = () => {
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/SobolevaAlisaAvatar.svg'}
                         personDescription={'Соболева Алиса'}
-                        personText={'Менеджер проектов'}
+                        personText={'Организатор'}
                         styles={'mt-[80px] mlarge:mt-[50px] ml-[200px] mlarge:ml-[0px]'}
                     />
 
@@ -142,7 +135,7 @@ const Page = () => {
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/LoginovaDaryaAvatar.svg'}
                         personDescription={'Логинова Дарья'}
-                        personText={'Руководитель команды разработчиков, <strong>C4T BuT S4D</strong>'}
+                        personText={'Куратор, <strong>C4T BuT S4D</strong>'}
                         styles={'mt-[-20px] mlarge:mt-[50px] ml-[0px]'}
                     />
 
@@ -176,36 +169,36 @@ const Page = () => {
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/SergeyKuznetsovAvatar.svg'}
-                        personDescription={'Сергей Кузнецов'}
-                        personText={'Администратор'}
+                        personDescription={'Кузнецов Сергей'}
+                        personText={'Организатор'}
                         styles={'mt-[-10px] mlarge:mt-[50px] ml-[-50px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/DanilShirshovAvatar.svg'}
-                        personDescription={'Даниил Ширшов'}
-                        personText={'Администратор'}
+                        personDescription={'Ширшов Даниил'}
+                        personText={'Организатор'}
                         styles={'mt-[-10px] mlarge:mt-[50px] ml-[350px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/ArtyomMicheevAvatar.svg'}
                         personDescription={'Артем Михеев'}
-                        personText={'Разработчик, <strong>CBS</strong>'}
+                        personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
                         styles={'mt-[-10px] mlarge:mt-[50px] ml-[750px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/AvdeevaElizavetaAvatar.svg'}
                         personDescription={'Авдеева Елизавета'}
-                        personText={'Разработчик'}
+                        personText={'Разработчик, <strong>C4T BuT S4D</strong'}
                         styles={'mt-[-10px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/FedotovIvanAvatar.svg'}
-                        personDescription={'Федотов Аватар'}
-                        personText={'Разработчик'}
+                        personDescription={'Федотов Иван'}
+                        personText={'Разработчик, <strong>C4T BuT S4D</strong'}
                         styles={'mt-[-60px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
@@ -219,7 +212,7 @@ const Page = () => {
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/NikitinRomanAvatar.svg'}
                         personDescription={'Никитин Роман'}
-                        personText={'DevOps, <strong>CBS</strong>'}
+                        personText={'DevOps, <strong>C4T BuT S4D</strong>'}
                         styles={'mt-[-10px] mlarge:mt-[50px] ml-[350px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
@@ -240,7 +233,7 @@ const Page = () => {
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/GrekovIlyaAvatar.svg'}
                         personDescription={'Греков Илья'}
-                        personText={'TeamLead, <strong>CBS</strong>'}
+                        personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
                         styles={'mt-[0px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[0px]'}
                     />
 
@@ -248,7 +241,14 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/project/KokorinVsevolodAvatar.svg'}
                         personDescription={'Кокорин Всеволод'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong'}
-                        styles={'mt-[80px] mlarge:mt-[50px] ml-[300px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[80px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/ShpilevRomanAvatar.svg'}
+                        personDescription={'Шпилев Роман'}
+                        personText={'3D художник'}
+                        styles={'mt-[-20px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[0px]'}
                     />
                 </section>
             </main>
