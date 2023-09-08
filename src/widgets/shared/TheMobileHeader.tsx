@@ -24,7 +24,7 @@ const TheMobileHeader = () => {
                     <img src='/static/header/icon/XMarkIcon.svg' alt='Закрыть' onClick={() => setIsModalWindowActive(false)} className='absolute top-[25px] right-[20px] w-[20px] h-[17.5px]'/>
 
                     <nav className='flex flex-wrap mt-[50px] w-full h-[300px] text-[#ffffff] text-[1.125rem] text-right font-["Good_Timing"] font-semibold'>
-                        <a className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
+                        <a href='https://forms.yandex.ru/u/64f6f2ffd046882e71f64a8c/' className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
 
                         <Link href='/' className='w-full outline-none no-underline'>главная</Link>
 

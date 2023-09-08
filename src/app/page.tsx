@@ -30,7 +30,9 @@ export default function Home() {
     <>
         {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
 
-        <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.2] mlarge:object-cover z-[-1]'/>
+        <div className='absolute mt-[5%] deskmedium:mt-[10%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px]'>
+            <img src={path} alt='Пузырьки' className='absolute w-full h-full scale-[1.375] desklarge:scale-[1.5] deskmedium:scale-[1.625] mlarge:scale-[1.2] mlarge:object-cover z-[-1]'/>
+        </div>
 
         {!isMobile && <div className='absolute mt-[1990px] w-[100%] h-[2800px] overflow-y-hidden'>
             <img src='/static/homePage/background/WaterCoolingImage.svg' alt='Водянка задний фон' className='absolute w-full z-[-1]'/>
@@ -38,7 +40,7 @@ export default function Home() {
 
         <main className='relative w-[100vw] h-auto overflow-hidden'>
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
-                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-290px)] h-[450px] mlarge:h-[400px] scale-[0.8] mlarge:scale-[1.3]'/>
+                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-290px)] deskmedium:pt-[calc(50%-400px)] h-[450px] deskmedium:h-[450px] mlarge:h-[400px] scale-[0.8] deskmedium:scale-[1] mlarge:scale-[1.3]'/>
 
                 <div className='relative mt-[-90px] mlarge:mt-[-240px]'>
                     <p className='pt-[270px] text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>

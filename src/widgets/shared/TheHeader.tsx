@@ -6,9 +6,9 @@ import Link from 'next/link';
 const TheHeader = () => {
     return (
         <header className='flex justify-between items-center px-[10%] w-[100%] h-[80px]'>
-            <a className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
+            <a href='https://forms.yandex.ru/u/64f6f2ffd046882e71f64a8c/' className='text-[#bf5af2] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
 
-            <nav className='flex justify-between w-[53%] mlarge:w-[100%] text-[#ffffff] text-[1rem] mlarge:text-[0.75rem] font-["Good_Timing"] font-semibold'>
+            <nav className='flex justify-between w-[53%] mlarge:w-[100%] text-[#ffffff] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] mlarge:text-[0.75rem] font-["Good_Timing"] font-semibold'>
                 <Link href='/' className='outline-none no-underline'>главная</Link>
 
                 <Link href='/info' className='outline-none no-underline'>информация</Link>
