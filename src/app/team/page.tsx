@@ -205,7 +205,7 @@ const Page = () => {
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/PokrovskiyNikitaAvatar.svg'}
                         personDescription={'Покровский Никита'}
-                        personText={'Разработчик'}
+                        personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
                         styles={'mt-[-10px] mlarge:mt-[50px] ml-[-50px] mlarge:ml-[0px]'}
                     />
 

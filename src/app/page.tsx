@@ -33,12 +33,12 @@ export default function Home() {
         <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.2] z-[-1] mlarge:object-cover'/>
 
         {!isMobile && <div className='absolute mt-[1990px] w-[100%] h-[2800px] overflow-y-hidden'>
-            <img src='/static/homePage/background/WaterCoolingImage.svg' alt='Водянка задний фон' className='absolute w-full'/>
+            <img src='/static/homePage/background/WaterCoolingImage.svg' alt='Водянка задний фон' className='absolute w-full z-[-1]'/>
         </div>}
 
         <main className='relative w-[100vw] h-auto overflow-hidden'>
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
-                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-300px)] h-[450px] mlarge:h-[400px] scale-[0.9] mlarge:scale-[1.3]'/>
+                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-290px)] h-[450px] mlarge:h-[400px] scale-[0.8] mlarge:scale-[1.3]'/>
 
                 <div className='relative mt-[-90px] mlarge:mt-[-240px]'>
                     <p className='pt-[270px] text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
@@ -238,10 +238,14 @@ export default function Home() {
             <section className='relative mlarge:flex mlarge:justify-between px-[15%] mlarge:px-[7.5%] w-full h-[850px] mlarge:h-[460px]'>
                 <img src='/static/homePage/text/MestoProvedeniyaText.svg' alt='Место проведения' className='absolute right-[13.5%] mlarge:right-[7.5%] w-[80vw] mlarge:w-[92.5vw] h-[240px]'/>
 
-                <img src='/static/homePage/logo/SkolkovoLogo.svg' alt='Сколково' className='pt-[200px] mlarge:pt-[60px] ml-[5%] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2]'/>
+                <img src='/static/homePage/logo/SkolkovoLogo.svg' alt='Сколково' className='pt-[200px] mlarge:pt-[60px] ml-[5%] mlarge:ml-[17.5%] w-[60%] scale-[1.3] mlarge:scale-[2] z-[-10]'/>
 
-                <span className='mt-[300px] mlarge:mt-[0px] mmedium:mt-[20px] mlarge:ml-[-22.5%] w-[37.5%] mlarge:w-[50%] text-[#ffffff] text-[1rem] mlarge:text-[0.875rem] mmedium:text-[0.75rem] msmall:text-[0.625rem] font-["Good_Timing"] mlarge:text-right whitespace-nowrap mlarge:whitespace-normal'>
-                    {!isMobile && <p className='mt-[15px] ml-[40px]'>Адрес: Большой бул., 42 с1, Сколково, Москва, 143026</p>}
+                <span className='relative mt-[300px] mlarge:mt-[0px] mmedium:mt-[20px] mlarge:ml-[-22.5%] w-[37.5%] mlarge:w-[50%] text-[#ffffff] text-[1rem] mlarge:text-[0.875rem] mmedium:text-[0.75rem] msmall:text-[0.625rem] font-["Good_Timing"] mlarge:text-right whitespace-nowrap mlarge:whitespace-normal'>
+                    {!isMobile && <span className='z-20'>
+                        <p className='mt-[15px] ml-[40px] z-40'>Адрес: Большой бул., 42 с1, Сколково, Москва, 143026</p>
+
+                        <a href='https://sk.ru/transport/' className='ml-[40px] text-[#bf5af2] no-underline outline-none'>sk.ru/transport</a>
+                    </span>}
 
                     {isMobile && <>
                         <p className='mt-[180px] whitespace-nowrap'>Адрес: Большой бул.,</p>

@@ -1,8 +1,7 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
 
-import { useAppDispatch, useAppSelector } from "@/store/storeHooks";
-import { mobileSlice } from "@/store/storeReducers/MobileSlice";
+import { useAppSelector } from "@/store/storeHooks";
 import { RootState } from '@/store';
 
 import TheHeader from '@/widgets/shared/TheHeader';
@@ -12,15 +11,7 @@ import TheFooter from '@/widgets/shared/TheFooter';
 import PersonInfo from '@/widgets/shared/PersonInfo';
 
 const Page = () => {
-    const dispatch = useAppDispatch();
-
     const isMobile = useAppSelector((state:RootState) => state.mobile.isMobile);
-
-    const { setIsMobileStatus } = mobileSlice.actions;
-
-    useEffect(() => {
-        dispatch(setIsMobileStatus(window.innerWidth < 480));
-    }, [])
 
     return (
         <>
@@ -39,7 +30,7 @@ const Page = () => {
                 <PersonInfo
                     imgPath={'/static/juryPage/avatars/BugrovVladimirAvatar.svg'}
                     personDescription={'Бугров Владимир'}
-                    personText={'И. О. начальника Департамента по обеспечению информационной безопасности ПФР'}
+                    personText={'Заместитель начальника Департамента технической защиты информации Главного научно-исследовательского вычислительного центра Управления делами Президента Российской Федерации'}
                     styles={'mt-[-10px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                 />
 
