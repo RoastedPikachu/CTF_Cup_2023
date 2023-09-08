@@ -38,7 +38,7 @@ const Page = () => {
                     imgPath={'/static/juryPage/avatars/VolkovSergeyAvatar.svg'}
                     personDescription={'Волков Сергей'}
                     personText={'Начальник отдела информационной безопасности, АО «ГОЗНАК»'}
-                    styles={'mt-[80px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[0px]'}
+                    styles={'mt-[80px] mlarge:mt-[50px] mmedium:mt-[80px] msmall:mt-[120px] ml-[150px] mlarge:ml-[0px]'}
                 />
 
                 <PersonInfo

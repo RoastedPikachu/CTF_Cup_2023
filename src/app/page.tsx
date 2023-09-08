@@ -30,7 +30,7 @@ export default function Home() {
     <>
         {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
 
-        <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.2] z-[-1] mlarge:object-cover'/>
+        <img src={path} alt='Пузырьки' className='absolute mt-[5%] mlarge:mt-[-13.5%] ml-[10%] w-[80%] h-[900px] mlarge:h-[600px] scale-[1.375] mlarge:scale-[1.2] mlarge:object-cover z-[-1]'/>
 
         {!isMobile && <div className='absolute mt-[1990px] w-[100%] h-[2800px] overflow-y-hidden'>
             <img src='/static/homePage/background/WaterCoolingImage.svg' alt='Водянка задний фон' className='absolute w-full z-[-1]'/>
@@ -253,13 +253,15 @@ export default function Home() {
                         <p className='whitespace-nowrap'>42 с1, Сколково,</p>
 
                         <p className='whitespace-nowrap'>Москва, 143026</p>
+
+                        <a href='https://sk.ru/transport/' className='text-[#bf5af2] no-underline outline-none'>sk.ru/transport</a>
                     </>}
                 </span>
 
                 {isMobile && <img src='/static/homePage/background/WaterCoolingPipeImage.svg' alt='Трубка водяного охлаждения, задний фон' className='absolute left-[0%] bottom-[-60px] mmedium:bottom-[-50px] msmall:bottom-[-35px] w-full'/>}
             </section>
 
-            <section className='relative flex justify-between mt-[50px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[600px] mlarge:h-[550px] mmedium:h-[525px] msmall:h-[475px]'>
+            <section className='relative flex justify-between mt-[50px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[600px] mlarge:h-[520px] mmedium:h-[480px] msmall:h-[430px]'>
                 <img src='/static/homePage/text/WhatIsCTFText.svg' alt='Что такое CTF?' className='absolute w-[85vw] mlarge:w-[95vw] mmedium:w-[100vw] h-[140px]'/>
 
                 <span className='mt-[140px] mlarge:mt-[110px] ml-[20%] mlarge:ml-[0%] text-[#ffffff] text-[1rem] mmedium:text-[0.875rem] msmall:text-[0.75rem] font-["Good_Timing"]'>
@@ -280,9 +282,9 @@ export default function Home() {
 
                 {isMobile && <img src='/static/homePage/background/WaterCoolingPipesImage2.svg' alt='Трубки водяного охлаждения, задний фон' className='absolute top-[540px] right-[5%] scale-[1.15] z-[-5]'/>}
 
-                <img src='/static/homePage/text/OfficialDocumentsText.svg' alt='Официальные документы' className='absolute right-[11.5%] mlarge:right-[7.5%] w-[90vw] mlarge:w-[95vw] mmedium:w-[100vw] h-[250px]'/>
+                <img src='/static/homePage/text/OfficialDocumentsText.svg' alt='Официальные документы' className='absolute mlarge:mt-[20px] mmedium:mt-[15px] right-[13%] mmedium:right-[8.5%] w-[90vw] mlarge:w-[95vw] mmedium:w-[100vw] h-[250px] scale-[0.95]'/>
 
-                <div className='pt-[260px] mlarge:pt-[240px] mmedium:pt-[225px] flex mlarge:block justify-between w-full h-[570px] mlarge:h-[900px]'>
+                <div className='pt-[280px] mlarge:pt-[240px] mmedium:pt-[225px] flex mlarge:block justify-between w-full h-[590px] mlarge:h-[900px]'>
                     <div className='relative flex items-center w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
                         <img src='/static/homePage/background/BubblesBg5.svg' alt='Пузырьки5' className='absolute msmall:mt-[-40px] z-[0]'/>
 
