@@ -73,7 +73,7 @@ const Page = () => {
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/IzbaenkovArtemAvatar.svg'}
                         personDescription={'Избаенков Артём'}
-                        personText={'Директор по развитию направления кибербезопасности «<strong>EdgeCenter</strong>»'}
+                        personText={'Директор по развитию направления кибербезопасности <strong>EdgeCenter</strong>'}
                         styles={'mt-[-140px] mlarge:mt-[50px] ml-[700px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
@@ -94,7 +94,7 @@ const Page = () => {
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/VasilievaVladislavaAnatolievaAvatar.svg'}
                         personDescription={'Васильева Владислава Анатольевна'}
-                        personText={'Заместитель директора направления «безопасная Открытая Инфраструктура» АНО «Цифровая экономика»'}
+                        personText={'Заместитель директора направления «Безопасная Открытая Инфраструктура» АНО «Цифровая экономика»'}
                         styles={'mt-[-100px] mlarge:mt-[50px] msmall:mt-[80px] ml-[0px] mlarge:ml-[0px]'}
                     />
 
@@ -153,7 +153,7 @@ const Page = () => {
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/BelovaMariaAvatar.svg'}
-                        personDescription={'Мария Белова'}
+                        personDescription={'Белова Мария'}
                         personText={'Редактор'}
                         styles={'mt-[-60px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[0px]'}
                     />
@@ -174,7 +174,7 @@ const Page = () => {
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/ArtyomMicheevAvatar.svg'}
-                        personDescription={'Артем Михеев'}
+                        personDescription={'Михеев Артем'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
                         styles={'mt-[-10px] mlarge:mt-[50px] ml-[750px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />

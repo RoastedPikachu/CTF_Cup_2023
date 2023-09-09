@@ -9,7 +9,7 @@ const TheHeader = () => {
             <div className='flex items-center'>
                 <img src='/static/header/logo/CTFCupPurpleLogo.svg' alt='Логотип кубка CTF' className='w-[50px] h-[50px]'/>
 
-                <a href='https://forms.yandex.ru/u/64f6f2ffd046882e71f64a8c/' className='ml-[15px] text-[#bf5af2] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
+                <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='ml-[15px] text-[#bf5af2] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
             </div>
 
             <nav className='flex justify-between w-[53%] mlarge:w-[100%] text-[#ffffff] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] mlarge:text-[0.75rem] font-["Good_Timing"] font-semibold'>

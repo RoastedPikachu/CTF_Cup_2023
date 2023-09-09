@@ -43,7 +43,7 @@ export default function Home() {
                 <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-290px)] deskmedium:pt-[calc(50%-400px)] h-[450px] deskmedium:h-[450px] mlarge:h-[400px] scale-[0.8] deskmedium:scale-[1] mlarge:scale-[1.3]'/>
 
                 <div className='relative mt-[180px] mlarge:mt-[20px] h-[100px]'>
-                    <a href='https://forms.yandex.ru/u/64f6f2ffd046882e71f64a8c/' className='outline-none'>
+                    <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='outline-none'>
                         <p className='text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
 
                         <img src='/static/homePage/icon/ArrowsDownIcon.svg' alt='Регистрация' className='ml-[calc(50%-20px)] mlarge:ml-[calc(50%-12.5px)] pt-[5px] w-[40px] mlarge:w-[25px] h-[40px] mlarge:h-[25px] cursor-pointer'/>
@@ -131,7 +131,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className='relative mt-[40px] w-full h-[210px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] '>
+                            <div className='relative mt-[35px] w-full h-[210px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] '>
                                 <div className='relative py-[10px] pl-[30px] pr-[15px] w-full h-full overflow-hidden'>
                                     <img src='/static/homePage/background/BubblesBg4.svg' alt='Пузырьки5' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
 
@@ -289,7 +289,7 @@ export default function Home() {
                 <img src='/static/homePage/text/OfficialDocumentsText.svg' alt='Официальные документы' className='absolute mlarge:mt-[20px] mmedium:mt-[15px] right-[13%] mmedium:right-[8.5%] w-[90vw] mlarge:w-[95vw] mmedium:w-[100vw] h-[250px] scale-[0.95]'/>
 
                 <div className='pt-[280px] mlarge:pt-[240px] mmedium:pt-[225px] flex mlarge:block justify-between w-full h-[590px] mlarge:h-[900px]'>
-                    <div className='relative flex items-center w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
+                    <a href='/static/homePage/documents/Pologenie.pdf' className='relative flex items-center w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
                         <img src='/static/homePage/background/BubblesBg5.svg' alt='Пузырьки5' className='absolute msmall:mt-[-40px] z-[0]'/>
 
                         <h3 className='absolute top-[20px] right-[10%] w-full text-[#bf5af2] text-[1.5rem] text-right font-["Good_Timing"] font-bold'>/DOC</h3>
@@ -297,9 +297,9 @@ export default function Home() {
                         <p className='px-[10%] w-full text-[0.875rem] font-bold leading-[1.75] z-10'>О проведении Всероссийских соревнований в области информационной безопасности «Кубок CTF России»</p>
 
                         <p className='absolute bottom-[5px] w-full text-[2.25rem] msmall:text-[2rem] text-center font-["Good_Timing"] font-bold'>положение</p>
-                    </div>
+                    </a>
 
-                    <div className='relative flex items-center mlarge:mt-[30px] w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
+                    <a href='/static/homePage/documents/Reglament.pdf' className='relative flex items-center mlarge:mt-[30px] w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
                         <img src='/static/homePage/background/BubblesBg6.svg' alt='Пузырьки6' className='absolute msmall:bottom-[0px] z-[0]'/>
 
                         <h3 className='absolute top-[20px] right-[10%] w-full text-[#bf5af2] text-[1.5rem] text-right font-["Good_Timing"] font-bold'>/DOC</h3>
@@ -307,7 +307,7 @@ export default function Home() {
                         <p className='px-[10%] w-full text-[1rem] font-bold leading-[1.75] z-10'>Правила проведения отборочного этапа VII Кубка CTF России</p>
 
                         <p className='absolute bottom-[5px] w-full text-[2.25rem] msmall:text-[2rem] text-center font-["Good_Timing"] font-bold'>регламенты</p>
-                    </div>
+                    </a>
 
                     <div className='relative flex items-center mlarge:mt-[30px] w-[30%] mlarge:w-full h-full mlarge:h-[300px] bg-[#0d0d0d] border-[1px] border-[#ffffff] rounded-[25px] text-[#ffffff] overflow-hidden'>
                         <img src='/static/homePage/background/BubblesBg7.svg' alt='Пузырьки7' className='absolute msmall:mt-[-40px] z-[0]'/>
