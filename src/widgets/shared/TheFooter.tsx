@@ -22,7 +22,7 @@ const TheFooter = () => {
             <div className='mlarge:mt-[50px] text-[#ffffff] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] font-["Good_Timing"] font-bold'>
                 <h3 className='text-[1.125rem] desklarge:text-[1.625rem] deskmedium:text-[1.375rem] font-["DaMiOne"]'>/Контакты</h3>
 
-                <p className='mt-[10px]'><strong className='text-[#bf5af2]'>tg:</strong> @deviantwish @AlisaSoboleva</p>
+                <p className='mt-[10px]'><strong className='text-[#bf5af2]'>tg:</strong> @deviantwish, @AlisaSoboleva</p>
 
                 <p className='mt-[10px]'><strong className='text-[#b3b1ff]'>phone:</strong> +7(495)640-53-30</p>
 

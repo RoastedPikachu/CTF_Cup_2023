@@ -87,7 +87,7 @@ export default function Home() {
                                 <p className='text-[2.5rem]'>28-29</p>
                             </div>
 
-                            <p className='mt-[30px] w-[100%]'>отборочный этап 24 часа, <br/> с 12:00 до 12:00 <br/><br/> В 11:00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+                            <p className='mt-[30px] w-[100%]'>отборочный этап 24 часа <br/> с 12:00 до 12:00 <br/><br/> В 11:00 на почту, указанную при регистрации, будет отправлена ссылка</p>
 
                             <p className='absolute bottom-[-15px] text-[5.5rem]'>online</p>
                         </div>

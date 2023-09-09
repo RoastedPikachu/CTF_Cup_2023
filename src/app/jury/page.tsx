@@ -65,7 +65,7 @@ const Page = () => {
                 <PersonInfo
                     imgPath={'/static/juryPage/avatars/MarkovAlexeyAvatar.svg'}
                     personDescription={'Марков Алексей'}
-                    personText={'Президент группы компаний ГК «Эшелон»'}
+                    personText={'Президент группы компаний ГК «Эшелон», доктор технических наук, лауреат премии Правительства РФ в области науки и техники'}
                     styles={'mt-[50px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[0px]'}
                 />
 
@@ -86,7 +86,7 @@ const Page = () => {
                 <PersonInfo
                     imgPath={'/static/juryPage/avatars/MichailenkoNatalyaAvatar.svg'}
                     personDescription={'Михайленко Наталья'}
-                    personText={'Доцент кафедры противодействия преступлениям в сфере ИТТ, к.ю.н.'}
+                    personText={'Доцент кафедры противодействия преступлениям в сфере ИТТ, Московский университет МВД России им. В.Я. Кихотя'}
                     styles={'mt-[50px] mlarge:mt-[50px] ml-[750px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                 />
 

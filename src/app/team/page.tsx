@@ -1,8 +1,7 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
 
-import { useAppDispatch, useAppSelector } from "@/store/storeHooks";
-import { mobileSlice } from "@/store/storeReducers/MobileSlice";
+import { useAppSelector } from "@/store/storeHooks";
 import { RootState } from '@/store';
 
 import TheHeader from '@/widgets/shared/TheHeader';
@@ -12,15 +11,7 @@ import TheMobileHeader from "@/widgets/shared/TheMobileHeader";
 import PersonInfo from '@/widgets/shared/PersonInfo';
 
 const Page = () => {
-    const dispatch = useAppDispatch();
-
     const isMobile = useAppSelector((state:RootState) => state.mobile.isMobile);
-
-    const { setIsMobileStatus } = mobileSlice.actions;
-
-    useEffect(() => {
-        dispatch(setIsMobileStatus(window.innerWidth < 480));
-    }, []);
 
     return (
         <>
@@ -41,27 +32,27 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/org/BarhatovDmitriyAvatar.svg'}
                         personDescription={'Бархатов Дмитрий'}
                         personText={'Председатель Координационного совета, Всероссийское общественное движение наставников детей и молодежи «Наставники России»'}
-                        styles={'mt-[50px] mlarge:mt-[50px] msmall:mt-[70px] ml-[600px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[50px] mlarge:mt-[50px] msmall:mt-[80px] ml-[600px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/BenginVladimirAvatar.svg'}
                         personDescription={'Бенгин Владимир'}
                         personText={'Директор Департамента обеспечения кибербезопасности, Министерства цифрового развития, связи, массовых коммуникаций Российской Федерации'}
-                        styles={'mt-[20px] mlarge:mt-[50px] ml-[200px] mlarge:ml-[0px]'}
+                        styles={'mt-[20px] mlarge:mt-[50px] msmall:mt-[80px] ml-[200px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/BudnikovAlexandrAvatar.svg'}
                         personDescription={'Будников Александр'}
                         personText={'Управляющий директор по информационной безопасности, ПАО АФК «Система»'}
-                        styles={'mt-[-20px] mlarge:mt-[50px] msmall:mt-[70px] ml-[700px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-20px] mlarge:mt-[50px] msmall:mt-[80px] ml-[700px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/VoinovUriyAvatar.svg'}
                         personDescription={'Войнов Юрий'}
-                        personText={'ВРИО начальника Департамента информационных технологий, связи и защиты информации МВД России'}
+                        personText={'Начальник Департамента информационных технологий, связи и защиты информации, МВД России'}
                         styles={'mt-[50px] mlarge:mt-[50px] ml-[0px] mlarge:ml-[0px]'}
                     />
 
@@ -103,15 +94,15 @@ const Page = () => {
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/VasilievaVladislavaAnatolievaAvatar.svg'}
                         personDescription={'Васильева Владислава Анатольевна'}
-                        personText={'Заместитель директора направления «Безопасная Открытая Инфраструктура»'}
-                        styles={'mt-[-100px] mlarge:mt-[50px] ml-[0px] mlarge:ml-[0px]'}
+                        personText={'Заместитель директора направления «безопасная Открытая Инфраструктура» АНО «Цифровая экономика»'}
+                        styles={'mt-[-100px] mlarge:mt-[50px] msmall:mt-[80px] ml-[0px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/MininViktorAvatar.svg'}
                         personDescription={'Минин Виктор'}
                         personText={'Председатель правления АРСИБ'}
-                        styles={'mt-[100px] mlarge:mt-[50px] ml-[350px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[100px] mlarge:mt-[50px] msmall:mt-[80px] ml-[350px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
                 </section>
 
@@ -227,28 +218,35 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/project/ZeunovAntonAvatar.svg'}
                         personDescription={'Зеунов Антон'}
                         personText={'Разработчик'}
-                        styles={'mt-[100px] mlarge:mt-[50px] ml-[0px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-60px] mlarge:mt-[50px] ml-[0px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                    />
+
+                    <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/KarabutBorisAvatar.svg'}
+                        personDescription={'Карабут Борис'}
+                        personText={'Frontend-разработчик'}
+                        styles={'mt-[-60px] mlarge:mt-[50px] ml-[350px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/GrekovIlyaAvatar.svg'}
                         personDescription={'Греков Илья'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
-                        styles={'mt-[0px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[0px]'}
+                        styles={'mt-[150px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/KokorinVsevolodAvatar.svg'}
                         personDescription={'Кокорин Всеволод'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong'}
-                        styles={'mt-[80px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[60px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/ShpilevRomanAvatar.svg'}
                         personDescription={'Шпилев Роман'}
                         personText={'3D художник'}
-                        styles={'mt-[-20px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[0px]'}
+                        styles={'mt-[-20px] mlarge:mt-[50px] ml-[550px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
                 </section>
             </main>
