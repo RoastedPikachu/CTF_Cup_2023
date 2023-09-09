@@ -42,10 +42,12 @@ export default function Home() {
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
                 <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='pt-[calc(50%-290px)] deskmedium:pt-[calc(50%-400px)] h-[450px] deskmedium:h-[450px] mlarge:h-[400px] scale-[0.8] deskmedium:scale-[1] mlarge:scale-[1.3]'/>
 
-                <div className='relative mt-[-90px] mlarge:mt-[-240px]'>
-                    <p className='pt-[270px] text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
+                <div className='relative mt-[180px] mlarge:mt-[20px] h-[100px]'>
+                    <a href='https://forms.yandex.ru/u/64f6f2ffd046882e71f64a8c/' className='outline-none'>
+                        <p className='text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
 
-                    <img src='/static/homePage/icon/ArrowsDownIcon.svg' alt='Регистрация' className='ml-[calc(50%-20px)] mlarge:ml-[calc(50%-12.5px)] pt-[5px] w-[40px] mlarge:w-[25px] h-[40px] mlarge:h-[25px] cursor-pointer'/>
+                        <img src='/static/homePage/icon/ArrowsDownIcon.svg' alt='Регистрация' className='ml-[calc(50%-20px)] mlarge:ml-[calc(50%-12.5px)] pt-[5px] w-[40px] mlarge:w-[25px] h-[40px] mlarge:h-[25px] cursor-pointer'/>
+                    </a>
                 </div>
             </section>
 
@@ -85,7 +87,7 @@ export default function Home() {
                                 <p className='text-[2.5rem]'>28-29</p>
                             </div>
 
-                            <p className='mt-[30px] w-[100%]'>отборочный этап 24ч с 12:00 до 12:00 В 11:00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+                            <p className='mt-[30px] w-[100%]'>отборочный этап 24 часа, <br/> с 12:00 до 12:00 <br/><br/> В 11:00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
 
                             <p className='absolute bottom-[-15px] text-[5.5rem]'>online</p>
                         </div>
@@ -105,7 +107,7 @@ export default function Home() {
                                         <p className='text-[2.5rem]'>08</p>
                                     </div>
 
-                                    <p className='mt-[30px] w-[100%]'>полуфинал с 9:00 до 19:30, «Сколково»</p>
+                                    <p className='mt-[30px] w-[100%]'>полуфинал <br/> с 9:00 до 19:30, <br/> «Сколково»</p>
 
                                     <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
                                 </div>
@@ -123,7 +125,7 @@ export default function Home() {
                                         <p className='text-[2.5rem]'>09</p>
                                     </div>
 
-                                    <p className='mt-[30px] w-[100%]'>финал с 9:00 до 20:00, «Сколково»</p>
+                                    <p className='mt-[30px] w-[100%]'>финал <br/> с 9:00 до 20:00, <br/> «Сколково»</p>
 
                                     <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
                                 </div>
@@ -134,7 +136,7 @@ export default function Home() {
                                     <img src='/static/homePage/background/BubblesBg4.svg' alt='Пузырьки5' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
 
                                     <div className='flex justify-between mt-[10px] w-full text-[#ffffff] text-[1rem] font-["Good_Timing"]'>
-                                        <p className='w-[50%]'>финал для школьных команд с 9:00 до 19:30, «Сколково»</p>
+                                        <p className='w-[50%]'>финал для школьных команд <br/> с 9:00 до 19:30, <br/> «Сколково»</p>
 
                                         <div className='flex justify-end items-center h-[50px]'>
                                             <div className='pr-[2.5px] text-[1rem]'>
@@ -312,7 +314,7 @@ export default function Home() {
 
                         <h3 className='absolute top-[20px] right-[10%] w-full text-[#bf5af2] text-[1.5rem] text-right font-["Good_Timing"] font-bold'>/DOC</h3>
 
-                        <p className='px-[10%] w-full text-[1rem] font-bold leading-[1.75] z-10'>Памятка участника. Дата и место проведения соревнований:</p>
+                        <p className='px-[10%] w-full text-[1rem] font-bold leading-[1.75] z-10'>Появится ближе к дате очных этапов</p>
                         
                         <p className='absolute bottom-[5px] w-full text-[2.25rem] msmall:text-[2rem] text-center font-["Good_Timing"] font-bold'>памятка</p>
                     </div>

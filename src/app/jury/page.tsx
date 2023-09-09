@@ -51,7 +51,7 @@ const Page = () => {
                 <PersonInfo
                     imgPath={'/static/juryPage/avatars/KaderMichailAvatar.svg'}
                     personDescription={'Кадер Михаил'}
-                    personText={'Архитектор по информационной безопасности'}
+                    personText={'Архитектор по информационной безопасности, <strong>Positive Technologies</strong>'}
                     styles={'mt-[100px] mlarge:mt-[50px] ml-[0px]'}
                 />
 

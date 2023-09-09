@@ -40,7 +40,7 @@ const Page = () => {
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/BarhatovDmitriyAvatar.svg'}
                         personDescription={'Бархатов Дмитрий'}
-                        personText={'Управляющий директор по информационной безопасности, ПАО АФК «Система»'}
+                        personText={'Председатель Координационного совета, Всероссийское общественное движение наставников детей и молодежи «Наставники России»'}
                         styles={'mt-[50px] mlarge:mt-[50px] msmall:mt-[70px] ml-[600px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 

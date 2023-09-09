@@ -9,8 +9,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'VII Кубок CTF России 2023',
-  description: 'Сайт VII кубка CTF 2023.',
+  description: 'Сайт VII кубка CTF 2023. CTF — это соревнования по информационной безопасности в форме командной игры, главная цель которой — захватить флаг у соперника в приближённых к реальности условиях.',
+  keywords: 'CTF, СТФ, ctf, стф, Capture The Flag, capture the flag, Кубок CTF, Кубок СТФ, ctf соревнования, стф соревнования'
 }
+
 
 export default function RootLayout({
    children,
