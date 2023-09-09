@@ -1,5 +1,7 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
+
+import { CSSTransition } from 'react-transition-group';
 
 import { useAppDispatch, useAppSelector } from "@/store/storeHooks";
 import { mobileSlice } from "@/store/storeReducers/MobileSlice";
@@ -62,9 +64,8 @@ const Page = () => {
         }
     ] as Paragraph[]);
 
-    useEffect(() => {
-        dispatch(setIsMobileStatus(window.innerWidth < 480));
-    }, [])
+    const nodeRef = useRef(null);
+
     return (
         <>
             {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
@@ -145,7 +146,7 @@ const Page = () => {
                                 <h3 className='w-[70%] mlarge:w-full text-[#ffffff] text-[1.5rem] mlarge:text-[1.25rem] mmedium:text-[1.125rem] font-["Good_Timing"] font-bold'>{paragraph.title}</h3>
 
                                 {!isMobile && <button className='w-[20px] h-[20px] outline-none' onClick={() => {paragraph.isOpen = !paragraph.isOpen; setParagraphs([...paragraphs])}}>
-                                    {paragraph.isOpen ? <img src='/static/infoPage/icon/XmarkIcon.svg' alt='Закрыть' className='w-full h-full'/> : <img src='/static/infoPage/icon/XmarkIcon.svg' alt='Открыть' className='w-full h-full rotate-45'/>}
+                                    <img src='/static/infoPage/icon/XmarkIcon.svg' alt='Иконка открытия и закрытия' ref={nodeRef} className={`w-full h-full ${paragraph.isOpen ? 'rotate-0' : 'rotate-45'} duration-[600ms] ease-in-out`}/>
                                 </button>}
                             </div>
 
