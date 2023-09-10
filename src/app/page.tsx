@@ -30,11 +30,11 @@ export default function Home() {
     <>
         {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
 
-        <div className='absolute mt-[5%] deskmedium:mt-[10%] mlarge:mt-[-13.5%] msmall:mt-[-26.5%] ml-[12.5%] mlarge:ml-[0%] w-[75%] mlarge:w-full h-[900px] mlarge:h-[600px] overflow-hidden'>
+        <div className='absolute mt-[5%] deskmedium:mt-[10%] mlarge:mt-[-13.5%] msmall:mt-[-26.5%] ml-[12.5%] mlarge:ml-[0%] w-[75%] mlarge:w-full h-[900px] mlarge:h-[600px] mlarge:overflow-hidden'>
             <img src={path} alt='Пузырьки' className='absolute w-full h-full scale-[1.35] desklarge:scale-[1.5] deskmedium:scale-[1.625] mlarge:scale-[1.15] msmall:scale-[0.95] mlarge:object-cover z-[-1]'/>
         </div>
 
-        {!isMobile && <div className='absolute mt-[1990px] w-[100%] h-[2800px] overflow-y-hidden'>
+        {!isMobile && <div className='absolute mt-[2010px] w-[100%] h-[2800px] overflow-y-hidden'>
             <img src='/static/homePage/background/WaterCoolingImage.png' alt='Водянка задний фон' className='absolute w-full z-[-1]'/>
         </div>}
 
@@ -239,10 +239,10 @@ export default function Home() {
                 </div>}
             </section>
 
-            <section className='relative mlarge:flex mlarge:justify-between px-[15%] mlarge:px-[7.5%] w-full h-[850px] mlarge:h-[460px] msmall:h-[420px]'>
-                <img src='/static/homePage/text/MestoProvedeniyaText.png' alt='Место проведения' className='absolute right-[10%] mlarge:right-[5%] mlarge:mt-[60px] mmedium:mt-[65px] msmall:mt-[55px] w-[95vw] mlarge:w-[92.5vw] h-[240px] mlarge:h-[100px] mmedium:h-[90px] msmall:h-[80px] scale-[0.9] mlarge:scale-[0.95]'/>
+            <section className='relative mlarge:flex mlarge:justify-between mt-[-60px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[850px] mlarge:h-[460px] msmall:h-[395px]'>
+                <img src='/static/homePage/text/MestoProvedeniyaText.png' alt='Место проведения' className='absolute right-[10%] mlarge:right-[5%] mlarge:mt-[60px] mmedium:mt-[75px] msmall:mt-[55px] w-[95vw] mlarge:w-[92.5vw] h-[240px] mlarge:h-[100px] mmedium:h-[90px] msmall:h-[80px] scale-[0.9] mlarge:scale-[0.95]'/>
 
-                <img src='/static/homePage/logo/SkolkovoLogo.png' alt='Сколково' className='mt-[200px] mlarge:mt-[200px] msmall:mt-[180px] ml-[5%] mlarge:ml-[17.5%] w-[60%] mlarge:h-[180px] msmall:h-[160px] scale-[1.3] mlarge:scale-[1.85] mmedium:scale-[1.7] z-[-10]'/>
+                <img src='/static/homePage/logo/SkolkovoLogo.png' alt='Сколково' className='pt-[200px] mlarge:pt-[140px] mmedium:pt-[160px] msmall:pt-[130px] ml-[5%] mlarge:ml-[17.5%] mmedium:ml-[15%] w-[60%] mlarge:h-[340px] msmall:h-[280px] scale-[1.3] mlarge:scale-[1.65] mmedium:scale-[1.55] msmall:scale-[1.6] z-[-10]'/>
 
                 <span className='relative mt-[300px] mlarge:mt-[0px] msmall:mt-[-20px] mmedium:mt-[20px] mlarge:ml-[-22.5%] w-[37.5%] mlarge:w-[50%] text-[#ffffff] text-[1rem] mlarge:text-[0.875rem] mmedium:text-[0.75rem] msmall:text-[0.625rem] font-["Good_Timing"] mlarge:text-right whitespace-nowrap mlarge:whitespace-normal'>
                     {!isMobile && <span className='z-20'>
@@ -265,7 +265,7 @@ export default function Home() {
                 {isMobile && <img src='/static/homePage/background/WaterCoolingPipeImage.svg' alt='Трубка водяного охлаждения, задний фон' className='absolute left-[0%] bottom-[-60px] mmedium:bottom-[-50px] msmall:bottom-[-35px] w-full'/>}
             </section>
 
-            <section className='relative flex justify-between mt-[50px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[600px] mlarge:h-[520px] mmedium:h-[480px] msmall:h-[430px]'>
+            <section className='relative flex justify-between mt-[40px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[600px] mlarge:h-[520px] mmedium:h-[480px] msmall:h-[430px]'>
                 <img src='/static/homePage/text/WhatIsCTFText.png' alt='Что такое CTF?' className='absolute left-[10.5%] mlarge:left-[5.5%] mlarge:mt-[30px] mmedium:mt-[35px] msmall:mt-[25px] w-[95vw] mlarge:w-[95vw] mmedium:w-[100vw] h-[140px] mlarge:h-[60px] mmedium:h-[50px] msmall:h-[45px] scale-[0.9] mlarge:scale-[0.95]'/>
 
                 <span className='mt-[140px] mlarge:mt-[110px] msmall:mt-[90px] ml-[20%] mlarge:ml-[0%] text-[#ffffff] text-[1rem] mmedium:text-[0.875rem] msmall:text-[0.75rem] font-["Good_Timing"]'>
