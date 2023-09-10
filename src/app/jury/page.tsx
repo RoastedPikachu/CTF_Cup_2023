@@ -1,21 +1,14 @@
-'use client';
 import React from 'react';
 
-import { useAppSelector } from "@/store/storeHooks";
-import { RootState } from '@/store';
-
 import TheHeader from '@/widgets/shared/TheHeader';
-import TheMobileHeader from '@/widgets/shared/TheMobileHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
 
 import PersonInfo from '@/widgets/shared/PersonInfo';
 
 const Page = () => {
-    const isMobile = useAppSelector((state:RootState) => state.mobile.isMobile);
-
     return (
         <>
-            {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
+            <TheHeader/>
 
             <main className='px-[10%] mlarge:px-[5%] w-full pb-[100px]'>
                 <img src='/static/juryPage/text/JuryText.svg' alt='Жюри' className='w-[55%] mlarge:w-[60%]'/>

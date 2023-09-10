@@ -1,21 +1,14 @@
-'use client';
 import React from 'react';
-
-import { useAppSelector } from "@/store/storeHooks";
-import { RootState } from '@/store';
 
 import TheHeader from '@/widgets/shared/TheHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
-import TheMobileHeader from "@/widgets/shared/TheMobileHeader";
 
 import PersonInfo from '@/widgets/shared/PersonInfo';
 
 const Page = () => {
-    const isMobile = useAppSelector((state:RootState) => state.mobile.isMobile);
-
     return (
         <>
-            {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
+            <TheHeader/>
 
             <main className='mt-[50px] mlarge:mt-[0px] px-[15%] mlarge:px-[5%] w-full h-auto'>
                 <section>

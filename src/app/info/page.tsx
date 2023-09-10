@@ -1,14 +1,10 @@
 'use client';
 import React, { useState, useRef } from 'react';
 
-import { CSSTransition } from 'react-transition-group';
-
-import { useAppDispatch, useAppSelector } from "@/store/storeHooks";
-import { mobileSlice } from "@/store/storeReducers/MobileSlice";
+import { useAppSelector } from "@/store/storeHooks";
 import { RootState } from '@/store';
 
 import TheHeader from '@/widgets/shared/TheHeader';
-import TheMobileHeader from '@/widgets/shared/TheMobileHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
 
 interface Paragraph {
@@ -19,11 +15,7 @@ interface Paragraph {
 }
 
 const Page = () => {
-    const dispatch = useAppDispatch();
-
     const isMobile = useAppSelector((state:RootState) => state.mobile.isMobile);
-
-    const { setIsMobileStatus } = mobileSlice.actions;
 
     const [paragraphs, setParagraphs] = useState([
         {
@@ -68,7 +60,7 @@ const Page = () => {
 
     return (
         <>
-            {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
+            <TheHeader/>
 
             <main className='relative mt-[50px] mmedium:mt-[30px] w-[100vw] h-auto overflow-hidden'>
                 {!isMobile && <img src='/static/infoPage/background/InfoBgImage1.svg' alt='Пузырик' className='absolute mt-[-20px] right-[-60px] z-[-1] scale-[0.9]'/>}

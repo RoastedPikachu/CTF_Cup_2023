@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <>
-        {!isMobile ? <TheHeader/> : <TheMobileHeader/>}
+        <TheHeader/>
 
         <div className='absolute mt-[5%] deskmedium:mt-[10%] mlarge:mt-[-15%] msmall:mt-[-26.5%] ml-[12.5%] mlarge:ml-[0%] w-[75%] mlarge:w-full h-[900px] mlarge:h-[600px] mlarge:overflow-hidden'>
             <img src={path} alt='Пузырьки' className='absolute w-full h-full scale-[1.35] desklarge:scale-[1.5] deskmedium:scale-[1.625] mlarge:scale-[1.15] msmall:scale-[0.95] mlarge:object-cover z-[-1]'/>
