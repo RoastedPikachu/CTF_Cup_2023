@@ -172,7 +172,7 @@ export default function Home() {
                             <p className='text-[2.5rem] msmall:text-[2.25rem]'>28-29</p>
                         </div>
 
-                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>отборочный этап 24ч с 12:00 до 12:00 В 11:00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
+                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>отборочный этап 24 часа <br/> с 12:00 до 12:00 <br/><br/> В 11:00 на почту, указанную при регистрации, будет отправлена ссылка.</p>
 
                         <p className='absolute left-[17.5px] mmedium:left-[15px] msmall:left-[12.5px] bottom-[-25px] mmedium:bottom-[-20px] msmall:bottom-[-15px] text-[6rem] mmedium:text-[5.25rem] msmall:text-[4.5rem]'>online</p>
                     </div>
@@ -190,7 +190,7 @@ export default function Home() {
                             <p className='text-[2.5rem] msmall:text-[2.25rem]'>08</p>
                         </div>
 
-                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>полуфинал с 9:00 до 19:30, «Сколково»</p>
+                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>полуфинал <br/> с 9:00 до 19:30, <br/> «Сколково»</p>
 
                         <p className='absolute left-[15px] msmall:left-[12.5px] bottom-[-22.5px] mmedium:bottom-[-17.5px] msmall:bottom-[-12.5px] text-[5.75rem] mmedium:text-[5rem] msmall:text-[4.25rem]'>offline</p>
                     </div>
@@ -208,22 +208,22 @@ export default function Home() {
                             <p className='text-[2.5rem] msmall:text-[2.25rem]'>09</p>
                         </div>
 
-                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>финал с 9:00 до 20:00, «Сколково»</p>
+                        <p className='mt-[50px] w-[85%] text-[1rem] text-left leading-[2]'>финал <br/> с 9:00 до 20:00, <br/> «Сколково»</p>
 
                         <p className='absolute left-[15px] msmall:left-[12.5px] bottom-[-22.5px] mmedium:bottom-[-17.5px] msmall:bottom-[-12.5px] text-[5.75rem] mmedium:text-[5rem] msmall:text-[4.25rem]'>offline</p>
                     </div>
                 </Carousel>}
 
-                {isMobile && <div className='relative mt-[30px] w-full h-[260px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px] '>
+                {isMobile && <div className='relative mt-[30px] w-full h-[260px] bg-[#0d0d0d0] border-[1px] border-[#ffffff] rounded-[25px]'>
                     <div className='relative py-[10px] pl-[30px] pr-[15px] w-full h-full overflow-hidden'>
                         <img src='/static/homePage/background/BubblesPhoneBg4.png' alt='Пузырьки5' className='absolute right-[5.5%] mt-[-10px] w-[95%] h-[calc(100%-10px)] z-[-1] scale-110 rounded-[30px]'/>
 
                         <div className='flex justify-between mt-[25px] w-full text-[#ffffff] text-[0.875rem] font-["Good_Timing"]'>
-                            <p className='msmall:mt-[10px] w-[55%] mmedium:w-[50%] text-[0.875rem] mmedium:text-[0.75rem] msmall:text-[0.625rem] leading-[1.75] mmedium:leading-[1.875] msmall:leading-[2]'>финал для школьных команд с 9:00 до 19:30, «Сколково»</p>
+                            <p className='msmall:mt-[10px] w-[55%] mmedium:w-[50%] text-[0.875rem] mmedium:text-[0.75rem] msmall:text-[0.625rem] leading-[1.75] mmedium:leading-[1.875] msmall:leading-[2]'>финал для <br/> школьных команд <br/> с 9:00 до 19:30, <br/> «Сколково»</p>
 
                             <div className='flex justify-end items-center mt-[-25px] h-[50px]'>
                                 <div className='pr-[2.5px] text-[1rem] msmall:text-[0.875rem]'>
-                                    <p className='text-[#bf5af2]'>Final</p>
+                                    <p className='text-[#bf5af2] text-right'>Final</p>
 
                                     <p className='mt-[-7.5px] text-right'>декабря</p>
                                 </div>
