@@ -12,8 +12,8 @@ const TheMobileHeader = () => {
     const nodeRef = useRef(null);
 
     return (
-        <header className='relative flex justify-between items-center px-[5%] w-full h-[80px]'>
-            <a className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
+        <header className='relative flex justify-between items-center px-[5%] w-full h-[80px] z-30'>
+            <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
 
             <button onClick={() => setIsModalWindowActive(true)} className='outline-none'>
                 <img src='/static/header/icon/HamburgerMenuIcon.svg' alt='Гамбургер меню' className='w-[20px] h-[20px]'/>
