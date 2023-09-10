@@ -1,11 +1,16 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import type { Metadata } from 'next';
+
+import { Inter } from 'next/font/google';
+
+import Script from 'next/script';
+
 import { ReduxProvider } from '@/store/provider';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const inter = Inter({ subsets: ['latin'] })
+
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'VII Кубок CTF России 2023',
@@ -22,6 +27,8 @@ export default function RootLayout({
   return (
       <html lang="ru">
         <body className={inter.className}>
+            <Script src='metrica.js'/>
+
             <ReduxProvider>
                 {children}
             </ReduxProvider>

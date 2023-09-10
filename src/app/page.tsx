@@ -8,7 +8,6 @@ import { useAppDispatch, useAppSelector } from '@/store/storeHooks';
 import { RootState } from '@/store';
 
 import TheHeader from '@/widgets/shared/TheHeader';
-import TheMobileHeader from '@/widgets/shared/TheMobileHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
 
 export default function Home() {

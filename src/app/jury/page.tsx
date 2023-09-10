@@ -65,7 +65,7 @@ const Page = () => {
                 <PersonInfo
                     imgPath={'/static/juryPage/avatars/MinakovSergeyAvatar.svg'}
                     personDescription={'Минаков Сергей'}
-                    personText={'Старший научный сотрудник Академия криптографии РФ'}
+                    personText={'Заместитель генерального директора АНО НТЦ ЦК, старший научный сотрудник Академии криптографии РФ'}
                     styles={'mt-[-80px] mlarge:mt-[50px] ml-[750px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                 />
 
