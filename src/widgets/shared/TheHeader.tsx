@@ -1,13 +1,14 @@
 'use client';
 import React from 'react';
 
+import Image from 'next/image';
 import Link from 'next/link';
 
 const TheHeader = () => {
     return (
         <header className='flex justify-between items-center px-[10%] w-[100%] h-[80px]'>
             <div className='flex items-center'>
-                <img src='/static/header/logo/CTFCupPurpleLogo.svg' alt='Логотип кубка CTF' className='w-[50px] h-[50px]'/>
+                <Image src='/static/header/logo/CTFCupPurpleLogo.svg' alt='Логотип кубка CTF' width={50} height={50}/>
 
                 <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='ml-[15px] text-[#bf5af2] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
             </div>
