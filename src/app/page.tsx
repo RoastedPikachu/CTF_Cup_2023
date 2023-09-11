@@ -29,8 +29,8 @@ export default function Home() {
     <>
         <TheHeader/>
 
-        <div className='absolute mt-[5%] deskmedium:mt-[10%] mlarge:mt-[-15%] msmall:mt-[-26.5%] ml-[12.5%] mlarge:ml-[0%] w-[75%] mlarge:w-full h-[900px] mlarge:h-[600px] mlarge:overflow-hidden'>
-            <img src={path} alt='Пузырьки' className='absolute w-full h-full scale-[1.35] desklarge:scale-[1.5] deskmedium:scale-[1.625] mlarge:scale-[1.15] msmall:scale-[0.95] mlarge:object-cover z-[-1]'/>
+        <div className='absolute mt-[-7%] deskmedium:mt-[10%] mlarge:mt-[-15%] msmall:mt-[-26.5%] mlarge:ml-[0%] w-full mlarge:w-full h-[1270px] mlarge:h-[600px] mlarge:overflow-hidden'>
+            <img src={path} alt='Пузырьки' className='absolute w-full h-full scale-[1] desklarge:scale-[1.5] deskmedium:scale-[1.625] mlarge:scale-[1.15] msmall:scale-[0.95] mlarge:object-cover z-[-1]'/>
         </div>
 
         {!isMobile && <div className='absolute mt-[2010px] w-[100%] h-[2800px] overflow-y-hidden'>
@@ -261,7 +261,7 @@ export default function Home() {
                     </>}
                 </span>
 
-                {isMobile && <img src='/static/homePage/background/WaterCoolingPipeImage.svg' alt='Трубка водяного охлаждения, задний фон' className='absolute left-[0%] bottom-[-60px] mmedium:bottom-[-50px] msmall:bottom-[-35px] w-full'/>}
+                {isMobile && <img src='/static/homePage/background/WaterCoolingPipeImage.png' alt='Трубка водяного охлаждения, задний фон' className='absolute left-[0%] bottom-[-60px] mmedium:bottom-[-50px] msmall:bottom-[-35px] w-full'/>}
             </section>
 
             <section className='relative flex justify-between mt-[40px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[600px] mlarge:h-[520px] mmedium:h-[480px] msmall:h-[430px]'>
@@ -281,9 +281,9 @@ export default function Home() {
             </section>
 
             <section className='relative mt-[100px] mlarge:mt-[20px] px-[15%] mmedium:px-[10%] w-full h-[670px] mlarge:h-[1250px]'>
-                {isMobile && <img src='/static/homePage/background/WaterCoolingPipesImage.svg' alt='Трубки водяного охлаждения, задний фон' className='absolute right-[5%] scale-[1.15] z-[-5]'/>}
+                {isMobile && <img src='/static/homePage/background/WaterCoolingPipesImage.png' alt='Трубки водяного охлаждения, задний фон' className='absolute right-[5%] scale-[1.15] z-[-5]'/>}
 
-                {isMobile && <img src='/static/homePage/background/WaterCoolingPipesImage2.svg' alt='Трубки водяного охлаждения, задний фон' className='absolute top-[540px] right-[5%] scale-[1.15] z-[-5]'/>}
+                {isMobile && <img src='/static/homePage/background/WaterCoolingPipesImage2.png' alt='Трубки водяного охлаждения, задний фон' className='absolute top-[540px] right-[5%] scale-[1.15] z-[-5]'/>}
 
                 <img src='/static/homePage/text/OfficialDocumentsText.png' alt='Официальные документы' className='absolute right-[10%] mlarge:right-[5%] mmedium:right-[8.5%] mlarge:mt-[110px] mmedium:mt-[105px] w-[95vw] mlarge:w-[97.5vw] mmedium:w-[100vw] h-[250px] mlarge:h-[80px] mmedium:h-[70px] msmall:h-[65px] scale-[0.9] mlarge:scale-[0.95]'/>
 

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 import Link from 'next/link';
 
 const TheFooter = () => {
@@ -36,14 +38,14 @@ const TheFooter = () => {
                     <img src='/static/footer/icon/ArrowRightDownIcon.svg' className='mt-[5px] w-[15px] desklarge:w-[20px] deskmedium:w-[17.5px] h-[15px] desklarge:h-[20px] deskmedium:h-[17.5px]'/>
                 </button>
 
-                <div className='flex justify-between items-center mt-[30px] w-[300px] mlarge:w-full h-[25px]'>
+                <div className='flex justify-between items-center mt-[25px] w-[300px] mlarge:w-full h-[30px]'>
                     <span className='flex justify-between w-[80px]'>
                         <a href='https://vk.com/ctfcup' className='outline-none'>
-                            <img src='/static/footer/icon/VkIcon.svg' alt='Вконтакте'/>
+                            <Image src='/static/footer/icon/VkIcon.svg' alt='Вконтакте' width={30} height={30}/>
                         </a>
 
                         <a href='https://t.me/ctfcup23_channel' className='outline-none'>
-                            <img src='/static/footer/icon/TelegramIcon.svg' alt='Телеграм'/>
+                            <Image src='/static/footer/icon/TelegramIcon.svg' alt='Телеграм' width={25} height={25}/>
                         </a>
                     </span>
 
