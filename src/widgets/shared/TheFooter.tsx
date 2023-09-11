@@ -33,7 +33,7 @@ const TheFooter = () => {
                 <button className='flex justify-between items-top w-[300px] mlarge:w-full h-[40px] desklarge:h-[55px] deskmedium:h-[45px] border-b-2 border-[#ffffff]'>
                     <p className='text-[#ffffff] text-[1.25rem] desklarge:text-[1.5rem] deskmedium:text-[1.375rem] font-["DaMiOne"]'>FOLLOW US</p>
 
-                    <img src='/static/footer/icon/ArrowRightDownIcon.svg' alt='FOLLOW US' className='mt-[5px] w-[15px] desklarge:w-[20px] deskmedium:w-[17.5px] h-[15px] desklarge:h-[20px] deskmedium:h-[17.5px]'/>
+                    <img src='/static/footer/icon/ArrowRightDownIcon.svg' className='mt-[5px] w-[15px] desklarge:w-[20px] deskmedium:w-[17.5px] h-[15px] desklarge:h-[20px] deskmedium:h-[17.5px]'/>
                 </button>
 
                 <div className='flex justify-between items-center mt-[30px] w-[300px] mlarge:w-full h-[25px]'>
