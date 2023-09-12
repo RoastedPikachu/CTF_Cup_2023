@@ -18,7 +18,7 @@ const TheFooter = () => {
 
                 <Link href='/jury' className='w-[200px] outline-none no-underline'>жюри</Link>
 
-                <Link href='' className='w-[200px] outline-none no-underline'>партнеры</Link>
+                <Link href='/partners' className='w-[200px] outline-none no-underline'>партнеры</Link>
             </nav>
 
             <div className='mlarge:mt-[50px] text-[#ffffff] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] font-["Good_Timing"] font-bold'>

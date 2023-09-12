@@ -44,7 +44,7 @@ const TheHeader = () => {
 
                     <Link href='/jury' className='outline-none no-underline'>жюри</Link>
 
-                    <Link href='/' className='outline-none no-underline'>партнеры</Link>
+                    <Link href='/partners' className='outline-none no-underline'>партнеры</Link>
                 </nav>
             </> : <>
                 <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
@@ -68,7 +68,7 @@ const TheHeader = () => {
 
                             <Link href='/jury' className='w-full outline-none no-underline'>жюри</Link>
 
-                            <Link href='/' className='w-full outline-none no-underline'>партнеры</Link>
+                            <Link href='/partners' className='w-full outline-none no-underline'>партнеры</Link>
                         </nav>
                     </div>
                 </CSSTransition>
