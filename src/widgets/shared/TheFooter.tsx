@@ -56,7 +56,7 @@ const TheFooter = () => {
             <div className='absolute bottom-[25px] mlarge:bottom-[40px] w-[70%] mlarge:w-[80%] mmedium:w-[90%] h-[60px]'>
                 <img src='/static/footer/logo/CTFCupLogo.svg' alt='Логотип Кубка CTF' className='ml-[calc(50%-25px)] w-[50px] h-[50px]'/>
 
-                <p className='mt-[10px] mlarge:mt-[20px] w-full text-[rgba(255,255,255,0.6)] text-[0.5rem] deskmedium:text-[0.625rem] font-["DaMiOne"] text-center'>@CTFCUP2023</p>
+                <p className='mt-[10px] mlarge:mt-[20px] w-full text-[rgba(255,255,255,0.6)] text-[0.75rem] font-["DaMiOne"] text-center'>@CTFCUP2023</p>
             </div>
         </footer>
     )

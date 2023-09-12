@@ -1,9 +1,10 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import { CSSTransition } from "react-transition-group";
 
-import { useAppSelector } from "@/store/storeHooks";
+import { mobileSlice } from '@/store/storeReducers/MobileSlice';
+import { useAppDispatch, useAppSelector} from "@/store/storeHooks";
 import { RootState } from "@/store";
 
 import Image from 'next/image';
@@ -11,14 +12,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const TheHeader = () => {
+    const dispatch = useAppDispatch();
+
     const isMobile = useAppSelector((state:RootState) => state.mobile.isMobile);
+
+    const { setIsMobileStatus } = mobileSlice.actions;
 
     const [isModalWindowActive, setIsModalWindowActive] = useState(false);
 
     const nodeRef = useRef(null);
 
+    useEffect(() => {
+        dispatch(setIsMobileStatus(window.innerWidth < 480));
+    }, []);
+
     return (
-        <header className='relative flex justify-between items-center px-[10%] mlarge:px-[5%] w-full h-[80px] mlarge:z-30'>
+        <header className='relative flex justify-between items-center px-[10%] mlarge:px-[5%] w-full h-[80px] z-30'>
             {!isMobile ? <>
                 <div className='flex items-center'>
                     <Image src='/static/header/logo/CTFCupPurpleLogo.svg' alt='Логотип кубка CTF' width={50} height={50}/>

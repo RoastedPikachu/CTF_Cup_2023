@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useRef } from 'react';
+import React from 'react';
 
 import { useAppSelector } from "@/store/storeHooks";
 import { RootState } from '@/store';
@@ -7,56 +7,10 @@ import { RootState } from '@/store';
 import TheHeader from '@/widgets/shared/TheHeader';
 import TheFooter from '@/widgets/shared/TheFooter';
 
-interface Paragraph {
-    id: number,
-    title: string,
-    isOpen: boolean,
-    text: string
-}
+import Paragraphs from "@/widgets/pageComponents/infoPage/Paragraphs";
 
 const Page = () => {
     const isMobile = useAppSelector((state:RootState) => state.mobile.isMobile);
-
-    const [paragraphs, setParagraphs] = useState([
-        {
-            id: 1,
-            title: 'Могу ли я принять участие в Кубке, если меня отчислили?',
-            isOpen: false,
-            text: 'Да, в этом году в Смешанном зачете могут принять участие любые люди не старше <strong style="color: #bf5af2;">25 лет (включительно)</strong>'
-        },
-        {
-            id: 2,
-            title: 'Какой зачет нам выбрать, если мы студенты, но у нас есть школьник в составе?',
-            isOpen: false,
-            text: 'В любой непонятной ситуации выбирайте <strong style="color: #bf5af2;">Смешанный зачет</strong>. Школьный только для школьников, а Академический — для студентов одного вуза (или колледжа)'
-        },
-        {
-            id: 3,
-            title: 'Могут ли пройти на финал иностранные команды',
-            isOpen: false,
-            text: 'Теоретически — да. А на практике каждая заявка иностранной команды будет рассматриваться в индивидуальном порядке <strong style="color: #bf5af2;">Оргкомитетом</strong>'
-        },
-        {
-            id: 4,
-            title: 'Приз — один на три зачета?',
-            isOpen: false,
-            text: 'А вот и нет — победитель <strong style="color: #bf5af2;">каждого из трех</strong> зачетов получит и денежный приз, и <strong style="color: #bf5af2;">свой экземпляр кубка</strong> ;)'
-        },
-        {
-            id: 5,
-            title: 'Когда будут известны результаты отборочного тура?',
-            isOpen: false,
-            text: 'Мы постараемся опубликовать результаты как можно скорее — но обычно нам нужно <strong style="color: #bf5af2;">2-3 дня</strong>, чтобы точно проверить результаты: за это время убедимся, что: <p style="margin-top: 10px;">&nbsp; &#9679; никто из команд не спутал зачеты,</p><p>&nbsp; &#9679; предоставил всю информацию в регистрации,</p><p>&nbsp; &#9679; не жульничал во время этапа.</p>'
-        },
-        {
-            id: 6,
-            title: 'Сколько этапов ждут школьников?',
-            isOpen: false,
-            text: 'В Школьном зачете всего <strong style="color: #bf5af2;">два этапа</strong>: общий <strong style="color: #bf5af2;">отборочный этап</strong>, а также <strong style="color: #bf5af2;">финал в декабре</strong> (смотри расписание на главной странице)'
-        }
-    ] as Paragraph[]);
-
-    const nodeRef = useRef(null);
 
     return (
         <>
@@ -70,82 +24,68 @@ const Page = () => {
                 <section className='px-[10%] mlarge:px-[5%] w-full'>
                     <img src='/static/infoPage/text/PravilaText.svg' alt='Правила' className='w-[60%] mlarge:w-[50%] mmedium:w-[60%]'/>
 
-                    {!isMobile && <>
-                        <div className='flex justify-between mt-[80px] w-full h-[250px]'>
-                            <span className='flex justyfy-between w-[45%] h-full text-[#ffffff]'>
-                                <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>01</p>
+                    {!isMobile ?
+                        <>
+                            <div className='flex justify-between mt-[80px] w-full h-[250px]'>
+                                <span className='flex justyfy-between w-[45%] h-full text-[#ffffff]'>
+                                    <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>01</p>
 
-                                <p className='w-[60%] font-["Good_Timing"] font-bold'>Команды могут принять <br/> участие в <strong className='text-[#bf5af2]'>одном из трех</strong> <br/> зачетов: <strong className='text-[#bf5af2]'>Школьном</strong>, <strong className='text-[#bf5af2]'>Академическом</strong> или <br/> <strong className='text-[#bf5af2]'>Смешанном</strong></p>
+                                    <p className='w-[60%] font-["Good_Timing"] font-bold'>Команды могут принять <br/> участие в <strong className='text-[#bf5af2]'>одном из трех</strong> <br/> зачетов: <strong className='text-[#bf5af2]'>Школьном</strong>, <strong className='text-[#bf5af2]'>Академическом</strong> или <br/> <strong className='text-[#bf5af2]'>Смешанном</strong></p>
+                                </span>
+
+                                <span className='flex justify-between w-[45%] h-full text-[#ffffff]'>
+                                    <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>03</p>
+
+                                    <p className='mt-[5px] w-[60%] font-["Good_Timing"] font-bold'>По итогу Отборочного <br/> тура в Полуфинал <br/> проходят <strong className='text-[#bf5af2]'>30 команд</strong>, по 10 команд в каждом зачёте</p>
+                                </span>
+                            </div>
+
+                            <div className='flex justify-between w-full h-[110px]'>
+                                <span className='flex justyfy-between w-[45%] text-[#ffffff]'>
+                                    <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>02</p>
+
+                                    <p className='mt-[5px] w-[60%] font-["Good_Timing"] font-bold'>Возраст <br/> участников — <br/> <strong className='text-[#bf5af2]'>от 14 до 25 лет</strong> <br/> включительно</p>
+                                </span>
+
+                                <span className='flex justify-between w-[45%] text-[#ffffff]'>
+                                    <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>04</p>
+
+                                    <p className='mt-[30px] w-[60%] font-["Good_Timing"] font-bold'>В Полуфинале от одного учебного заведения — <strong className='text-[#bf5af2]'>не <br/> более 1 команды</strong></p>
+                                </span>
+                            </div>
+                        </>
+                    :
+                        <div className='mt-[80px] mmedium:mt-[50px] w-full h-[560px] mmedium:h-[520px] msmall:h-[440px]'>
+                            <span className='flex justyfy-between items-center w-full h-[100px] text-[#ffffff]'>
+                                <p className='mt-[-40px] mlarge:text-[6rem] mmedium:text-[5.5rem] msmall:text-[5.25rem] font-["DaMiOne"]'>01</p>
+
+                                <p className='mt-[-30px] msmall:mt-[-40px] ml-[5px] w-[85%] mlarge:text-[0.75rem] mmedium:text-[0.625rem] msmall:text-[0.5rem] font-["Good_Timing"] font-bold'>Команды могут принять <br/> участие в <strong className='text-[#bf5af2]'>одном из трёх</strong> <br/> зачётов: <strong className='text-[#bf5af2]'>Школьном</strong>, <br/> <strong className='text-[#bf5af2]'>Академическом</strong> или <br/> <strong className='text-[#bf5af2]'>Смешанном</strong></p>
                             </span>
 
-                            <span className='flex justify-between w-[45%] h-full text-[#ffffff]'>
-                                <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>03</p>
+                            <span className='flex justyfy-between items-center mt-[50px] mmedium:mt-[40px] msmall:mt-[20px] w-full h-[100px] text-[#ffffff]'>
+                                <p className='mt-[-40px] msmall:mt-[-30px] mr-[10px] w-[85%] mlarge:text-[0.75rem] mmedium:text-[0.625rem] msmall:text-[0.5rem] text-right font-["Good_Timing"] font-bold'>Возраст <br/> участников — <br/> <strong className='text-[#bf5af2]'>от 14 до 25 лет</strong> <br/> включительно</p>
 
-                                <p className='mt-[5px] w-[60%] font-["Good_Timing"] font-bold'>По итогу Отборочного <br/> тура в Полуфинал <br/> проходят <strong className='text-[#bf5af2]'>30 команд</strong>, по 10 команд в каждом зачёте</p>
+                                <p className='mt-[-40px] mlarge:text-[6rem] mmedium:text-[5.5rem] msmall:text-[5.25rem] font-["DaMiOne"]'>02</p>
+                            </span>
+
+                            <span className='flex justyfy-between items-center mt-[50px] mmedium:mt-[40px] msmall:mt-[20px] w-full h-[100px] text-[#ffffff]'>
+                                <p className='mt-[-40px] mlarge:text-[6rem] mmedium:text-[5.5rem] msmall:text-[5.25rem] font-["DaMiOne"]'>03</p>
+
+                                <p className='mt-[-50px] msmall:mt-[-30px] ml-[5px] w-[85%] mlarge:text-[0.75rem] mmedium:text-[0.625rem] msmall:text-[0.5rem] font-["Good_Timing"] font-bold'>По итогу Отборочного <br/> тура в Полуфинал <br/> проходят <strong className='text-[#bf5af2]'>30 команд</strong>, по 10 <br/> команд в каждом зачёте</p>
+                            </span>
+
+                            <span className='flex justyfy-between items-center mt-[50px] mmedium:mt-[40px] msmall:mt-[20px] w-full h-[100px] text-[#ffffff]'>
+                                <p className='mt-[-30px] msmall:mt-[-20px] mr-[10px] w-[85%] mlarge:text-[0.75rem] mmedium:text-[0.625rem] msmall:text-[0.5rem] text-right font-["Good_Timing"] font-bold'>В полуфинале от одного учебного заведения — <strong className='text-[#bf5af2]'>не более 1 команды</strong></p>
+
+                                <p className='mt-[-40px] mlarge:text-[6rem] mmedium:text-[5.5rem] msmall:text-[5.25rem] font-["DaMiOne"]'>04</p>
                             </span>
                         </div>
-
-                        <div className='flex justify-between w-full h-[110px]'>
-                            <span className='flex justyfy-between w-[45%] text-[#ffffff]'>
-                                <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>02</p>
-
-                                <p className='mt-[5px] w-[60%] font-["Good_Timing"] font-bold'>Возраст <br/> участников — <br/> <strong className='text-[#bf5af2]'>от 14 до 25 лет</strong> <br/> включительно</p>
-                            </span>
-
-                            <span className='flex justify-between w-[45%] text-[#ffffff]'>
-                                <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>04</p>
-
-                                <p className='mt-[30px] w-[60%] font-["Good_Timing"] font-bold'>В Полуфинале от одного учебного заведения — <strong className='text-[#bf5af2]'>не <br/> более 1 команды</strong></p>
-                            </span>
-                        </div>
-                    </>}
-
-                    {isMobile && <div className='mt-[80px] mmedium:mt-[50px] w-full h-[560px] mmedium:h-[520px] msmall:h-[440px]'>
-                        <span className='flex justyfy-between items-center w-full h-[100px] text-[#ffffff]'>
-                            <p className='mt-[-40px] mlarge:text-[6rem] mmedium:text-[5.5rem] msmall:text-[5.25rem] font-["DaMiOne"]'>01</p>
-
-                            <p className='mt-[-30px] msmall:mt-[-40px] ml-[5px] w-[85%] mlarge:text-[0.75rem] mmedium:text-[0.625rem] msmall:text-[0.5rem] font-["Good_Timing"] font-bold'>Команды могут принять <br/> участие в <strong className='text-[#bf5af2]'>одном из трёх</strong> <br/> зачётов: <strong className='text-[#bf5af2]'>Школьном</strong>, <br/> <strong className='text-[#bf5af2]'>Академическом</strong> или <br/> <strong className='text-[#bf5af2]'>Смешанном</strong></p>
-                        </span>
-
-                        <span className='flex justyfy-between items-center mt-[50px] mmedium:mt-[40px] msmall:mt-[20px] w-full h-[100px] text-[#ffffff]'>
-                            <p className='mt-[-40px] msmall:mt-[-30px] mr-[10px] w-[85%] mlarge:text-[0.75rem] mmedium:text-[0.625rem] msmall:text-[0.5rem] text-right font-["Good_Timing"] font-bold'>Возраст <br/> участников — <br/> <strong className='text-[#bf5af2]'>от 14 до 25 лет</strong> <br/> включительно</p>
-
-                            <p className='mt-[-40px] mlarge:text-[6rem] mmedium:text-[5.5rem] msmall:text-[5.25rem] font-["DaMiOne"]'>02</p>
-                        </span>
-
-                        <span className='flex justyfy-between items-center mt-[50px] mmedium:mt-[40px] msmall:mt-[20px] w-full h-[100px] text-[#ffffff]'>
-                            <p className='mt-[-40px] mlarge:text-[6rem] mmedium:text-[5.5rem] msmall:text-[5.25rem] font-["DaMiOne"]'>03</p>
-
-                            <p className='mt-[-50px] msmall:mt-[-30px] ml-[5px] w-[85%] mlarge:text-[0.75rem] mmedium:text-[0.625rem] msmall:text-[0.5rem] font-["Good_Timing"] font-bold'>По итогу Отборочного <br/> тура в Полуфинал <br/> проходят <strong className='text-[#bf5af2]'>30 команд</strong>, по 10 <br/> команд в каждом зачёте</p>
-                        </span>
-
-                        <span className='flex justyfy-between items-center mt-[50px] mmedium:mt-[40px] msmall:mt-[20px] w-full h-[100px] text-[#ffffff]'>
-                            <p className='mt-[-30px] msmall:mt-[-20px] mr-[10px] w-[85%] mlarge:text-[0.75rem] mmedium:text-[0.625rem] msmall:text-[0.5rem] text-right font-["Good_Timing"] font-bold'>В полуфинале от одного учебного заведения — <strong className='text-[#bf5af2]'>не более 1 команды</strong></p>
-
-                            <p className='mt-[-40px] mlarge:text-[6rem] mmedium:text-[5.5rem] msmall:text-[5.25rem] font-["DaMiOne"]'>04</p>
-                        </span>
-                    </div>}
+                    }
 
                     <p className='mt-[20px] w-[50%] mlarge:w-full text-[#ffffff] text-[1.125rem] mlarge:text-[0.875rem] msmall:text-[0.75rem] font-["Good_Timing"] font-bold'>*подробнее ознакомиться с правилами можно в разделе <strong className='text-[#bf5af2]'>«ОФИЦИАЛЬНЫЕ ДОКУМЕНТЫ»</strong></p>
                 </section>
 
-                <section className='mt-[120px] mlarge:mt-[100px] mmedium:mt-[80px] msmall:mt-[60px] pb-[100px] px-[10%] mlarge:px-[5%] w-full'>
-                    <img src='/static/infoPage/text/FAQText.svg' alt='FAQ' className='w-[40%] mlarge:w-[50%] mmedium:w-[55%] pb-[50px] mlarge:pb-[20px] mmedium:pb-[0px]'/>
-
-                    {paragraphs.map((paragraph:Paragraph) => (
-                        <div key={paragraph.id} className='mt-[30px] mlarge:mt-[50px] pb-[20px] h-auto border-b-2 border-[#bf5af2]'>
-                            <div className='flex justify-between items-center w-[calc(100%-12.5px)] h-[50px]'>
-                                <h3 className='w-[70%] mlarge:w-full text-[#ffffff] text-[1.5rem] mlarge:text-[1.25rem] mmedium:text-[1.125rem] font-["Good_Timing"] font-bold'>{paragraph.title}</h3>
-
-                                {!isMobile && <button className='w-[20px] h-[20px] outline-none' onClick={() => {paragraph.isOpen = !paragraph.isOpen; setParagraphs([...paragraphs])}}>
-                                    <img src='/static/infoPage/icon/XmarkIcon.svg' alt='Иконка открытия и закрытия' ref={nodeRef} className={`w-full h-full ${paragraph.isOpen ? 'rotate-0' : 'rotate-45'} duration-[600ms] ease-in-out`}/>
-                                </button>}
-                            </div>
-
-                            {(paragraph.isOpen || isMobile) && <p dangerouslySetInnerHTML={{ __html: paragraph.text}} className='mt-[30px] pb-[20px] text-[#ffffff] text-[1rem] mmedium:text-[0.875rem]'></p>}
-                        </div>
-                    ))}
-                </section>
+                <Paragraphs isMobile={isMobile}/>
             </main>
 
             <TheFooter/>
