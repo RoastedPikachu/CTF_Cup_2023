@@ -55,8 +55,8 @@ const Paragraphs:React.FC<ParagraphsProps> = ({ isMobile }) => {
     const nodeRef = useRef(null);
 
     return (
-        <section className='mt-[120px] mlarge:mt-[100px] mmedium:mt-[80px] msmall:mt-[60px] pb-[100px] px-[10%] mlarge:px-[5%] w-full'>
-            <img src='/infoPage/text/FAQText.svg' alt='FAQ' className='w-[40%] mlarge:w-[50%] mmedium:w-[55%] pb-[50px] mlarge:pb-[20px] mmedium:pb-[0px]'/>
+        <section className='mt-[120px] mlarge:mt-[100px] mmedium:mt-[80px] msmall:mt-[60px] pb-[100px] px-[10%] deskWide:px-[0px] mlarge:px-[5%] w-full'>
+            <img src='/static/infoPage/text/FAQText.svg' alt='FAQ' className='w-[25%] mlarge:w-[50%] mmedium:w-[55%] pb-[40px] mlarge:pb-[20px] mmedium:pb-[0px]'/>
 
             {paragraphs.map((paragraph:Paragraph) => (
                 <div key={paragraph.id} className='mt-[30px] mlarge:mt-[50px] pb-[20px] h-auto border-b-2 border-[#bf5af2]'>
@@ -64,7 +64,7 @@ const Paragraphs:React.FC<ParagraphsProps> = ({ isMobile }) => {
                         <h3 className='w-[70%] mlarge:w-full text-[#ffffff] text-[1.5rem] mlarge:text-[1.25rem] mmedium:text-[1.125rem] font-["Good_Timing"] font-bold'>{paragraph.title}</h3>
 
                         {!isMobile && <button className='w-[20px] h-[20px] outline-none' onClick={() => {paragraph.isOpen = !paragraph.isOpen; setParagraphs([...paragraphs])}}>
-                            <img src='/infoPage/icon/XmarkIcon.svg' alt='Иконка открытия и закрытия' ref={nodeRef} className={`w-full h-full ${paragraph.isOpen ? 'rotate-0' : 'rotate-45'} duration-[600ms] ease-in-out`}/>
+                            <img src='/static/infoPage/icon/XmarkIcon.svg' alt='Иконка открытия и закрытия' ref={nodeRef} className={`w-full h-full ${paragraph.isOpen ? 'rotate-0' : 'rotate-45'} duration-[600ms] ease-in-out`}/>
                         </button>}
                     </div>
 

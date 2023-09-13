@@ -16,13 +16,13 @@ const Page = () => {
         <>
             <TheHeader/>
 
-            <main className='relative mt-[50px] mmedium:mt-[30px] w-[100vw] h-auto overflow-hidden'>
-                {!isMobile && <img src='/static/infoPage/background/InfoBgImage1.svg' alt='Пузырик' className='absolute mt-[-20px] right-[-60px] z-[-1] scale-[0.9]'/>}
+            <main className='relative deskWide:mx-[calc((100%-1440px)/2)] w-[100vw] max-w-[1440px] h-auto overflow-hidden deskWide:overflow-visible'>
+                {!isMobile && <img src='/static/infoPage/background/InfoBgImage1.png' alt='Пузырик' className='absolute mt-[-20px] right-[-600px] z-[-1] scale-[0.9] deskWide:scale-[0.8]'/>}
 
-                {!isMobile && <img src='/static/infoPage/background/InfoBgImage2.svg' alt='Пузырик2' className='absolute mt-[1000px] left-[-100px] z-[-1] scale-[0.9]'/>}
+                {!isMobile && <img src='/static/infoPage/background/InfoBgImage2.png' alt='Пузырик2' className='absolute mt-[1000px] left-[-450px] deskWide:left-[-600px] z-[-1] scale-[0.9] deskWide:scale-[0.8]'/>}
 
-                <section className='px-[10%] mlarge:px-[5%] w-full'>
-                    <img src='/static/infoPage/text/PravilaText.svg' alt='Правила' className='w-[60%] mlarge:w-[50%] mmedium:w-[60%]'/>
+                <section className='px-[10%] deskWide:px-[0%] mlarge:px-[5%] w-full'>
+                    <img src='/static/infoPage/text/PravilaText.svg' alt='Правила' className='mt-[50px] mmedium:mt-[30px] w-[45%] mlarge:w-[50%] mmedium:w-[60%]'/>
 
                     {!isMobile ?
                         <>
@@ -30,13 +30,13 @@ const Page = () => {
                                 <span className='flex justyfy-between w-[45%] h-full text-[#ffffff]'>
                                     <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>01</p>
 
-                                    <p className='w-[60%] font-["Good_Timing"] font-bold'>Команды могут принять <br/> участие в <strong className='text-[#bf5af2]'>одном из трех</strong> <br/> зачетов: <strong className='text-[#bf5af2]'>Школьном</strong>, <strong className='text-[#bf5af2]'>Академическом</strong> или <br/> <strong className='text-[#bf5af2]'>Смешанном</strong></p>
+                                    <p className='w-[60%] font-["Good_Timing"] font-bold'>Команды могут принять <br/> участие в <strong className='text-[#bf5af2]'>одном из трех</strong> <br/> зачетов: <strong className='text-[#bf5af2]'>Школьном</strong>, <br/> <strong className='text-[#bf5af2]'>Академическом</strong> или <br/> <strong className='text-[#bf5af2]'>Смешанном</strong></p>
                                 </span>
 
                                 <span className='flex justify-between w-[45%] h-full text-[#ffffff]'>
                                     <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>03</p>
 
-                                    <p className='mt-[5px] w-[60%] font-["Good_Timing"] font-bold'>По итогу Отборочного <br/> тура в Полуфинал <br/> проходят <strong className='text-[#bf5af2]'>30 команд</strong>, по 10 команд в каждом зачёте</p>
+                                    <p className='mt-[5px] w-[60%] font-["Good_Timing"] font-bold'>По итогу Отборочного <br/> тура в Полуфинал <br/> проходят <strong className='text-[#bf5af2]'>30 команд</strong>, по 10 <br/> команд в каждом зачёте</p>
                                 </span>
                             </div>
 
@@ -50,7 +50,7 @@ const Page = () => {
                                 <span className='flex justify-between w-[45%] text-[#ffffff]'>
                                     <p className='mt-[-40px] text-[8rem] font-["DaMiOne"]'>04</p>
 
-                                    <p className='mt-[30px] w-[60%] font-["Good_Timing"] font-bold'>В Полуфинале от одного учебного заведения — <strong className='text-[#bf5af2]'>не <br/> более 1 команды</strong></p>
+                                    <p className='mt-[30px] w-[60%] font-["Good_Timing"] font-bold'>В Полуфинале от одного <br/> учебного заведения — <strong className='text-[#bf5af2]'>не <br/> более 1 команды</strong></p>
                                 </span>
                             </div>
                         </>

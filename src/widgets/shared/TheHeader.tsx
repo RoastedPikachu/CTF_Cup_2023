@@ -27,15 +27,15 @@ const TheHeader = () => {
     }, []);
 
     return (
-        <header className='relative flex justify-between items-center px-[10%] mlarge:px-[5%] w-full h-[80px] z-30'>
+        <header className='relative flex justify-between items-center px-[10%] deskWide:px-[calc((100%-1440px)/2)] mlarge:px-[5%] w-full h-[80px] z-30'>
             {!isMobile ? <>
                 <div className='flex items-center'>
                     <Image src='/static/header/logo/CTFCupPurpleLogo.svg' alt='Логотип кубка CTF' width={50} height={50}/>
 
-                    <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='ml-[15px] text-[#bf5af2] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
+                    <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='ml-[15px] deskWide:ml-[20px] text-[#bf5af2] text-[1rem] deskWide:text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>
                 </div>
 
-                <nav className='flex justify-between w-[53%] mlarge:w-[100%] text-[#ffffff] text-[1rem] desklarge:text-[1.5rem] deskmedium:text-[1.25rem] mlarge:text-[0.75rem] font-["Good_Timing"] font-semibold'>
+                <nav className='flex justify-between w-[53%] mlarge:w-[100%] text-[#ffffff] text-[1rem] deskWide:text-[1.125rem] mlarge:text-[0.75rem] font-["Good_Timing"] font-semibold'>
                     <Link href='/' className='outline-none no-underline'>главная</Link>
 
                     <Link href='/info' className='outline-none no-underline'>информация</Link>

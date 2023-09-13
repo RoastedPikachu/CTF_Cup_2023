@@ -17,8 +17,7 @@ const config: Config = {
         'mlarge': {'max': '480px'},
         'mmedium': {'max': '380px'},
         'msmall': {'max': '320px'},
-        'desklarge': {'raw': '(min-height: 1440px) and (min-width: 2560px)'},
-        'deskmedium': {'raw': '(min-height: 1080px) and (min-width: 1920px)'}
+        'deskWide': {'min': '1500px'},
       }
     }
   },

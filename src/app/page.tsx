@@ -15,9 +15,9 @@ export default function Home() {
 
         <BgImages/>
 
-        <main className='relative w-[100vw] h-auto overflow-hidden'>
+        <main className='relative deskWide:mx-[calc((100%-1440px)/2)] w-[100vw] max-w-[1440px] h-auto overflow-hidden'>
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
-                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='mt-[calc(50%-420px)] mlarge:mt-[calc(50%-140px)] mmedium:mt-[calc(50%-120px)] deskmedium:mt-[calc(50%-400px)] h-[450px] deskmedium:h-[450px] mlarge:h-[400px] scale-[0.8] deskmedium:scale-[1] mlarge:scale-[1.3]'/>
+                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='mt-[calc(50%-400px)] mlarge:mt-[calc(50%-140px)] mmedium:mt-[calc(50%-120px)] h-[450px] mlarge:h-[400px] scale-[0.8] mlarge:scale-[1.3]'/>
 
                 <div className='relative mt-[100px] mlarge:mt-[20px] h-[100px]'>
                     <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='outline-none'>
@@ -50,10 +50,10 @@ export default function Home() {
 
             <Address/>
 
-            <section className='relative flex justify-between mt-[40px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[600px] mlarge:h-[520px] mmedium:h-[480px] msmall:h-[430px]'>
+            <section className='relative flex justify-between mt-[40px] deskWide:mt-[20px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[600px] mlarge:h-[520px] mmedium:h-[480px] msmall:h-[430px]'>
                 <img src='/static/homePage/text/WhatIsCTFText.png' alt='Что такое CTF?' className='absolute left-[10.5%] mlarge:left-[5.5%] mlarge:mt-[40px] mmedium:mt-[35px] w-[95vw] mlarge:w-[95vw] mmedium:w-[100vw] h-[140px] mlarge:h-[50px] mmedium:h-[45px] scale-[0.9] mlarge:scale-[0.95]'/>
 
-                <span className='mt-[140px] mlarge:mt-[110px] msmall:mt-[90px] ml-[20%] mlarge:ml-[0%] text-[#ffffff] text-[1rem] mmedium:text-[0.875rem] msmall:text-[0.75rem] font-["Good_Timing"]'>
+                <span className='mt-[140px] mlarge:mt-[110px] msmall:mt-[90px] ml-[20%] mlarge:ml-[0%] text-[#ffffff] text-[1rem] deskWide:text-[1.125rem] mmedium:text-[0.875rem] msmall:text-[0.75rem] font-["Good_Timing"]'>
                     <h3 className='text-[#bf5af2] text-[3rem] mlarge:text-[1.25rem] mmedium:text-[1.125rem] msmall:text-[1rem]'>CTF (Capture the Flag)</h3>
 
                     <p className='mt-[5px] mmedium:mt-[10px]'>— это соревнования по информационной безопасности в форме командной игры, главная цель которой —

@@ -8,8 +8,8 @@ const Page = () => {
         <>
             <TheHeader/>
 
-            <main className='mx-[15%] pb-[100px] w-full'>
-                <img src='/static/partnersPage/text/PartnersText.png' alt='Партнеры' className=' mt-[50px] w-[35%]'/>
+            <main className='deskWide:mx-[calc((100%-1440px)/2)] px-[15%] deskWide:px-[0px] pb-[100px] w-full max-w-[1440px]'>
+                <img src='/static/partnersPage/text/PartnersText.png' alt='Партнеры' className='mt-[50px] w-[50%]'/>
 
                 <div className='flex items-center mt-[60px] h-[60px]'>
                     <p className='text-[#ffffff] text-[2rem] font-["DaMiOne"]'>СТАНЬТЕ ЧАСТЬЮ</p>

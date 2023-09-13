@@ -17,6 +17,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
   width: 100vw;
@@ -45,5 +49,6 @@ body {
   top: -110vh;
   transition: 400ms ease;
 }
+
 
 

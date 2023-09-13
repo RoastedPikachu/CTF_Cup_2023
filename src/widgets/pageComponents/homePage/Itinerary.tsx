@@ -29,7 +29,7 @@ const Itinerary = () => {
                                 <p className='text-[2.5rem]'>28-29</p>
                             </div>
 
-                            <p className='mt-[30px] w-[100%]'>отборочный этап 24 часа <br/> с 12:00 до 12:00 <br/><br/> В 11:00 на почту, указанную при регистрации, будет отправлена ссылка</p>
+                            <p className='mt-[30px] w-[100%] deskWide:text-[1.125rem]'>отборочный этап 24 часа <br/> с 12:00 до 12:00 <br/><br/> В 11:00 на почту, указанную при регистрации, будет отправлена ссылка</p>
 
                             <p className='absolute bottom-[-15px] text-[5.5rem]'>online</p>
                         </div>
@@ -49,7 +49,7 @@ const Itinerary = () => {
                                         <p className='text-[2.5rem]'>08</p>
                                     </div>
 
-                                    <p className='mt-[30px] w-[100%]'>полуфинал <br/> с 9:00 до 19:30, <br/> «Сколково»</p>
+                                    <p className='mt-[30px] w-[100%] deskWide:text-[1.125rem]'>полуфинал <br/> с 9:00 до 19:30, <br/> «Сколково»</p>
 
                                     <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
                                 </div>
@@ -67,7 +67,7 @@ const Itinerary = () => {
                                         <p className='text-[2.5rem]'>09</p>
                                     </div>
 
-                                    <p className='mt-[30px] w-[100%]'>финал <br/> с 9:00 до 20:00, <br/> «Сколково»</p>
+                                    <p className='mt-[30px] w-[100%] deskWide:text-[1.125rem]'>финал <br/> с 9:00 до 20:00, <br/> «Сколково»</p>
 
                                     <p className='absolute bottom-[-15px] text-[4.75rem]'>offline</p>
                                 </div>
@@ -78,7 +78,7 @@ const Itinerary = () => {
                                     <img src='/static/homePage/background/BubblesBg4.png' alt='Пузырьки5' className='absolute mt-[-10px] w-full h-[calc(100%-10px)] z-[-1] scale-110'/>
 
                                     <div className='flex justify-between mt-[10px] w-full text-[#ffffff] text-[1rem] font-["Good_Timing"]'>
-                                        <span className='w-[50%]'><p>финал для школьных команд <br/> с 9:00 до 19:30, <br/> «Сколково»</p> <br/> <p className='mt-[-10px] text-[0.75rem]'>награждение состоится <br/> <strong className='text-[#bf5af2]'>9 декабря</strong>, <br/> а потом — афтепати</p></span>
+                                        <span className='w-[50%] deskWide:text-[1.125rem]'><p>финал для школьных команд <br/> с 9:00 до 19:30, <br/> «Сколково»</p> <br/> <p className='mt-[-10px] deskWide:mt-[-20px] text-[0.75rem] deskWide:text-[0.875rem]'>награждение состоится <br/> <strong className='text-[#bf5af2]'>9 декабря</strong>, <br/> а потом — афтепати</p></span>
 
                                         <div className='flex justify-end items-center h-[50px]'>
                                             <div className='pr-[2.5px] text-[1rem]'>
