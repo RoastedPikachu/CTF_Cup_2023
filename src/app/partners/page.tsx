@@ -21,7 +21,7 @@ const Page = () => {
 
                 <p className='mt-[20px] w-[40%] text-[#ffffff] text-[1rem]'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвуют свыше 300 команд студентов и молодых проффесионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
 
-                <button className='flex justify-center items-center mt-[40px] ml-[300px] w-[320px] h-[55px] border-2 border-[#bf5af2] rounded-[30px] text-[#bf5af2] text-[1rem] font-["Good_Timing"] outline-none'>Обсудить сотрудничество</button>
+                <a href='mailto:mnv@aciso.ru' className='flex justify-center items-center mt-[40px] ml-[300px] w-[320px] h-[55px] border-2 border-[#bf5af2] rounded-[30px] text-[#bf5af2] text-[1rem] font-["Good_Timing"] outline-none'>Обсудить сотрудничество</a>
             </main>
 
             <TheFooter/>

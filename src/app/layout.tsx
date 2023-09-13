@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
       <html lang="ru">
         <body className={inter.className}>
-            <Script src='@/app/metrica'/>
+            <Script src='/static/scripts/metrica.js'/>
 
             <ReduxProvider>
                 {children}
