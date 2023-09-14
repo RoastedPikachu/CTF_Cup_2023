@@ -25,7 +25,7 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/org/BarhatovDmitriyAvatar.png'}
                         personDescription={'Бархатов Дмитрий'}
                         personText={'Председатель Координационного совета, Всероссийское общественное движение наставников детей и молодежи «Наставники России»'}
-                        styles={'mt-[50px] mlarge:mt-[50px] msmall:mt-[80px] ml-[600px] deskWide:ml-[650px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[50px] mlarge:mt-[50px] msmall:mt-[80px] ml-[600px] deskWide:ml-[700px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
@@ -39,7 +39,7 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/org/BudnikovAlexandrAvatar.png'}
                         personDescription={'Будников Александр'}
                         personText={'Управляющий директор по информационной безопасности, ПАО АФК «Система»'}
-                        styles={'mt-[-20px] mlarge:mt-[50px] msmall:mt-[80px] ml-[750px] deskWide:ml-[800px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-20px] mlarge:mt-[50px] msmall:mt-[80px] ml-[750px] deskWide:ml-[850px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
@@ -53,7 +53,7 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/org/BykovRomanAvatar.png'}
                         personDescription={'Быков Роман'}
                         personText={'Директор <strong>RuCTF</strong>'}
-                        styles={'mt-[-80px] mlarge:mt-[50px] ml-[500px] deskWide:ml-[550px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-80px] mlarge:mt-[50px] ml-[500px] deskWide:ml-[600px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
@@ -67,21 +67,21 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/org/IzbaenkovArtemAvatar.png'}
                         personDescription={'Избаенков Артём'}
                         personText={'Директор по развитию направления кибербезопасности <strong>EdgeCenter</strong>'}
-                        styles={'mt-[-140px] mlarge:mt-[50px] ml-[750px] deskWide:ml-[800px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-140px] mlarge:mt-[50px] ml-[750px] deskWide:ml-[850px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/MasalovichAndreyAvatar.png'}
                         personDescription={'Масалович Андрей'}
                         personText={'Генеральный директор ООО «Лавина Пульс»'}
-                        styles={'mt-[80px] mlarge:mt-[50px] ml-[400px] mlarge:ml-[0px]'}
+                        styles={'mt-[80px] mlarge:mt-[50px] ml-[400px] deskWide:ml-[450px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/org/BirukovIgorAvatar.png'}
                         personDescription={'Бирюков Игорь'}
                         personText={'Руководитель перспективных проектов в области информационной безопасности Кластер информационных технологий | ФОНД СКОЛКОВО'}
-                        styles={'mt-[100px] mlarge:mt-[50px] ml-[600px] deskWide:ml-[650px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[100px] mlarge:mt-[50px] ml-[600px] deskWide:ml-[700px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
@@ -95,7 +95,7 @@ const Page = () => {
                         imgPath={'/static/teamPage/avatars/org/MininViktorAvatar.png'}
                         personDescription={'Минин Виктор'}
                         personText={'Председатель правления АРСИБ'}
-                        styles={'mt-[100px] mlarge:mt-[50px] msmall:mt-[80px] ml-[400px] deskWide:ml-[450px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[100px] mlarge:mt-[50px] msmall:mt-[80px] ml-[400px] deskWide:ml-[500px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
                 </section>
 
