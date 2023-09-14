@@ -55,7 +55,7 @@ const TheHeader = () => {
 
                 <CSSTransition in={isModalWindowActive} nodeRef={nodeRef} timeout={600} classNames='modalHeader' unmountOnExit>
                     <div ref={nodeRef} className='fixed ml-[calc(-5%)] py-[25px] px-[20px] w-full h-[100vh] bg-[#0d0d0d] z-30 ease-in-out'>
-                         <img src='/static/header/icon/XMarkIcon.svg' alt='Закрыть' onClick={() => setIsModalWindowActive(false)} className='absolute top-[25px] right-[20px] w-[20px] h-[17.5px]'/>
+                        <img src='/static/header/icon/XMarkIcon.svg' alt='Закрыть' onClick={() => setIsModalWindowActive(false)} className='absolute top-[25px] right-[20px] w-[20px] h-[17.5px]'/>
 
                         <nav className='flex flex-wrap mt-[50px] w-full h-[300px] text-[#ffffff] text-[1.125rem] text-right font-["Good_Timing"] font-semibold'>
                             <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'>регистрация</a>

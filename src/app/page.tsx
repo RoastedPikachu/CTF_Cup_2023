@@ -17,7 +17,7 @@ export default function Home() {
 
         <main className='relative deskWide:mx-[calc((100%-1440px)/2)] w-[100vw] max-w-[1440px] h-auto overflow-hidden'>
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
-                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='mt-[calc(50%-400px)] mlarge:mt-[calc(50%-140px)] mmedium:mt-[calc(50%-120px)] h-[450px] mlarge:h-[400px] scale-[0.8] mlarge:scale-[1.3]'/>
+                <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='mt-[calc(50%-400px)] mlarge:mt-[calc(50%-140px)] mmedium:mt-[calc(50%-120px)] h-[450px] mlarge:h-[400px] scale-[0.75] mlarge:scale-[1.3]'/>
 
                 <div className='relative mt-[100px] mlarge:mt-[20px] h-[100px]'>
                     <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='outline-none'>
@@ -28,7 +28,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='pt-[200px] px-[10%] mlarge:px-[5%] w-[100%] h-[800px] mlarge:h-[450px] msmall:h-[400px] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.89)_16.01%,#000_28.81%,#000_100%)]'>
+            <section className='pt-[200px] px-[10%] mlarge:px-[5%] w-full h-[800px] mlarge:h-[450px] msmall:h-[400px] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.89)_16.01%,#000_28.81%,#000_100%)]'>
                 <div className='relative w-full h-[500px] mlarge:h-[210px] mmedium:h-[190px] msmall:h-[160px] border-[1px] border-[#ffffff] rounded-[25px]'>
                     <p className='absolute top-[-20px] mlarge:top-[-15px] left-[30px] mlarge:left-[20px] py-[5px] px-[20px] mlarge:px-[15px] bg-[#111111] border-[1px] border-[#ffffff] rounded-[40px] text-[#ffffff] text-[1rem] mlarge:text-[0.875rem] font-["Good_Timing"] font-bold'>online</p>
 
