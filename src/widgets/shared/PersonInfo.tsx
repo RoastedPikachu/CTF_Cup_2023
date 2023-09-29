@@ -11,8 +11,8 @@ const PersonInfo: React.FC<PersonProps> = ({imgPath, personDescription, personTe
     return (
         <div className={`flex justify-between ${styles} w-[390px] mlarge:w-[290px] mmedium:w-[275px] msmall:w-[250px] h-[220px] mlarge:h-[170px] msmall:h-[160px]`}>
             <div className='relative w-[180px] mlarge:w-[140px] msmall:w-[130px] h-[220px] mlarge:h-[170px] msmall:h-[160px]'>
-                <img src={imgPath} alt={personDescription} className='absolute w-[180px] h-[220px] z-10'/>
-                <img src={imgPath} alt={personDescription} className='absolute w-[180px] h-[220px] duration-700 ease-in-out grayscale hover:opacity-0 z-20'/>
+                <img src={imgPath} alt={personDescription} className='absolute w-full h-full z-10'/>
+                <img src={imgPath} alt={personDescription} className='absolute w-full h-full duration-700 ease-in-out grayscale hover:opacity-0 z-20'/>
             </div>
 
             <span className='w-[190px] mlarge:w-[135px] mmedium:w-[120px] msmall:w-[110px]'>

@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition } from "react-transition-group";
 
 import { mobileSlice } from '@/store/storeReducers/MobileSlice';
-import { useAppDispatch, useAppSelector} from "@/store/storeHooks";
+import { useAppDispatch, useAppSelector } from "@/store/storeHooks";
 import { RootState } from "@/store";
 
 import Image from 'next/image';

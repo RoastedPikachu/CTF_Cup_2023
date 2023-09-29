@@ -14,24 +14,122 @@ const Page = () => {
         <>
             <TheHeader/>
 
-            <main className='deskWide:mx-[calc((100%-1440px)/2)] px-[10%] deskWide:px-[0px] mlarge:px-[5%] pb-[100px] w-full max-w-[1440px]'>
+            <main className='deskWide:mx-[calc((100%-1440px)/2)] px-[15%] mlarge:px-[5%] pb-[100px] w-full max-w-[1440px]'>
                 <img src='/static/partnersPage/text/PartnersText.svg' alt='Партнеры' className='mt-[50px] mlarge:mt-[20px] mmedium:mt-[15px] msmall:mt-[10px] w-[50%] mlarge:w-[65%]'/>
 
-                <div className='flex items-center mlarge:block mt-[60px] mlarge:mt-[50px] msmall:mt-[30px] h-[60px] mlarge:h-[100px]'>
-                    <p className='text-[#ffffff] text-[2rem] mlarge:text-[1.5rem] msmall:text-[1.375rem] font-["DaMiOne"]'>СТАНЬТЕ ЧАСТЬЮ</p>
+                <div className='relative mt-[80px] w-full'>
+                    <img src='/static/partnersPage/background/PartnersBgImage1.png' alt='Пузырик1' className='absolute mt-[-170px] ml-[-500px] scale-[1.25]'/>
 
-                    <img src='/static/partnersPage/text/SeventhCupText.svg' alt='VII Кубка CTF' className='mlarge:mt-[15px] ml-[50px] mlarge:ml-[0px] w-[500px] h-[40px] mlarge:h-[35px] msmall:h-[30px] scale-[1.1] mlarge:scale-[1]'/>
+                    <img src='/static/partnersPage/background/PartnersBgImage2.png' alt='Пузырик2' className='absolute mt-[60px] ml-[400px] scale-[1.25]'/>
+
+                    <img src='/static/partnersPage/background/PartnersBgImage3.png' alt='Пузырик3' className='absolute mt-[650px] ml-[-500px] scale-[1.15]'/>
+
+                    <div className='flex justify-between w-full h-[300px]'>
+                        <div className='p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Стань частью VII Кубка CTF</h3>
+
+                            <p className='mt-[10px] text-[rgba(255,255,255,0.78)] text-[0.875rem] font-["Good_Timing"]'>Приглашаем к сотрудничеству ИТ и ИБ компании. Напишите нам, если хотите поддержать развитие сообщества информационной безопасности в России.</p>
+
+                            <a href='mailto:mnv@aciso.ru' className='flex justify-center items-center mt-[30px] w-full h-[40px] bg-[rgba(217,217,217,0.03)] rounded-[30px] backdrop-blur-sm text-[#bf5af2] text-[0.875rem] font-["Good_Timing"] outline-none'>Обсудить сотрудничество</a>
+                        </div>
+
+                        <div className='relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Партнеры</h3>
+
+                            <div className='flex justify-between items-center mt-[100px] ml-[20px] w-[85%]'>
+                                <img src='/static/partnersPage/logo/CoordinationalCenterRuLogo.png' alt='Координационный центр доменов .ru/.рф'/>
+
+                                <img src='/static/partnersPage/logo/ArmadaMediaGroupLogo.png' alt='Армада Медиа груп'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='relative flex justify-between mt-[20px] w-full h-[300px]'>
+                        <div className='p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Партнер призового фонда</h3>
+
+                            <img src='/static/partnersPage/logo/NTCVulkanLogo.png' alt='НТЦ Вулкан' className='absolute bottom-[30px] right-[30px]'/>
+                        </div>
+
+                        <div className='p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px]'>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Технологические партнеры</h3>
+
+                            <img src='/static/partnersPage/logo/EdgeCenterLogo.png' alt='Edge центр' className='mt-[80px] ml-[50px]'/>
+                        </div>
+
+                        <div className='p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Генеральный информационный партнер</h3>
+
+                            <img src='/static/partnersPage/logo/HackerNewsLogo.png' alt='Hacker news' className='absolute bottom-[30px] right-[20px]'/>
+                        </div>
+                    </div>
+
+                    <div className='relative flex justify-between w-full h-[300px]'>
+                        <div className='mt-[20px] p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px]'>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Информационные партнеры</h3>
+
+                            <img src='/static/partnersPage/logo/CTFNewsLogo.png' alt='CTF News' className='mt-[60px] ml-[20px]'/>
+                        </div>
+
+                        <div className='p-[20px] w-[32%] h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px]'>
+                            <img src='/static/partnersPage/logo/UserGateLogo.png' alt='User Gate' className='mt-[-30px]'/>
+
+                            <img src='/static/partnersPage/logo/CBSLogo.png' alt='CBS' className='absolute bottom-[50px] right-[40px]'/>
+                        </div>
+
+                        <div className='mt-[20px] p-[20px] w-[32%] h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px]'>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>При поддержке</h3>
+
+                            <div className='flex justify-between items-center mt-[30px] w-[90%]'>
+                                <img src='/static/partnersPage/logo/GerbLogo1.png' alt='Герб1'/>
+
+                                <img src='/static/partnersPage/logo/GerbLogo2.png' alt='Герб2'/>
+                            </div>
+
+                            <img src='/static/partnersPage/logo/GerbLogo3.png' alt='Герб3' className='ml-[40px]'/>
+                        </div>
+                    </div>
+
+                    <div className='relative flex justify-between mt-[20px] w-full h-[300px]'>
+                        <div className='p-[20px] w-[32%] h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px]'>
+                            <img src='/static/partnersPage/logo/VkontakteLogo.png' alt='Вконтакте' className='mt-[10px] ml-[20px]'/>
+
+                            <img src='/static/partnersPage/logo/CodebyLogo.png' alt='Codeby.net' className='absolute bottom-[90px] right-[30px]'/>
+                        </div>
+
+                        <div className='relative mt-[20px] p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-tl-[20px]'>
+                            <div className='flex justify-between items-center mt-[20px] mx-[2.5%] w-[95%]'>
+                                <img src='/static/partnersPage/logo/BankOfRussiaLogo.png' alt='Банк России'/>
+
+                                <img src='/static/partnersPage/logo/MinistryOfScienceAndHighEducationLogo.png' alt='Министерство науки и высшего образования РФ'/>
+                            </div>
+
+                            <div className='flex justify-between items-center mt-[50px] ml-[-5px] w-[95%]'>
+                                <img src='/static/partnersPage/logo/MinCifriRossiiLogo.png' alt='Минцифры России'/>
+
+                                <img src='/static/partnersPage/logo/ITDepartmentOfMoscowLogo.png' alt='Департамент информационных технологий города Москвы'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='relative flex justify-between mt-[20px] w-full h-[150px]'>
+                        <div className='relative mt-[20px] p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px] z-[10]'>
+                            <img src='/static/partnersPage/logo/CTFCupVIILogo.png' alt='VII Кубок CTF 2023' className='mt-[20px] ml-[10px]'/>
+                        </div>
+
+                        <div className='relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px]'>
+                            <div className='flex justify-between items-center mx-[2.5%] w-[95%]'>
+                                <img src='/static/partnersPage/logo/SystemLogo.png' alt='Система - акционерная финансовая корпорация' className='ml-[10px]'/>
+
+                                <img src='/static/partnersPage/logo/GoznakLogo.png' alt='Гознак' className='mr-[100px]'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='relative flex justify-center items-center mt-[20px] p-[20px] w-full h-[150px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] rounded-tr-[20px] z-[5]'>
+                        <p className='text-[#4f4f4f] text-[1rem] font-["Good_Timing"]'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвует свыше 300 команд студентов и молодых профессионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
+                    </div>
                 </div>
-
-                {!isMobile ?
-                    <h3 className='mt-[40px] w-[55%] text-[#ffffff] text-[1.125rem] font-["Good_Timing"] leading-[1.75]'>Приглашаем к сотрудничеству ИТ и ИБ-компании. <br/> Напишите нам, если хотите поддержать развитие <br/> сообщества информационной безопасности России.</h3>
-                :
-                    <h3 className='mt-[40px] msmall:mt-[20px] w-[40%] mlarge:w-full text-[#ffffff] text-[1.125rem] msmall:text-[1rem] font-["Good_Timing"] leading-[1.75]'>Приглашаем к сотрудничеству <br/> ИТ и ИБ-компании. Напишите нам, если хотите поддержать развитие <br/> сообщества информационной безопасности России.</h3>
-                }
-
-                <p className='mt-[20px] w-[50%] mlarge:w-full text-[#ffffff] text-[1rem] msmall:text-[0.875rem] mlarge:leading-[1.75rem]'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвуют свыше 300 команд студентов и молодых проффесионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
-
-                <a href='mailto:mnv@aciso.ru' className='flex justify-center items-center mt-[40px] ml-[220px] mlarge:ml-[0px] w-[320px] mmedium:w-[300px] msmall:w-[280px] h-[55px] mmedium:h-[50px] msmall:h-[45px] border-2 border-[#bf5af2] rounded-[30px] text-[#bf5af2] text-[1rem] font-["Good_Timing"] outline-none'>Обсудить сотрудничество</a>
             </main>
 
             <TheFooter/>
