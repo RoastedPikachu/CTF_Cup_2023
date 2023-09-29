@@ -166,80 +166,87 @@ const Page = () => {
                     />
 
                     <PersonInfo
+                        imgPath={'/static/teamPage/avatars/project/NovikovIvanAvatar.png'}
+                        personDescription={'Новиков Иван'}
+                        personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
+                        styles={'mt-[100px] mlarge:mt-[50px] ml-[0px] deskWide:ml-[0px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                    />
+
+                    <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/MicheevArtemAvatar.png'}
                         personDescription={'Михеев Артем'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
-                        styles={'mt-[-10px] mlarge:mt-[50px] ml-[750px] deskWide:ml-[800px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-160px] mlarge:mt-[50px] ml-[750px] deskWide:ml-[800px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/AvdeevaElizavetaAvatar.png'}
                         personDescription={'Авдеева Елизавета'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong'}
-                        styles={'mt-[-10px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[0px]'}
+                        styles={'mt-[20px] mlarge:mt-[50px] ml-[350px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/FedotovIvanAvatar.png'}
                         personDescription={'Федотов Иван'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong'}
-                        styles={'mt-[-60px] mlarge:mt-[50px] ml-[600px] deskWide:ml-[650px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[100px] mlarge:mt-[50px] ml-[550px] deskWide:ml-[600px] mlarge:ml-[0%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/PokrovskiyNikitaAvatar.png'}
                         personDescription={'Покровский Никита'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
-                        styles={'mt-[-10px] mlarge:mt-[50px]'}
+                        styles={'mt-[-60px] mlarge:mt-[50px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/NikitinRomanAvatar.png'}
                         personDescription={'Никитин Роман'}
                         personText={'DevOps, <strong>C4T BuT S4D</strong>'}
-                        styles={'mt-[-10px] mlarge:mt-[50px] ml-[400px] deskWide:ml-[450px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-10px] mlarge:mt-[50px] ml-[400px] deskWide:ml-[450px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/KhakimovLevAvatar.png'}
                         personDescription={'Хакимов Лев'}
                         personText={'Технический специалист'}
-                        styles={'mt-[-10px] mlarge:mt-[50px] ml-[750px] deskWide:ml-[800px] mlarge:ml-[0px]'}
+                        styles={'mt-[-10px] mlarge:mt-[50px] ml-[750px] deskWide:ml-[800px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/ZeunovAntonAvatar.png'}
                         personDescription={'Зеунов Антон'}
                         personText={'Разработчик'}
-                        styles={'mt-[-60px] mlarge:mt-[50px] ml-[0px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-60px] mlarge:mt-[50px] ml-[0px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/KarabutBorisAvatar.png'}
                         personDescription={'Карабут Борис'}
                         personText={'Frontend-разработчик'}
-                        styles={'mt-[-60px] mlarge:mt-[50px] ml-[400px] deskWide:ml-[450px] mlarge:ml-[0px]'}
+                        styles={'mt-[-60px] mlarge:mt-[50px] ml-[400px] deskWide:ml-[450px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/GrekovIlyaAvatar.png'}
                         personDescription={'Греков Илья'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong>'}
-                        styles={'mt-[150px] mlarge:mt-[50px] ml-[600px] deskWide:ml-[650px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[150px] mlarge:mt-[50px] ml-[600px] deskWide:ml-[650px] mlarge:ml-[0px]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/KokorinVsevolodAvatar.png'}
                         personDescription={'Кокорин Всеволод'}
                         personText={'Разработчик, <strong>C4T BuT S4D</strong'}
-                        styles={'mt-[60px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[0px]'}
+                        styles={'mt-[60px] mlarge:mt-[50px] ml-[150px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
                     />
 
                     <PersonInfo
                         imgPath={'/static/teamPage/avatars/project/ShpilevRomanAvatar.png'}
                         personDescription={'Шпилев Роман'}
                         personText={'3D художник'}
-                        styles={'mt-[-20px] mlarge:mt-[50px] ml-[600px] deskWide:ml-[650px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]'}
+                        styles={'mt-[-20px] mlarge:mt-[50px] ml-[600px] deskWide:ml-[650px] mlarge:ml-[0px]'}
                     />
                 </section>
             </main>
