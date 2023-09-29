@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: 'Good Timing Regular';
+  src: url('./fonts/Good_Timing_Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'DaMiOne';
   src: url('./fonts/DaMiOne.ttf') format('truetype');
 }

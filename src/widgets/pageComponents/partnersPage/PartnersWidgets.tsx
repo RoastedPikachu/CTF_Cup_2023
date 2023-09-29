@@ -21,9 +21,9 @@ const PartnersWidgets = () => {
                         <div className='p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                             <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Стань частью VII Кубка CTF</h3>
 
-                            <p className='mt-[10px] text-[rgba(255,255,255,0.78)] text-[0.875rem] font-["Good_Timing"]'>Приглашаем к сотрудничеству ИТ и ИБ компании. Напишите нам, если хотите поддержать развитие сообщества информационной безопасности в России.</p>
+                            <p className='mt-[10px] text-[rgba(255,255,255,0.78)] text-[0.875rem] font-["Good_Timing_Regular"] font-regular'>Приглашаем к сотрудничеству ИТ и ИБ компании. Напишите нам, если хотите поддержать развитие сообщества информационной безопасности в России.</p>
 
-                            <a href='mailto:mnv@aciso.ru' className='flex justify-center items-center mt-[30px] w-full h-[40px] bg-[rgba(217,217,217,0.03)] rounded-[30px] backdrop-blur-sm text-[#bf5af2] text-[0.875rem] font-["Good_Timing"] outline-none'>Обсудить сотрудничество</a>
+                            <a href='mailto:mnv@aciso.ru' className='flex justify-center items-center mt-[30px] w-full h-[40px] bg-[rgba(217,217,217,0.03)] rounded-[30px] backdrop-blur-sm text-[#bf5af2] text-[1rem] font-["Good_Timing"] outline-none'>Обсудить сотрудничество</a>
                         </div>
 
                         <div className='relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
@@ -132,7 +132,7 @@ const PartnersWidgets = () => {
                     </div>
 
                     <div className='relative flex justify-center items-center mt-[20px] p-[20px] pt-[40px] w-full h-[150px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] rounded-tr-[20px] z-[5]'>
-                        <p className='text-[#4f4f4f] text-[1rem] font-["Good_Timing"]'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвует свыше 300 команд студентов и молодых профессионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
+                        <p className='text-[#4f4f4f] text-[1rem] font-["Good_Timing_Regular"] font-regular'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвует свыше 300 команд студентов и молодых профессионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
                     </div>
                 </div>
             :

@@ -23,7 +23,7 @@ export default function Home() {
                     <p className='text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
 
                     <div className='flex justify-center mt-[5px]'>
-                        <p className='w-[340px] mlarge:w-[200px] text-[#ffffff] text-[1.125rem] mlarge:text-[0.875rem] text-center font-["Good_Timing"]'>для <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='text-[#bf5af2] outline-none'>российских/</a><a href='https://forms.yandex.ru/u/650b4305c769f152a366a2d9/' className='text-[#6bf29a] outline-none'>иностранных команд</a></p>
+                        <p className='w-[340px] mlarge:w-[200px] text-[#ffffff] text-[1.125rem] mlarge:text-[0.875rem] text-center font-["Good_Timing_Regular"] font-regular'>для <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='text-[#bf5af2] outline-none'>российских/</a><a href='https://forms.yandex.ru/u/650b4305c769f152a366a2d9/' className='text-[#6bf29a] outline-none'>иностранных</a> команд</p>
                     </div>
 
                     <img src='/static/homePage/icon/ArrowsDownIcon.svg' className='ml-[calc(50%-20px)] mlarge:ml-[calc(50%-12.5px)] pt-[10px] w-[40px] mlarge:w-[25px] h-[40px] mlarge:h-[25px] cursor-pointer'/>
