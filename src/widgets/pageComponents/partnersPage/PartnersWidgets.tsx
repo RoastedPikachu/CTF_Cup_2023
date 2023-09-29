@@ -136,22 +136,22 @@ const PartnersWidgets = () => {
                     </div>
                 </div>
             :
-                <div className='relative mt-[40px] w-[90%]'>
+                <div className='relative mt-[40px] w-[90%] msmall:w-full'>
                     <img src='/static/partnersPage/background/PartnersBgImage1.png' alt='Пузырик1' className='absolute mt-[20px] ml-[-150px] scale-[2.25]'/>
 
                     <img src='/static/partnersPage/background/PartnersBgImage2.png' alt='Пузырик2' className='absolute mt-[450px] ml-[30px] scale-[2.5]'/>
 
                     <img src='/static/partnersPage/background/PartnersBgImage3.png' alt='Пузырик3' className='absolute mt-[1050px] ml-[-150px] scale-[2.25]'/>
 
-                    <div className='p-[30px] w-full h-[320px] mmedium:h-[340px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='p-[30px] msmall:p-[20px] w-full h-[320px] mmedium:h-[340px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Стань частью VII Кубка CTF</h3>
 
-                        <p className='mt-[10px] text-[rgba(255,255,255,0.78)] text-[0.875rem] font-["Good_Timing"]'>Приглашаем к сотрудничеству ИТ и ИБ компании. Напишите нам, если хотите поддержать развитие сообщества информационной безопасности в России.</p>
+                        <p className='mt-[10px] text-[rgba(255,255,255,0.78)] text-[0.875rem] font-["Good_Timing_Regular"] font-regular'>Приглашаем к сотрудничеству ИТ и ИБ компании. Напишите нам, если хотите поддержать развитие сообщества информационной безопасности в России.</p>
 
                         <a href='mailto:mnv@aciso.ru' className='flex justify-center items-center mt-[40px] w-full h-[40px] bg-[rgba(217,217,217,0.03)] rounded-[30px] backdrop-blur-sm text-[#bf5af2] text-[0.875rem] font-["Good_Timing"] outline-none'>Обсудить сотрудничество</a>
                     </div>
 
-                    <div className='relative mt-[20px] p-[30px] w-full h-[380px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[380px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Партнеры</h3>
 
                         <div className='relative mt-[40px] ml-[20px] w-full h-[280px]'>
@@ -161,13 +161,13 @@ const PartnersWidgets = () => {
                         </div>
                     </div>
 
-                    <div className='relative mt-[20px] p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='relative mt-[20px] p-[20px] msmall:p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Партнер призового фонда</h3>
 
                         <img src='/static/partnersPage/logo/NTCVulkanLogo.png' alt='НТЦ Вулкан' className='absolute bottom-[30px] right-[30px]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] w-full h-[650px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[650px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Технологические партнеры</h3>
 
                         <img src='/static/partnersPage/logo/EdgeCenterLogo.png' alt='Edge центр' className='mt-[80px] ml-[50px] mmedium:ml-[30px]'/>
@@ -177,13 +177,13 @@ const PartnersWidgets = () => {
                         <img src='/static/partnersPage/logo/CBSLogo.png' alt='CBS' className='absolute bottom-[50px] right-[40px]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Генеральный информационный партнер</h3>
 
                         <img src='/static/partnersPage/logo/HackerNewsLogo.png' alt='Hacker news' className='absolute bottom-[30px] right-[20px]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] w-full h-[650px] mmedium:h-[630px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[650px] mmedium:h-[630px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Информационные партнеры</h3>
 
                         <img src='/static/partnersPage/logo/CTFNewsLogo.png' alt='CTF News' className='mt-[60px] ml-[10px] mmedium:ml-[0px] scale-[1.15] mmedium:scale-[1.05]'/>
@@ -193,7 +193,7 @@ const PartnersWidgets = () => {
                         <img src='/static/partnersPage/logo/CodebyLogo.png' alt='Codeby.net' className='absolute bottom-[90px] right-[50px] mmedium:right-[30px] scale-[1.15] mmedium:scale-[1.05]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] w-full h-[1100px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[1100px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>При поддержке</h3>
 
                         <div className='flex justify-between items-center mt-[30px] w-full'>
@@ -217,10 +217,10 @@ const PartnersWidgets = () => {
                         <img src='/static/partnersPage/logo/GoznakLogo.png' alt='Гознак' className='mt-[50px] ml-[calc(50%-36px)]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] w-full h-[640px] mmedium:h-[580px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[640px] mmedium:h-[580px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <img src='/static/partnersPage/logo/CTFCupVIILogo.png' alt='VII Кубок CTF 2023' className='mt-[20px] ml-[10px] mmedium:ml-[0px] scale-[1.1] mmedium:scale-[1]'/>
 
-                        <p className='mt-[40px] text-[#4f4f4f] text-[1rem] mmedium:text-[0.875rem] font-["Good_Timing"] leading-[1.65]'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвует свыше 300 команд студентов и молодых профессионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
+                        <p className='mt-[40px] text-[#4f4f4f] text-[1rem] mmedium:text-[0.875rem] font-["Good_Timing_Regular"] font-regular leading-[1.65]'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвует свыше 300 команд студентов и молодых профессионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
                     </div>
                 </div>
             }
