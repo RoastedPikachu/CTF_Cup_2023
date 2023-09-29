@@ -19,12 +19,14 @@ export default function Home() {
             <section className='relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]'>
                 <img src='/static/homePage/text/KubokCTFText.svg' alt='Кубок CTF 2023' className='mt-[calc(50%-400px)] mlarge:mt-[calc(50%-140px)] mmedium:mt-[calc(50%-120px)] h-[450px] mlarge:h-[400px] scale-[0.75] mlarge:scale-[1.3]'/>
 
-                <div className='relative mt-[100px] mlarge:mt-[20px] h-[100px]'>
-                    <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='outline-none'>
-                        <p className='text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
+                <div className='relative mt-[100px] mlarge:mt-[-20px] h-[100px]'>
+                    <p className='text-[#ffffff] text-[2.25rem] mlarge:text-[1.25rem] font-["DaMiOne"] text-center'>Регистрация</p>
 
-                        <img src='/static/homePage/icon/ArrowsDownIcon.svg' className='ml-[calc(50%-20px)] mlarge:ml-[calc(50%-12.5px)] pt-[5px] w-[40px] mlarge:w-[25px] h-[40px] mlarge:h-[25px] cursor-pointer'/>
-                    </a>
+                    <div className='flex justify-center mt-[5px]'>
+                        <p className='w-[340px] mlarge:w-[200px] text-[#ffffff] text-[1.125rem] mlarge:text-[0.875rem] text-center font-["Good_Timing"]'>для <a href='https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/' className='text-[#bf5af2] outline-none'>российских/</a><a href='https://forms.yandex.ru/u/650b4305c769f152a366a2d9/' className='text-[#6bf29a] outline-none'>иностранных команд</a></p>
+                    </div>
+
+                    <img src='/static/homePage/icon/ArrowsDownIcon.svg' className='ml-[calc(50%-20px)] mlarge:ml-[calc(50%-12.5px)] pt-[10px] w-[40px] mlarge:w-[25px] h-[40px] mlarge:h-[25px] cursor-pointer'/>
                 </div>
             </section>
 
