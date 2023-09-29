@@ -14,10 +14,10 @@ const Page = () => {
         <>
             <TheHeader/>
 
-            <main className='deskWide:mx-[calc((100%-1440px)/2)] px-[15%] mlarge:px-[5%] pb-[100px] w-full max-w-[1440px]'>
+            <main className='deskWide:mx-[calc((100%-1440px)/2)] px-[10%] mlarge:px-[5%] pb-[100px] w-full max-w-[1440px]'>
                 <img src='/static/partnersPage/text/PartnersText.svg' alt='Партнеры' className='mt-[50px] mlarge:mt-[20px] mmedium:mt-[15px] msmall:mt-[10px] w-[50%] mlarge:w-[65%]'/>
 
-                <div className='relative mt-[80px] w-full'>
+                <div className='relative mt-[80px] w-[90%]'>
                     <img src='/static/partnersPage/background/PartnersBgImage1.png' alt='Пузырик1' className='absolute mt-[-170px] ml-[-500px] scale-[1.25]'/>
 
                     <img src='/static/partnersPage/background/PartnersBgImage2.png' alt='Пузырик2' className='absolute mt-[60px] ml-[400px] scale-[1.25]'/>
@@ -39,7 +39,7 @@ const Page = () => {
                             <div className='flex justify-between items-center mt-[100px] ml-[20px] w-[85%]'>
                                 <img src='/static/partnersPage/logo/CoordinationalCenterRuLogo.png' alt='Координационный центр доменов .ru/.рф'/>
 
-                                <img src='/static/partnersPage/logo/ArmadaMediaGroupLogo.png' alt='Армада Медиа груп'/>
+                                <img src='/static/partnersPage/logo/ArmadaMediaGroupLogo.png' alt='Армада Медиа груп' className='scale-[1.1]'/>
                             </div>
                         </div>
                     </div>
@@ -77,16 +77,22 @@ const Page = () => {
                             <img src='/static/partnersPage/logo/CBSLogo.png' alt='CBS' className='absolute bottom-[50px] right-[40px]'/>
                         </div>
 
+                        {/*Нижние 2 div-а необходимы для создания скоса*/}
+
+                        <div className='absolute mt-[332.5px] ml-[67.2%] w-[7.5px] h-[7.5px] bg-[rgba(255,255,255,0.04)] z-[15]'></div>
+
+                        <div className='absolute mt-[330px] ml-[67%] w-[10px] h-[10px] bg-[#0d0d0d] rounded-br-[20px] z-[15]'></div>
+
                         <div className='mt-[20px] p-[20px] w-[32%] h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px]'>
                             <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>При поддержке</h3>
 
-                            <div className='flex justify-between items-center mt-[30px] w-[90%]'>
+                            <div className='flex justify-between items-center mt-[30px] w-[95%]'>
                                 <img src='/static/partnersPage/logo/GerbLogo1.png' alt='Герб1'/>
 
                                 <img src='/static/partnersPage/logo/GerbLogo2.png' alt='Герб2'/>
                             </div>
 
-                            <img src='/static/partnersPage/logo/GerbLogo3.png' alt='Герб3' className='ml-[40px]'/>
+                            <img src='/static/partnersPage/logo/GerbLogo3.png' alt='Герб3' className='ml-[50px]'/>
                         </div>
                     </div>
 
@@ -117,7 +123,13 @@ const Page = () => {
                             <img src='/static/partnersPage/logo/CTFCupVIILogo.png' alt='VII Кубок CTF 2023' className='mt-[20px] ml-[10px]'/>
                         </div>
 
-                        <div className='relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px]'>
+                        {/*Нижние 2 div-а необходимы для создания скоса*/}
+
+                        <div className='absolute mt-[162.5px] ml-[32%] w-[7.5px] h-[7.5px] bg-[rgba(255,255,255,0.04)] z-[15]'></div>
+
+                        <div className='absolute mt-[160px] ml-[32%] w-[10px] h-[10px] bg-[#0d0d0d] rounded-bl-[20px] z-[15]'></div>
+
+                        <div className='relative p-[20px] w-[66%] h-[150px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] z-[20]'>
                             <div className='flex justify-between items-center mx-[2.5%] w-[95%]'>
                                 <img src='/static/partnersPage/logo/SystemLogo.png' alt='Система - акционерная финансовая корпорация' className='ml-[10px]'/>
 
@@ -126,7 +138,7 @@ const Page = () => {
                         </div>
                     </div>
 
-                    <div className='relative flex justify-center items-center mt-[20px] p-[20px] w-full h-[150px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] rounded-tr-[20px] z-[5]'>
+                    <div className='relative flex justify-center items-center mt-[20px] p-[20px] pt-[40px] w-full h-[150px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] rounded-tr-[20px] z-[5]'>
                         <p className='text-[#4f4f4f] text-[1rem] font-["Good_Timing"]'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвует свыше 300 команд студентов и молодых профессионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
                     </div>
                 </div>
