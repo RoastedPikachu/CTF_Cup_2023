@@ -217,10 +217,10 @@ const PartnersWidgets = () => {
                         <img src='/static/partnersPage/logo/GoznakLogo.png' alt='Гознак' className='mt-[50px] ml-[calc(50%-36px)]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[640px] mmedium:h-[580px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-auto bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <img src='/static/partnersPage/logo/CTFCupVIILogo.png' alt='VII Кубок CTF 2023' className='mt-[20px] ml-[10px] mmedium:ml-[0px] scale-[1.1] mmedium:scale-[1]'/>
 
-                        <p className='mt-[40px] text-[#4f4f4f] text-[1rem] mmedium:text-[0.875rem] font-["Good_Timing_Regular"] font-regular leading-[1.65]'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвует свыше 300 команд студентов и молодых профессионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
+                        <p className='mt-[40px] mmedium:mt-[30px] text-[#4f4f4f] text-[1rem] mmedium:text-[0.875rem] font-["Good_Timing_Regular"] font-regular leading-[1.65]'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвует свыше 300 команд студентов и молодых профессионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
                     </div>
                 </div>
             }

@@ -24,7 +24,7 @@ const TheFooter = () => {
             <div className='mlarge:mt-[50px] text-[#ffffff] text-[1rem] deskWide:text-[1.125rem] font-["Good_Timing"] font-bold'>
                 <h3 className='text-[1.125rem] deskWide:text-[1.25rem] font-["DaMiOne"]'>/Контакты</h3>
 
-                <p className='mt-[10px]'><strong className='text-[#bf5af2]'>tg:</strong> @deviantwish, @AlisaSoboleva</p>
+                <p className='mt-[10px]'><strong className='text-[#bf5af2]'>tg:</strong> <a href='https://t.me/@deviantwish' className='outline-none'>@deviantwish</a>, <a href='https://t.me/AlisaSoboleva' className='outline-nore'>@AlisaSoboleva</a></p>
 
                 <p className='mt-[10px]'><strong className='text-[#b3b1ff]'>phone:</strong> +7(495)640-53-30</p>
 
