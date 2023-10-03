@@ -10,7 +10,7 @@ const PartnersWidgets = () => {
     return (
         <>
             {!isMobile ?
-                <div className='relative mt-[80px] w-[90%]'>
+                <div className='relative mt-[80px] w-[90%] deskWide:w-full'>
                     <img src='/static/partnersPage/background/PartnersBgImage1.png' alt='Пузырик1' className='absolute mt-[-170px] ml-[-500px] scale-[1.25]'/>
 
                     <img src='/static/partnersPage/background/PartnersBgImage2.png' alt='Пузырик2' className='absolute mt-[60px] ml-[400px] scale-[1.25]'/>
@@ -27,6 +27,18 @@ const PartnersWidgets = () => {
                         </div>
 
                         <div className='relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Организаторы</h3>
+
+                            <div className='flex justify-between items-center mt-[50px] ml-[120px] w-[70%]'>
+                                <img src='/static/partnersPage/logo/CoachesOfRussiaLogo.png' alt='Наставники России'/>
+
+                                <img src='/static/partnersPage/logo/ArsibLogo.png' alt='Арсиб' className='scale-[1.1]'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='flex justify-between mt-[20px] w-full h-[300px]'>
+                        <div className='relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                             <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Партнеры</h3>
 
                             <div className='flex justify-between items-center mt-[100px] ml-[20px] w-[85%]'>
@@ -34,6 +46,12 @@ const PartnersWidgets = () => {
 
                                 <img src='/static/partnersPage/logo/ArmadaMediaGroupLogo.png' alt='Армада Медиа груп' className='scale-[1.1]'/>
                             </div>
+                        </div>
+
+                        <div className='relative p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Специальный партнёр</h3>
+
+                            <img src='/static/partnersPage/logo/PositiveTechnologiesLogo.png' alt='Positive Technologies' className='absolute bottom-[40px] right-[40px] scale-[1.1]'/>
                         </div>
                     </div>
 
@@ -126,12 +144,14 @@ const PartnersWidgets = () => {
                             <div className='flex justify-between items-center mx-[2.5%] w-[95%]'>
                                 <img src='/static/partnersPage/logo/SystemLogo.png' alt='Система - акционерная финансовая корпорация' className='ml-[10px]'/>
 
-                                <img src='/static/partnersPage/logo/GoznakLogo.png' alt='Гознак' className='mr-[100px]'/>
+                                <img src='/static/partnersPage/logo/FSPLogo.png' alt='ФСП' />
+
+                                <img src='/static/partnersPage/logo/GoznakLogo.png' alt='Гознак' className='mr-[50px]'/>
                             </div>
                         </div>
                     </div>
 
-                    <div className='relative flex justify-center items-center mt-[20px] p-[20px] pt-[40px] w-full h-[150px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] rounded-tr-[20px] z-[5]'>
+                    <div className='relative flex justify-center items-center mt-[20px] p-[20px] pt-[40px] w-full h-[160px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] rounded-tr-[20px] z-[5]'>
                         <p className='text-[#4f4f4f] text-[1rem] font-["Good_Timing_Regular"] font-regular'>Кубок CTF ежегодно собирает несколько тысяч молодых айти-специалистов: в отборочном туре участвует свыше 300 команд студентов и молодых профессионалов, а финал помогает выявить самых талантливых участников. Поддержка такого мероприятия помогает с развитием HR-бренда, повышает узнаваемость компании и закрывает маркетинговые потребности организаций любого масштаба.</p>
                     </div>
                 </div>
@@ -167,7 +187,7 @@ const PartnersWidgets = () => {
                         <img src='/static/partnersPage/logo/NTCVulkanLogo.png' alt='НТЦ Вулкан' className='absolute bottom-[30px] right-[30px]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[650px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[650px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Технологические партнеры</h3>
 
                         <img src='/static/partnersPage/logo/EdgeCenterLogo.png' alt='Edge центр' className='mt-[80px] ml-[50px] mmedium:ml-[30px]'/>
@@ -177,13 +197,13 @@ const PartnersWidgets = () => {
                         <img src='/static/partnersPage/logo/CBSLogo.png' alt='CBS' className='absolute bottom-[50px] right-[40px]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Генеральный информационный партнер</h3>
 
                         <img src='/static/partnersPage/logo/HackerNewsLogo.png' alt='Hacker news' className='absolute bottom-[30px] right-[20px]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[650px] mmedium:h-[630px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[650px] mmedium:h-[630px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Информационные партнеры</h3>
 
                         <img src='/static/partnersPage/logo/CTFNewsLogo.png' alt='CTF News' className='mt-[60px] ml-[10px] mmedium:ml-[0px] scale-[1.15] mmedium:scale-[1.05]'/>
