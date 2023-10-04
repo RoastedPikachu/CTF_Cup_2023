@@ -171,7 +171,7 @@ const PartnersWidgets = () => {
                         <a href='mailto:mnv@aciso.ru' className='flex justify-center items-center mt-[40px] w-full h-[40px] bg-[rgba(217,217,217,0.03)] rounded-[30px] backdrop-blur-sm text-[#bf5af2] text-[0.875rem] font-["Good_Timing"] outline-none'>Обсудить сотрудничество</a>
                     </div>
 
-                    <div className='relative p-[30px] w-full h-[400px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='relative mt-[20px] p-[30px] w-full h-[400px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Организаторы</h3>
 
                         <img src='/static/partnersPage/logo/CoachesOfRussiaLogo.png' alt='Наставники России' className='mt-[10px] ml-[10px] scale-[0.8] mmedium:scale-[0.75]'/>
@@ -189,7 +189,7 @@ const PartnersWidgets = () => {
                         </div>
                     </div>
 
-                    <div className='relative p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='relative mt-[20px] p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Специальный партнёр</h3>
 
                         <img src='/static/partnersPage/logo/PositiveTechnologiesLogo.png' alt='Positive Technologies' className='absolute bottom-[40px] right-[40px] msmall:right-[30px] scale-[1.1] msmall:scale-[1]'/>
