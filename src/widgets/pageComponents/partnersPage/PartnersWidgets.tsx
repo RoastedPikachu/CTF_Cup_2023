@@ -144,7 +144,7 @@ const PartnersWidgets = () => {
                             <div className='flex justify-between items-center mx-[2.5%] w-[95%]'>
                                 <img src='/static/partnersPage/logo/SystemLogo.png' alt='Система - акционерная финансовая корпорация' className='ml-[10px]'/>
 
-                                <img src='/static/partnersPage/logo/FSPLogo.png' alt='ФСП' />
+                                <img src='/static/partnersPage/logo/FSPLogo.png' alt='ФСП'/>
 
                                 <img src='/static/partnersPage/logo/GoznakLogo.png' alt='Гознак' className='mr-[50px]'/>
                             </div>
@@ -171,6 +171,14 @@ const PartnersWidgets = () => {
                         <a href='mailto:mnv@aciso.ru' className='flex justify-center items-center mt-[40px] w-full h-[40px] bg-[rgba(217,217,217,0.03)] rounded-[30px] backdrop-blur-sm text-[#bf5af2] text-[0.875rem] font-["Good_Timing"] outline-none'>Обсудить сотрудничество</a>
                     </div>
 
+                    <div className='relative p-[30px] w-full h-[400px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                        <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Организаторы</h3>
+
+                        <img src='/static/partnersPage/logo/CoachesOfRussiaLogo.png' alt='Наставники России' className='mt-[10px] ml-[10px] scale-[0.8] mmedium:scale-[0.75]'/>
+
+                        <img src='/static/partnersPage/logo/ArsibLogo.png' alt='Арсиб' className='absolute right-[20px] mmedium:right-[10px] msmall:right-[0px] scale-[0.8] mmedium:scale-[0.75]'/>
+                    </div>
+
                     <div className='relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[380px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Партнеры</h3>
 
@@ -179,6 +187,12 @@ const PartnersWidgets = () => {
 
                             <img src='/static/partnersPage/logo/ArmadaMediaGroupLogo.png' alt='Армада Медиа груп' className='absolute bottom-[30px] right-[30px] scale-[1.1]'/>
                         </div>
+                    </div>
+
+                    <div className='relative p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                        <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Специальный партнёр</h3>
+
+                        <img src='/static/partnersPage/logo/PositiveTechnologiesLogo.png' alt='Positive Technologies' className='absolute bottom-[40px] right-[40px] msmall:right-[30px] scale-[1.1] msmall:scale-[1]'/>
                     </div>
 
                     <div className='relative mt-[20px] p-[20px] msmall:p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
@@ -213,7 +227,7 @@ const PartnersWidgets = () => {
                         <img src='/static/partnersPage/logo/CodebyLogo.png' alt='Codeby.net' className='absolute bottom-[90px] right-[50px] mmedium:right-[30px] scale-[1.15] mmedium:scale-[1.05]'/>
                     </div>
 
-                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[1100px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
+                    <div className='mt-[20px] p-[30px] msmall:p-[20px] w-full h-[1220px] mmedium:h-[1200px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
                         <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>При поддержке</h3>
 
                         <div className='flex justify-between items-center mt-[30px] w-full'>
@@ -224,17 +238,19 @@ const PartnersWidgets = () => {
 
                         <img src='/static/partnersPage/logo/GerbLogo3.png' alt='Герб3' className='ml-[50px] mmedium:ml-[40px]'/>
 
-                        <img src='/static/partnersPage/logo/BankOfRussiaLogo.png' alt='Банк России' className='mt-[50px]'/>
+                        <img src='/static/partnersPage/logo/BankOfRussiaLogo.png' alt='Банк России' className='mt-[50px] ml-[calc(50%-140px)] mmedium:ml-[0px] scale-[0.95]'/>
 
-                        <img src='/static/partnersPage/logo/MinistryOfScienceAndHighEducationLogo.png' alt='Министерство науки и высшего образования РФ' className='mt-[50px]'/>
+                        <img src='/static/partnersPage/logo/MinistryOfScienceAndHighEducationLogo.png' alt='Министерство науки и высшего образования РФ' className='mt-[50px] ml-[calc(50%-130px)] mmedium:ml-[0px] mmedium:scale-[0.95]'/>
 
-                        <img src='/static/partnersPage/logo/MinCifriRossiiLogo.png' alt='Минцифры России' className='mt-[50px] ml-[-10px]'/>
+                        <img src='/static/partnersPage/logo/MinCifriRossiiLogo.png' alt='Минцифры России' className='mt-[40px] ml-[calc(50%-135px)] mmedium:ml-[0px] scale-[1.1]'/>
 
-                        <img src='/static/partnersPage/logo/ITDepartmentOfMoscowLogo.png' alt='Департамент информационных технологий города Москвы' className='mt-[50px] ml-[30px] mmedium:ml-[20px]'/>
+                        <img src='/static/partnersPage/logo/ITDepartmentOfMoscowLogo.png' alt='Департамент информационных технологий города Москвы' className='mt-[50px] ml-[calc(50%-110px)]'/>
 
-                        <img src='/static/partnersPage/logo/SystemLogo.png' alt='Система - акционерная финансовая корпорация' className='mt-[50px] ml-[10px] mmedium:ml-[0px]'/>
+                        <img src='/static/partnersPage/logo/SystemLogo.png' alt='Система - акционерная финансовая корпорация' className='mt-[60px] ml-[calc(50%-100px)] scale-[1.1]'/>
 
-                        <img src='/static/partnersPage/logo/GoznakLogo.png' alt='Гознак' className='mt-[50px] ml-[calc(50%-36px)]'/>
+                        <img src='/static/partnersPage/logo/FSPLogo.png' alt='ФСП' className='mt-[50px] ml-[calc(50%-85px)]'/>
+
+                        <img src='/static/partnersPage/logo/GoznakLogo.png' alt='Гознак' className='mt-[50px] ml-[calc(50%-35px)]'/>
                     </div>
 
                     <div className='relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-auto bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
