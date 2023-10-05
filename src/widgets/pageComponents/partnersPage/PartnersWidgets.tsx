@@ -49,7 +49,7 @@ const PartnersWidgets = () => {
                         </div>
 
                         <div className='relative p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
-                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Специальный партнёр</h3>
+                            <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Специальный партнер</h3>
 
                             <img src='/static/partnersPage/logo/PositiveTechnologiesLogo.png' alt='Positive Technologies' className='absolute bottom-[40px] right-[40px] scale-[1.1]'/>
                         </div>
@@ -190,7 +190,7 @@ const PartnersWidgets = () => {
                     </div>
 
                     <div className='relative mt-[20px] p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]'>
-                        <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Специальный партнёр</h3>
+                        <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>Специальный партнер</h3>
 
                         <img src='/static/partnersPage/logo/PositiveTechnologiesLogo.png' alt='Positive Technologies' className='absolute bottom-[40px] right-[40px] msmall:right-[30px] scale-[1.1] msmall:scale-[1]'/>
                     </div>
