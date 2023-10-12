@@ -76,28 +76,49 @@ const PartnersWidgets = () => {
             </div>
           </div>
 
-          <div className="relative mt-[20px] p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
-            <h3 className='w-[100px] text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
-              Официальный партнер
-            </h3>
+          <div className="flex justify-between mt-[20px] w-full h-[320px]">
+            <div className="relative p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+              <h3 className='w-[100px] text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
+                Генеральный партнер
+              </h3>
 
-            <div className="flex justify-between absolute bottom-[50px] right-[80px] w-[70%]">
               <a
-                href="https://www.sberbank.com/ru/ecs"
+                href="https://rdp-ru.turbopages.org/turbo/rdp.ru/s/"
                 className="outline-none"
               >
                 <img
-                  src="/static/partnersPage/logo/SberbankLogo.png"
-                  alt="Сбербанк"
+                  src="/static/partnersPage/logo/RDPLogo.png"
+                  alt="RDP"
+                  className="absolute bottom-[50px] right-[30px]"
                 />
               </a>
+            </div>
 
-              <a href="https://www.gazprombank.ru/" className="outline-none">
-                <img
-                  src="/static/partnersPage/logo/GazprombankLogo.png"
-                  alt="Газпромбанк"
-                />
-              </a>
+            <div className="relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+              <h3 className='w-[100px] text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
+                Официальный партнер
+              </h3>
+
+              <div className="flex justify-between absolute bottom-[50px] right-[30px] w-[90%]">
+                <a
+                  href="https://www.sberbank.com/ru/ecs"
+                  className="outline-none"
+                >
+                  <img
+                    src="/static/partnersPage/logo/SberbankLogo.png"
+                    alt="Сбербанк"
+                    className="scale-[0.8]"
+                  />
+                </a>
+
+                <a href="https://www.gazprombank.ru/" className="outline-none">
+                  <img
+                    src="/static/partnersPage/logo/GazprombankLogo.png"
+                    alt="Газпромбанк"
+                    className="scale-[0.8]"
+                  />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -126,7 +147,7 @@ const PartnersWidgets = () => {
             </div>
 
             <div className="relative p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
-              <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
+              <h3 className='w-[100px] text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
                 Специальный партнер
               </h3>
 
@@ -397,6 +418,23 @@ const PartnersWidgets = () => {
               alt="Арсиб"
               className="absolute right-[20px] mmedium:right-[10px] msmall:right-[0px] scale-[0.8] mmedium:scale-[0.75]"
             />
+          </div>
+
+          <div className="mt-[20px] p-[30px] msmall:p-[20px] w-full h-[320px] mmedium:h-[340px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+            <h3 className='w-[100px] text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
+              Генеральный партнер
+            </h3>
+
+            <a
+              href="https://rdp-ru.turbopages.org/turbo/rdp.ru/s/"
+              className="outline-none"
+            >
+              <img
+                src="/static/partnersPage/logo/RDPLogo.png"
+                alt="RDP"
+                className="absolute bottom-[50px] right-[30px]"
+              />
+            </a>
           </div>
 
           <div className="relative mt-[20px] p-[30px] w-full h-[400px] mmedium:h-[380px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">

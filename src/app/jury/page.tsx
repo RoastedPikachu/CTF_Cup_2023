@@ -114,7 +114,7 @@ const Page = () => {
           imgPath={"/static/juryPage/avatars/MichailenkoNatalyaAvatar.png"}
           personDescription={"Михайленко Наталья"}
           personText={
-            "Доцент кафедры противодействия преступлениям в сфере ИТТ, Московский университет МВД России им. В.Я. Кихотя"
+            "Доцент кафедры противодействия преступлениям в сфере ИТТ, Московский университет МВД России им. В.Я. Кикотя"
           }
           styles={
             "mt-[50px] mlarge:mt-[50px] ml-[750px] deskWide:ml-[900px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]"
