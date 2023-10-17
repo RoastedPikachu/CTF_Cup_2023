@@ -83,7 +83,7 @@ const PartnersWidgets = () => {
               </h3>
 
               <a
-                href="https://rdp-ru.turbopages.org/turbo/rdp.ru/s/"
+                href="https://www.rdp.ru/"
                 className="outline-none"
               >
                 <img
@@ -152,7 +152,7 @@ const PartnersWidgets = () => {
               </h3>
 
               <a
-                href="https://www.ptsecurity.com/ww-en/"
+                href="https://www.ptsecurity.com/"
                 className="outline-none"
               >
                 <img
@@ -274,7 +274,7 @@ const PartnersWidgets = () => {
 
           <div className="relative flex justify-between mt-[20px] w-full h-[300px]">
             <div className="p-[20px] w-[32%] h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px]">
-              <a href="https://m.vk.com/" className="outline-none">
+              <a href="https://vk.com/" className="outline-none">
                 <img
                   src="/static/partnersPage/logo/VkontakteLogo.png"
                   alt="Вконтакте"
@@ -420,7 +420,7 @@ const PartnersWidgets = () => {
             />
           </div>
 
-          <div className="mt-[20px] p-[30px] msmall:p-[20px] w-full h-[320px] mmedium:h-[340px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+          <div className="relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[320px] mmedium:h-[340px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
             <h3 className='w-[100px] text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
               Генеральный партнер
             </h3>

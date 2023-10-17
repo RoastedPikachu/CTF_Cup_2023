@@ -54,7 +54,7 @@ const TheFooter = () => {
         </p>
 
         <p className="mt-[10px]">
-          <strong className="text-[#6bf89a] outline-none">e-mail:</strong>
+          <strong className="text-[#6bf89a] outline-none">e-mail: </strong>
           <a href="mailto:info@aciso.ru" className="outline-none no-underline">
             info@aciso.ru
           </a>
