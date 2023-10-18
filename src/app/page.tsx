@@ -2,6 +2,7 @@ import React from "react";
 
 import TheHeader from "@/widgets/shared/TheHeader";
 import TheFooter from "@/widgets/shared/TheFooter";
+import TheExpirationAlert from "@/widgets/shared/TheExpirationAlert";
 
 import Itinerary from "@/widgets/pageComponents/homePage/Itinerary";
 import Address from "@/widgets/pageComponents/homePage/Address";
@@ -186,6 +187,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <TheExpirationAlert />
       </main>
 
       <TheFooter />

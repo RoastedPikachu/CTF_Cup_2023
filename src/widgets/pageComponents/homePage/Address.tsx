@@ -49,15 +49,17 @@ const Address = () => {
             >
               sk.ru/transport
             </a>
-
-            <img
-              src="/static/homePage/background/WaterCoolingPipeImage.png"
-              alt="Трубка водяного охлаждения, задний фон"
-              className="absolute left-[0%] bottom-[-60px] mmedium:bottom-[-50px] msmall:bottom-[-35px] w-full"
-            />
           </>
         )}
       </span>
+
+      {isMobile && (
+        <img
+          src="/static/homePage/background/WaterCoolingPipeImage.png"
+          alt="Трубка водяного охлаждения, задний фон"
+          className="absolute left-[0%] bottom-[-60px] mmedium:bottom-[-50px] msmall:bottom-[-35px] w-full"
+        />
+      )}
     </section>
   );
 };
