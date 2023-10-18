@@ -24,7 +24,7 @@ const Page = () => {
             "Управляющий директор по информационной безопасности, ПАО АФК «Система»"
           }
           styles={
-            "mt-[80px] mlarge:mt-[50px] ml-[150px] deskWide:ml-[200px] mlarge:ml-[0px]"
+            "mt-[80px] mlarge:mt-[50px] ml-[150px] deskWide:ml-[200px] mlarge:ml-0"
           }
         />
 
@@ -46,7 +46,7 @@ const Page = () => {
             "Начальник отдела информационной безопасности, АО «ГОЗНАК»"
           }
           styles={
-            "mt-[80px] mlarge:mt-[50px] mmedium:mt-[80px] msmall:mt-[120px] ml-[150px] deskWide:ml-[200px] mlarge:ml-[0px]"
+            "mt-[80px] mlarge:mt-[50px] mmedium:mt-[80px] msmall:mt-[120px] ml-[150px] deskWide:ml-[200px] mlarge:ml-0"
           }
         />
 
@@ -65,7 +65,7 @@ const Page = () => {
           personText={
             "Архитектор по информационной безопасности, <strong>Positive Technologies</strong>"
           }
-          styles={"mt-[100px] mlarge:mt-[50px] ml-[0px] deskWide:ml-[50px]"}
+          styles={"mt-[100px] mlarge:mt-[50px] ml-0 deskWide:ml-[50px]"}
         />
 
         <PersonInfo
@@ -86,7 +86,7 @@ const Page = () => {
             "Президент группы компаний ГК «Эшелон», доктор технических наук, лауреат премии Правительства РФ в области науки и техники"
           }
           styles={
-            "mt-[50px] mlarge:mt-[50px] ml-[150px] deskWide:ml-[250px] mlarge:ml-[0px]"
+            "mt-[50px] mlarge:mt-[50px] ml-[150px] deskWide:ml-[250px] mlarge:ml-0"
           }
         />
 
@@ -106,7 +106,7 @@ const Page = () => {
           personDescription={"Масалович Андрей"}
           personText={"Генеральный директор ООО «Лавина Пульс»"}
           styles={
-            "mt-[40px] mlarge:mt-[50px] ml-[350px] deskWide:ml-[500px] mlarge:ml-[0px]"
+            "mt-[40px] mlarge:mt-[50px] ml-[350px] deskWide:ml-[500px] mlarge:ml-0"
           }
         />
 
@@ -127,7 +127,7 @@ const Page = () => {
           personText={
             "Заместитель начальника центрального вычислительного центра, Главный информационно-аналитический центр МВД России"
           }
-          styles={"mt-[-180px] mlarge:mt-[50px] ml-[0px] deskWide:ml-[50px]"}
+          styles={"mt-[-180px] mlarge:mt-[50px] ml-0 deskWide:ml-[50px]"}
         />
 
         <PersonInfo
@@ -146,7 +146,7 @@ const Page = () => {
             "Начальник отдела информационной безопасности, ООО «М13 ИТ УСЛУГИ»"
           }
           styles={
-            "mt-[140px] mlarge:mt-[50px] ml-[0px] deskWide:ml-[50px] mlarge:ml-[0px]"
+            "mt-[140px] mlarge:mt-[50px] ml-[0px] deskWide:ml-[50px] mlarge:ml-0"
           }
         />
 
@@ -168,7 +168,7 @@ const Page = () => {
             "Руководитель направления Центра взаимодействия и реагирования Департамента информационной безопасности Банка России"
           }
           styles={
-            "mt-[120px] mlarge:mt-[50px] ml-[250px] deskWide:ml-[350px] mlarge:ml-[0px]"
+            "mt-[120px] mlarge:mt-[50px] ml-[250px] deskWide:ml-[350px] mlarge:ml-0"
           }
         />
       </main>
