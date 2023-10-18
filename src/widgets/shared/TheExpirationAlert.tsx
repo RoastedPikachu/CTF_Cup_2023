@@ -15,7 +15,7 @@ const TheExpirationAlert = () => {
 
   return (
     <>
-      {!isOpen && (
+      {isOpen && (
         <div className="fixed flex mlarge:block justify-between items-center bottom-[50px] mx-[10%] deskWide:mx-[0%] mlarge:mx-[7.5%] mlarge:pt-[30px] mlarge:pb-[10px] pl-[30px] pr-[20px] mlarge:px-0 w-[calc(80%+15px)] max-w-[1480px] mlarge:w-[85%] h-[80px] mlarge:min-h-[180px] mlarge:h-auto border-[1px] border-[#ffffff] rounded-[60px] mlarge:rounded-[35px] bg-[rgba(217,217,217,0.07)] backdrop-blur text-[#ffffff] text-[1rem] font-['Good_Timing_Regular'] font-normal z-40">
           {!isMobile ? (
             <p className="deskWide:text-[1.125rem]">
