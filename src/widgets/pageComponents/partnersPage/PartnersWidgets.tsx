@@ -173,7 +173,7 @@ const PartnersWidgets = () => {
                 <img
                   src="/static/partnersPage/logo/CTFNewsLogo.png"
                   alt="CTF News"
-                  className="mt-[60px] ml-[20px]"
+                  className="mt-[80px] ml-[20px]"
                 />
               </a>
 
@@ -181,7 +181,7 @@ const PartnersWidgets = () => {
                 <img
                   src="/static/partnersPage/logo/VkontakteLogo.png"
                   alt="Вконтакте"
-                  className="mt-[140px] ml-[20px]"
+                  className="mt-[90px] ml-[20px]"
                 />
               </a>
 
@@ -189,7 +189,7 @@ const PartnersWidgets = () => {
                 <img
                   src="/static/partnersPage/logo/CodebyLogo.png"
                   alt="Codeby.net"
-                  className="absolute bottom-[0px] right-[40px]"
+                  className="absolute bottom-[100px] right-[40px]"
                 />
               </a>
             </div>
@@ -273,6 +273,14 @@ const PartnersWidgets = () => {
 
           <div className="relative flex justify-between w-full h-[300px]">
             <div className="relative mt-[20px] p-[20px] w-[32%] h-[300px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px]">
+              <a href="https://www.globalcio.ru" className="outline-none">
+                <img
+                  src="/static/partnersPage/logo/GlobalCIOLogo.png"
+                  alt="GlobalCIO"
+                  className="mt-[-20px] ml-[15px] scale-[0.9]"
+                />
+              </a>
+
               <a href="https://securitymedia.org/" className="outline-none">
                 <img
                   src="/static/partnersPage/logo/CyberMediaLogo.png"
@@ -463,7 +471,7 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/CoordinationalCenterRuLogo.png"
                 alt="Координационный центр доменов .ru/.рф"
-                className="absolute bottom-[40px] right-[20px] mmedium:right-[10px] msmall:right-0 mmedium:scale-[0.85]"
+                className="absolute bottom-[40px] right-[20px] mmedium:right-[10px] msmall:right-0 scale-[0.95] mmedium:scale-[0.85]"
               />
             </a>
           </div>
@@ -540,7 +548,7 @@ const PartnersWidgets = () => {
             </a>
           </div>
 
-          <div className="relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[850px] mmedium:h-[830px] msmall:h-[810px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+          <div className="relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[1000px] mmedium:h-[970px] msmall:h-[970px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
             <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
               Информационные партнеры
             </h3>
@@ -549,7 +557,7 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/CTFNewsLogo.png"
                 alt="CTF News"
-                className="mt-[60px] ml-[10px] mmedium:ml-[0px] scale-[1.15] mmedium:scale-[1.05]"
+                className="mt-[60px] ml-[10px] mmedium:ml-[0px] scale-[1.1] mmedium:scale-[1.05]"
               />
             </a>
 
@@ -557,7 +565,7 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/VkontakteLogo.png"
                 alt="Вконтакте"
-                className="mt-[110px] ml-[20px] mmedium:ml-[0px] scale-[1.15] mmedium:scale-[1.05]"
+                className="mt-[110px] ml-[15px] mmedium:ml-[0px] scale-[1.05] mmedium:scale-[1.05]"
               />
             </a>
 
@@ -565,7 +573,15 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/CodebyLogo.png"
                 alt="Codeby.net"
-                className="mt-[140px] mmedium:mt-[130px] ml-[20px] mmedium:ml-0 scale-[1.15] mmedium:scale-[1.05]"
+                className="mt-[120px] mmedium:mt-[130px] ml-[20px] mmedium:ml-0 scale-[1.05] mmedium:scale-[1.05]"
+              />
+            </a>
+
+            <a href="https://www.globalcio.ru" className="outline-none">
+              <img
+                src="/static/partnersPage/logo/GlobalCIOLogo.png"
+                alt="GlobalCIO"
+                className="mt-[120px] ml-[10px] msmall:ml-[0px] scale-[0.9]"
               />
             </a>
 
