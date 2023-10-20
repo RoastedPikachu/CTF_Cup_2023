@@ -131,22 +131,13 @@ const Page = () => {
         />
 
         <PersonInfo
-          imgPath={"/static/juryPage/avatars/UsanovAlexeyAvatar.png"}
-          personDescription={"Усанов Алексей"}
-          personText={"Технический директор НТЦ «Вулкан»"}
-          styles={
-            "mt-[40px] mlarge:mt-[50px] ml-[350px] deskWide:ml-[500px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]"
-          }
-        />
-
-        <PersonInfo
           imgPath={"/static/juryPage/avatars/OvchinnikovViktorAvatar.png"}
           personDescription={"Овчинников Виктор"}
           personText={
             "Начальник отдела информационной безопасности, ООО «М13 ИТ УСЛУГИ»"
           }
           styles={
-            "mt-[140px] mlarge:mt-[50px] ml-[0px] deskWide:ml-[50px] mlarge:ml-0"
+            "mt-[140px] mlarge:mt-[50px] ml-[50px] deskWide:ml-[50px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]"
           }
         />
 
@@ -157,7 +148,7 @@ const Page = () => {
             "Руководитель отдела анализа приложений, Positive Technologies"
           }
           styles={
-            "mt-[-160px] mlarge:mt-[50px] ml-[600px] deskWide:ml-[700px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]"
+            "mt-[-160px] mlarge:mt-[50px] ml-[650px] deskWide:ml-[700px] mlarge:ml-0"
           }
         />
 
@@ -168,7 +159,7 @@ const Page = () => {
             "Руководитель направления Центра взаимодействия и реагирования Департамента информационной безопасности Банка России"
           }
           styles={
-            "mt-[120px] mlarge:mt-[50px] ml-[250px] deskWide:ml-[350px] mlarge:ml-0"
+            "mt-[120px] mlarge:mt-[50px] ml-[300px] deskWide:ml-[350px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]"
           }
         />
       </main>
