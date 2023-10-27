@@ -117,7 +117,7 @@ const PartnersWidgets = () => {
                 <img
                   src="/static/partnersPage/logo/GazprombankLogo.png"
                   alt="Газпромбанк"
-                  className="absolute bottom-[45px] right-[10px] scale-[0.8]"
+                  className="absolute bottom-[45px] right-0 scale-[0.9]"
                 />
               </a>
             </div>
@@ -351,7 +351,7 @@ const PartnersWidgets = () => {
             </div>
           </div>
 
-          <div className="relative mt-[20px] p-[30px] w-full h-[300px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] rounded-tr-[20px] z-[5]">
+          <div className="relative mt-[20px] p-[30px] w-full h-[300px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px] z-[5]">
             <img
               src="/static/partnersPage/logo/CTFCupVIILogo.png"
               alt="VII Кубок CTF 2023"
@@ -469,7 +469,7 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/GazprombankLogo.png"
                 alt="Газпромбанк"
-                className="absolute bottom-[50px] right-0 scale-[0.8]"
+                className="absolute bottom-[50px] right-0 scale-[0.85]"
               />
             </a>
           </div>

@@ -188,7 +188,7 @@ export default function Home() {
           </div>
         </section>
 
-        <TheExpirationAlert />
+        {/* Убрали из-за того, что срок вышел 27 октября <TheExpirationAlert />*/}
       </main>
 
       <TheFooter />
