@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { useAppSelector } from "@/store/storeHooks";
+import { useSelector } from "react-redux";
 import { RootState } from "@/store";
 
 import TheHeader from "@/widgets/shared/TheHeader";
@@ -10,7 +10,7 @@ import TheFooter from "@/widgets/shared/TheFooter";
 import Paragraphs from "@/widgets/pageComponents/infoPage/Paragraphs";
 
 const Page = () => {
-  const isMobile = useAppSelector((state: RootState) => state.mobile.isMobile);
+  const isMobile = useSelector((state: RootState) => state.mobile.isMobile);
 
   return (
     <>
