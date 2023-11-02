@@ -43,7 +43,7 @@ const TheFooter = () => {
           <a href="https://t.me/deviantwish" className="outline-none">
             @deviantwish
           </a>
-          ,
+          ,{" "}
           <a href="https://t.me/AlisaSoboleva" className="outline-none">
             @AlisaSoboleva
           </a>

@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 
-import { useAppSelector } from "@/store/storeHooks";
+import { useSelector } from "react-redux";
 import { RootState } from "@/store";
 
 const Address = () => {
-  const isMobile = useAppSelector((state: RootState) => state.mobile.isMobile);
+  const isMobile = useSelector((state: RootState) => state.mobile.isMobile);
 
   return (
     <section className="relative mlarge:flex mlarge:justify-between mt-[-60px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[850px] mlarge:h-[420px] msmall:h-[380px]">

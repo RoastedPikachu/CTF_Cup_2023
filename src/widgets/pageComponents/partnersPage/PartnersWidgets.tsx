@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 
-import { useAppSelector } from "@/store/storeHooks";
+import { useSelector } from "react-redux";
 import { RootState } from "@/store";
 
 const PartnersWidgets = () => {
-  const isMobile = useAppSelector((state: RootState) => state.mobile.isMobile);
+  const isMobile = useSelector((state: RootState) => state.mobile.isMobile);
 
   return (
     <>

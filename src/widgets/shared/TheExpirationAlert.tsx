@@ -2,14 +2,15 @@
 import React from "react";
 
 import { alertSlice } from "@/store/storeReducers/AlertSlice";
-import { useAppDispatch, useAppSelector } from "@/store/storeHooks";
+import { useSelector } from "react-redux";
+import { useAppDispatch } from "@/store/storeHooks";
 import { RootState } from "@/store";
 
 const TheExpirationAlert = () => {
   const dispatch = useAppDispatch();
 
-  const isOpen = useAppSelector((state: RootState) => state.alert.isOpen);
-  const isMobile = useAppSelector((state: RootState) => state.mobile.isMobile);
+  const isOpen = useSelector((state: RootState) => state.alert.isOpen);
+  const isMobile = useSelector((state: RootState) => state.mobile.isMobile);
 
   const { closeAlertWindow } = alertSlice.actions;
 

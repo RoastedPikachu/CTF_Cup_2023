@@ -3,11 +3,11 @@ import React from "react";
 
 import { Carousel } from "react-responsive-carousel";
 
-import { useAppSelector } from "@/store/storeHooks";
+import { useSelector } from "react-redux";
 import { RootState } from "@/store";
 
 const Itinerary = () => {
-  const isMobile = useAppSelector((state: RootState) => state.mobile.isMobile);
+  const isMobile = useSelector((state: RootState) => state.mobile.isMobile);
 
   return (
     <section className="relative px-[15%] mlarge:px-[7.5%] w-full mlarge:w-full h-[750px]">

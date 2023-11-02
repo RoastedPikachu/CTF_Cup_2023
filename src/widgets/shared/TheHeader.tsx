@@ -2,9 +2,9 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import { CSSTransition } from "react-transition-group";
-
+import { useSelector } from "react-redux";
 import { mobileSlice } from "@/store/storeReducers/MobileSlice";
-import { useAppDispatch, useAppSelector } from "@/store/storeHooks";
+import { useAppDispatch } from "@/store/storeHooks";
 import { RootState } from "@/store";
 
 import Image from "next/image";
@@ -14,7 +14,7 @@ import Link from "next/link";
 const TheHeader = () => {
   const dispatch = useAppDispatch();
 
-  const isMobile = useAppSelector((state: RootState) => state.mobile.isMobile);
+  const isMobile = useSelector((state: RootState) => state.mobile.isMobile);
 
   const { setIsMobileStatus } = mobileSlice.actions;
 
@@ -22,12 +22,32 @@ const TheHeader = () => {
 
   const nodeRef = useRef(null);
 
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+  const [isTopHeaderHidden, setIsTopHeaderHidden] = useState(false);
+
   useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.pageYOffset - 100 > window.innerHeight
+        ? setIsHeaderFixed(true)
+        : setIsHeaderFixed(false);
+      window.pageYOffset > 40
+        ? setIsTopHeaderHidden(true)
+        : setIsTopHeaderHidden(false);
+    });
+
     dispatch(setIsMobileStatus(window.innerWidth < 480));
   }, []);
 
   return (
-    <header className="relative flex justify-between items-center px-[10%] deskWide:px-[calc((100%-1440px)/2)] mlarge:px-[5%] w-full h-[80px] z-30">
+    <header
+      className={`${
+        isHeaderFixed
+          ? "mt-0 bg-[#0d0d0d]"
+          : isTopHeaderHidden
+          ? "mt-[-80px]"
+          : "mt-0"
+      } fixed flex justify-between items-center px-[10%] deskWide:px-[calc((100%-1440px)/2)] mlarge:px-[5%] w-full h-[80px] duration-[400ms] ease-in-out z-30`}
+    >
       {!isMobile ? (
         <>
           <div className="flex items-center">

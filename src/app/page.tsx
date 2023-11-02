@@ -36,8 +36,9 @@ export default function Home() {
                   href="https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/"
                   className="text-[#bf5af2] outline-none"
                 >
-                  российских/
+                  российских
                 </a>
+                /
                 <a
                   href="https://forms.yandex.ru/u/650b4305c769f152a366a2d9/"
                   className="text-[#6bf29a] outline-none"
