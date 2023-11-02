@@ -27,7 +27,8 @@ const TheHeader = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.pageYOffset - 100 > window.innerHeight
+      window.pageYOffset + (window.innerWidth < 480 ? 250 : -100) >
+      window.innerHeight
         ? setIsHeaderFixed(true)
         : setIsHeaderFixed(false);
       window.pageYOffset > 40
