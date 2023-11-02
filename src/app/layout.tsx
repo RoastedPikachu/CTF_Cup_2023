@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
-        <Script src="/static/scripts/metrica.js" />
+        <Script src="/static/scripts/metrica.js" strategy="lazyOnload" />
 
         <ReduxProvider>{children}</ReduxProvider>
       </body>
