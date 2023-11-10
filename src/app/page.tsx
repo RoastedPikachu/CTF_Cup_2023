@@ -16,7 +16,7 @@ export default function Home() {
 
       <BgImages />
 
-      <main className="relative deskWide:mx-[calc((100%-1440px)/2)] w-[100vw] max-w-[1440px] h-auto overflow-hidden">
+      <main className="relative mt-[80px] deskWide:mx-[calc((100%-1440px)/2)] w-[100vw] max-w-[1440px] h-auto overflow-hidden">
         <section className="relative px-[15%] w-[100%] h-[700px] mlarge:h-[330px]">
           <img
             src="/static/homePage/text/KubokCTFText.svg"

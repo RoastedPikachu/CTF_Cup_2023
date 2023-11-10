@@ -16,7 +16,7 @@ const Page = () => {
     <>
       <TheHeader />
 
-      <main className="relative deskWide:mx-[calc((100%-1440px)/2)] w-[100vw] max-w-[1440px] h-auto overflow-hidden deskWide:overflow-visible">
+      <main className="relative mt-[80px] deskWide:mx-[calc((100%-1440px)/2)] w-[100vw] max-w-[1440px] h-auto overflow-hidden deskWide:overflow-visible">
         {!isMobile && (
           <img
             src="/static/infoPage/background/InfoBgImage1.png"

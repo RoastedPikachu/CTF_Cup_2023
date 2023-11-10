@@ -9,7 +9,7 @@ const BgImages = () => {
 
   return (
     <>
-      <div className="absolute mt-[20px] mlarge:mt-[-15%] msmall:mt-[-26.5%] ml-[-11%] deskWide:ml-[calc(((100%-1440px)/2)-160px)] mlarge:ml-[0%] deskWide:mx-[calc((100%-1440px)/2)] w-full max-w-[1440px] h-[950px] mlarge:h-[600px] mlarge:overflow-hidden scale-[1.4] mlarge:scale-[1]">
+      <div className="absolute mt-[100px] mlarge:mt-[-15%] msmall:mt-[-26.5%] ml-[-11%] deskWide:ml-[calc(((100%-1440px)/2)-160px)] mlarge:ml-[0%] deskWide:mx-[calc((100%-1440px)/2)] w-full max-w-[1440px] h-[950px] mlarge:h-[600px] mlarge:overflow-hidden scale-[1.4] mlarge:scale-[1]">
         <img
           src={
             isMobile

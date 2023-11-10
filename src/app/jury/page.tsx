@@ -10,7 +10,7 @@ const Page = () => {
     <>
       <TheHeader />
 
-      <main className="deskWide:mx-[calc((100%-1440px)/2)] px-[10%] deskWide:px-[0px] mlarge:px-[5%] w-full max-w-[1440px] pb-[100px]">
+      <main className="mt-[130px] deskWide:mx-[calc((100%-1440px)/2)] px-[10%] deskWide:px-[0px] mlarge:px-[5%] w-full max-w-[1440px] pb-[100px]">
         <img
           src="/static/juryPage/text/JuryText.png"
           alt="Жюри"

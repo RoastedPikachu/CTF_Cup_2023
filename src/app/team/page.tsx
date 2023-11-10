@@ -10,7 +10,7 @@ const Page = () => {
     <>
       <TheHeader />
 
-      <main className="mt-[50px] mlarge:mt-[0px] deskWide:mx-[calc((100%-1440px)/2)] px-[10%] deskWide:px-[0px] mlarge:px-[5%] w-full max-w-[1440px] h-auto">
+      <main className="mt-[130px] mlarge:mt-[0px] deskWide:mx-[calc((100%-1440px)/2)] px-[10%] deskWide:px-[0px] mlarge:px-[5%] w-full max-w-[1440px] h-auto">
         <section>
           <img
             src="/static/teamPage/text/KomandaOrgText.png"

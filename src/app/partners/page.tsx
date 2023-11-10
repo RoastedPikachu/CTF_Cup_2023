@@ -10,7 +10,7 @@ const Page = () => {
     <>
       <TheHeader />
 
-      <main className="relative deskWide:mx-[calc((100%-1440px)/2)] px-[10%] mlarge:px-[5%] pb-[100px] w-full max-w-[1440px]">
+      <main className="mt-[130px] relative deskWide:mx-[calc((100%-1440px)/2)] px-[10%] mlarge:px-[5%] pb-[100px] w-full max-w-[1440px]">
         <img
           src="/static/partnersPage/text/PartnersText.svg"
           alt="Партнеры"
