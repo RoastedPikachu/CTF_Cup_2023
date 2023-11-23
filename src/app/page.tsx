@@ -79,7 +79,7 @@ export default function Home() {
 
         <Address />
 
-        <section className="relative flex justify-between mt-[40px] deskWide:mt-[20px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[600px] mlarge:h-[520px] mmedium:h-[480px] msmall:h-[430px]">
+        <section className="relative flex justify-between mt-[-50px] deskWide:mt-[-50px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[600px] mlarge:h-[520px] mmedium:h-[480px] msmall:h-[430px]">
           <img
             src="/static/homePage/text/WhatIsCTFText.png"
             alt="Что такое CTF?"
