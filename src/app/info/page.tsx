@@ -7,6 +7,7 @@ import { RootState } from "@/store";
 import TheHeader from "@/widgets/shared/TheHeader";
 import TheFooter from "@/widgets/shared/TheFooter";
 
+import Results from "@/widgets/pageComponents/infoPage/Results";
 import Paragraphs from "@/widgets/pageComponents/infoPage/Paragraphs";
 
 const Page = () => {
@@ -156,6 +157,8 @@ const Page = () => {
             <strong className="text-[#bf5af2]"> «ОФИЦИАЛЬНЫЕ ДОКУМЕНТЫ»</strong>
           </p>
         </section>
+
+        <Results />
 
         <Paragraphs isMobile={isMobile} />
       </main>
