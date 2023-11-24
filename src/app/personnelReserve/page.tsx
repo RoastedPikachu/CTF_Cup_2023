@@ -44,7 +44,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="relative py-[20px] px-[30px] w-[40%] h-[510px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+          <div className="relative py-[20px] px-[30px] w-[40%] h-[465px] deskWide:h-[510px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
             <img
               src="/static/personnelReservePage/PersonnelReserveQRCode.png"
               alt="QR-Код, ведущий на регистрационную форму кадрового резерва"
