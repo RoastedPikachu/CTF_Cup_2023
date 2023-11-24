@@ -65,6 +65,13 @@ const TheHeader = () => {
             >
               регистрация
             </a>
+
+            <Link
+              href="/personnelReserve"
+              className='ml-[35px] deskWide:ml-[40px] text-[#bf5af2] text-[1rem] deskWide:text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+            >
+              кадровый резерв
+            </Link>
           </div>
 
           <nav className='flex justify-between w-[53%] mlarge:w-[100%] text-[#ffffff] text-[1rem] deskWide:text-[1.125rem] mlarge:text-[0.75rem] font-["Good_Timing"] font-semibold'>
@@ -97,6 +104,13 @@ const TheHeader = () => {
           >
             регистрация
           </a>
+
+          <Link
+            href="/personnelReserve"
+            className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+          >
+            кадровый резерв
+          </Link>
 
           <button
             onClick={() => setIsModalWindowActive(true)}
@@ -134,6 +148,13 @@ const TheHeader = () => {
                 >
                   регистрация
                 </a>
+
+                <Link
+                  href="/personnelReserve"
+                  className='text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+                >
+                  кадровый резерв
+                </Link>
 
                 <Link href="/" className="w-full outline-none no-underline">
                   главная

@@ -196,7 +196,7 @@ const Results = () => {
   ] as StudentsResult[]);
 
   return (
-    <section className="px-[10%] deskWide:px-[0%] mlarge:px-[5%] w-full">
+    <section className="deskWide:mb-[100px] px-[10%] deskWide:px-[0%] mlarge:px-[5%] w-full">
       <img
         src="/static/infoPage/text/ResultsText.png"
         alt="Итоги отборочного этапа"
