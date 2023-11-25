@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 
 interface Result {
@@ -200,15 +201,16 @@ const Results = () => {
       <img
         src="/static/infoPage/text/ResultsText.png"
         alt="Итоги отборочного этапа"
-        className="mt-[200px] mmedium:mt-[30px] w-[45%] mlarge:w-[50%] mmedium:w-[60%]"
+        className="mt-[200px] mlarge:mt-[100px] w-[45%] mlarge:w-[50%] mmedium:w-[60%]"
       />
 
-      <div className="mt-[100px]">
+      <div className="mt-[100px] mlarge:mt-[50px]">
         <div className="relative w-full">
-          <div className="flex justify-evenly items-center mb-[50px] w-[40%] h-[75px] border-[2px] border-[#bf5af2] rounded-[40px]">
+          <div className="flex justify-evenly items-center mlarge:mt-[30px] mb-[50px] mlarge:mb-[30px] w-[40%] mlarge:w-[60%] h-[75px] mlarge:h-[50px] border-[2px] border-[#bf5af2] rounded-[40px] mlarge:rounded-[30px]">
             <img
               src="/static/infoPage/text/SchoolResultsText.png"
               alt="Результаты школьного зачёта"
+              className="mlarge:w-[60%]"
             />
 
             <button
@@ -221,7 +223,7 @@ const Results = () => {
               <img
                 src="/static/infoPage/icon/SchoolTopArrowIcon.svg"
                 alt="Открыть список из топ 10 участников школьного зачета"
-                className={`mt-[10px] ${
+                className={`mt-[10px] mlarge:mt-[2.5px] mlarge:w-[22.5px] mlarge:h-[25px] ${
                   results[0].isOpen ? "rotate-0" : "rotate-[180deg]"
                 } duration-[1000ms] ease-in-out`}
               />
@@ -232,7 +234,7 @@ const Results = () => {
             schoolResults.map((team) => (
               <div
                 key={team.id}
-                className={`relative flex items-center mt-[15px] px-[2.5%] w-full h-[45px] bg-[rgba(217,217,217,0.08)] ${
+                className={`relative flex items-center mt-[15px] px-[2.5%] w-full h-[45px] mmedium:h-[55px] bg-[rgba(217,217,217,0.08)] ${
                   team.id === 1
                     ? "border-[2px] border-[#d27aff] text-[#d27aff]"
                     : team.id === 2
@@ -246,19 +248,33 @@ const Results = () => {
                   <img
                     src="/static/infoPage/icon/SchoolFirstPlaceIcon.svg"
                     alt="Первое место"
-                    className="absolute mt-[-2.5px] ml-[-60px] w-[20px] h-[20px]"
+                    className="absolute mlarge:hidden mt-[-2.5px] ml-[-60px] w-[20px] h-[20px]"
                   />
                 )}
 
-                <p className="w-[15%] text-[1.75rem] font-['Good_Timing'] font-bold">
+                <p className="w-[15%] mmedium:w-[17.5%] text-[1.75rem] mlarge:text-[1.5rem] mmedium:text-[1.375rem] msmall:text-[1.25rem] font-['Good_Timing'] font-bold">
                   {team.id > 0 && team.id < 10 ? `0${team.id}` : team.id}
                 </p>
 
-                <p className="w-[35%] text-[1.125rem] text-left font-['Good_Timing_Regular'] tracking-widest">
+                <p
+                  className={`w-[35%] ${
+                    team.id === 8
+                      ? "mlarge:w-[50%]"
+                      : "mlarge:w-[45%] mmedium:w-[47.5%]"
+                  } text-[1.125rem] mlarge:text-[0.875rem] mmedium:text-[0.75rem] ${
+                    team.id === 2 ? "msmall:text-[0.7rem]" : ""
+                  } text-left font-['Good_Timing_Regular'] tracking-widest`}
+                >
                   {team.name}
                 </p>
 
-                <p className="w-[60%] text-[0.875rem] text-right font-regular tracking-wider">
+                <p
+                  className={`w-[60%] ${
+                    team.id === 8
+                      ? "mlarge:w-[35%]"
+                      : "mlarge:w-[40%] mmedium:w-[35%]"
+                  } text-[0.875rem] mlarge:text-[0.625rem] msmall:text-[0.5rem] text-right font-regular tracking-wider`}
+                >
                   {team.city}
                 </p>
               </div>
@@ -266,10 +282,11 @@ const Results = () => {
         </div>
 
         <div className="relative w-full">
-          <div className="flex justify-evenly items-center mt-[50px] mb-[50px] w-[42.5%] h-[75px] border-[2px] border-[#8c8aff] rounded-[40px]">
+          <div className="flex justify-evenly items-center mt-[50px] mlarge:mt-[30px] mb-[50px] mlarge:mb-[30px] w-[42.5%] mlarge:w-[65%] h-[75px] mlarge:h-[50px] border-[2px] border-[#8c8aff] rounded-[40px] mlarge:rounded-[30px]">
             <img
               src="/static/infoPage/text/MixedResultsText.png"
               alt="Результаты смешанного зачёта"
+              className="mlarge:w-[65%]"
             />
 
             <button
@@ -282,7 +299,7 @@ const Results = () => {
               <img
                 src="/static/infoPage/icon/MixedTopArrowIcon.svg"
                 alt="Открыть список из топ 10 участников смешанного зачета"
-                className={`mt-[10px] ${
+                className={`mt-[10px] mlarge:mt-[2.5px] mlarge:w-[22.5px] mlarge:h-[25px] ${
                   results[1].isOpen ? "rotate-0" : "rotate-[180deg]"
                 } duration-[1000ms] ease-in-out`}
               />
@@ -293,7 +310,7 @@ const Results = () => {
             mixedResults.map((team) => (
               <div
                 key={team.id}
-                className={`relative flex items-center mt-[15px] px-[2.5%] w-full h-[45px] bg-[rgba(217,217,217,0.08)] ${
+                className={`relative flex items-center mt-[15px] px-[2.5%] w-full h-[45px] mmedium:h-[55px] bg-[rgba(217,217,217,0.08)] ${
                   team.id === 1
                     ? "border-[2px] border-[#9e9cff] text-[#9e9cff]"
                     : team.id === 2
@@ -307,19 +324,27 @@ const Results = () => {
                   <img
                     src="/static/infoPage/icon/MixedFirstPlaceIcon.svg"
                     alt="Первое место"
-                    className="absolute mt-[-2.5px] ml-[-60px] w-[20px] h-[20px]"
+                    className="absolute mlarge:hidden mt-[-2.5px] ml-[-60px] w-[20px] h-[20px]"
                   />
                 )}
 
-                <p className="w-[15%] text-[1.75rem] font-['Good_Timing'] font-bold">
+                <p className="w-[15%] text-[1.75rem] mlarge:text-[1.5rem] mmedium:text-[1.375rem] msmall:text-[1.25rem] font-['Good_Timing'] font-bold">
                   {team.id > 0 && team.id < 10 ? `0${team.id}` : team.id}
                 </p>
 
-                <p className="w-[35%] text-[1.125rem] text-left font-['Good_Timing_Regular'] tracking-widest">
+                <p
+                  className={`w-[35%] ${
+                    team.id === 7 ? "mlarge:w-[55%]" : "mlarge:w-[45%]"
+                  } text-[1.125rem] mlarge:text-[0.875rem] mmedium:text-[0.75rem] text-left font-['Good_Timing_Regular'] tracking-widest`}
+                >
                   {team.name}
                 </p>
 
-                <p className="w-[60%] text-[0.875rem] text-right font-regular tracking-wider">
+                <p
+                  className={`w-[60%] ${
+                    team.id === 7 ? "mlarge:w-[30%]" : "mlarge:w-[40%]"
+                  } text-[0.875rem] mlarge:text-[0.625rem] msmall:text-[0.5rem] text-right font-regular tracking-wider`}
+                >
                   {team.city}
                 </p>
               </div>
@@ -327,10 +352,11 @@ const Results = () => {
         </div>
 
         <div>
-          <div className="flex justify-evenly items-center mt-[50px] mb-[50px] w-[60%] h-[75px] border-[2px] border-[#6bf89a] rounded-[40px]">
+          <div className="flex justify-evenly items-center mlarge:mt-[30px] mb-[50px] mlarge:mb-[30px] w-[60%] mlarge:w-[75%] msmall:w-[80%] h-[75px] mlarge:h-[50px] border-[2px] border-[#6bf89a] rounded-[40px] mlarge:rounded-[30px]">
             <img
               src="/static/infoPage/text/StudentsResultsText.png"
               alt="Результаты академического зачёта"
+              className="mlarge:w-[75%]"
             />
 
             <button
@@ -343,7 +369,7 @@ const Results = () => {
               <img
                 src="/static/infoPage/icon/StudentsTopArrowIcon.svg"
                 alt="Открыть список из топ 10 участников академического зачета"
-                className={`mt-[10px] ${
+                className={`mt-[10px] mlarge:mt-[2.5px] mlarge:w-[22.5px] mlarge:h-[25px] ${
                   results[2].isOpen ? "rotate-0" : "rotate-[180deg]"
                 } duration-[1000ms] ease-in-out`}
               />
@@ -354,7 +380,7 @@ const Results = () => {
             studentsResults.map((team) => (
               <div
                 key={team.id}
-                className={`relative flex items-center mt-[15px] px-[2.5%] w-full h-[45px] bg-[rgba(217,217,217,0.08)] ${
+                className={`relative flex items-center mt-[15px] px-[2.5%] w-full h-[45px] mmedium:h-[55px] bg-[rgba(217,217,217,0.08)] ${
                   team.id === 1
                     ? "border-[2px] border-[#7dffa9] text-[#7dffa9]"
                     : team.id === 2
@@ -372,19 +398,31 @@ const Results = () => {
                   />
                 )}
 
-                <p className="w-[15%] text-[1.75rem] font-['Good_Timing'] font-bold">
+                <p className="w-[15%] text-[1.75rem] mlarge:text-[1.5rem] mmedium:text-[1.375rem] msmall:text-[1.25rem] font-['Good_Timing'] font-bold">
                   {team.id > 0 && team.id < 10 ? `0${team.id}` : team.id}
                 </p>
 
-                <p className="w-[35%] text-[1.125rem] text-left font-['Good_Timing_Regular'] tracking-widest">
+                <p
+                  className={`w-[35%] ${
+                    team.id === 10 ? "mlarge:w-[35%]" : "mlarge:w-[40%]"
+                  } ${
+                    team.id === 9 ? "mlarge:w-[45%]" : "mlarge:w-[40%]"
+                  } msmall:w-[45%] text-[1.125rem] mlarge:text-[0.875rem] mmedium:text-[0.75rem] text-left font-['Good_Timing_Regular'] tracking-widest`}
+                >
                   {team.name}
                 </p>
 
-                <p className="w-[30%] text-[1.125rem] text-left font-['Good_Timing_Regular'] tracking-widest">
+                <p
+                  className={`w-[30%] ${
+                    team.id === 10 ? "mlarge:w-[30%]" : "mlarge:w-[25%]"
+                  } ${
+                    team.id === 9 ? "mlarge:w-[20%]" : "mlarge:w-[25%]"
+                  } msmall:w-[20%] text-[1.125rem] mlarge:text-[0.75rem] mmedium:text-[0.625rem] text-left font-['Good_Timing_Regular'] tracking-widest`}
+                >
                   {team.almaMater}
                 </p>
 
-                <p className="w-[30%] text-[0.875rem] text-right font-regular tracking-wider">
+                <p className="w-[30%] mlarge:w-[20%]text-[0.875rem]  mlarge:text-[0.625rem] msmall:text-[0.5rem] text-right font-regular tracking-wider">
                   {team.city}
                 </p>
               </div>
