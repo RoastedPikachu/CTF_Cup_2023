@@ -124,32 +124,28 @@ const PartnersWidgets = () => {
           </div>
 
           <div className="flex justify-between mt-[20px] w-full h-[300px]">
-            <div className="p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+            <div className="p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
               <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
                 Партнер призового фонда
               </h3>
 
-              <a href="https://ntc-vulkan.ru/" className="outline-none">
-                <img
-                  src="/static/partnersPage/logo/NTCVulkanLogo.png"
-                  alt="НТЦ Вулкан"
-                  className="absolute bottom-[30px] right-[30px]"
-                />
-              </a>
-            </div>
+              <div className="relative flex justify-between items-center mt-[50px] w-[80%]">
+                <a href="https://ntc-vulkan.ru/" className="outline-none">
+                  <img
+                    src="/static/partnersPage/logo/NTCVulkanLogo.png"
+                    alt="НТЦ Вулкан"
+                    className="mt-[80px] ml-[80px]"
+                  />
+                </a>
 
-            <div className="relative p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
-              <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
-                Партнеры
-              </h3>
-
-              <a href="https://cctld.ru/" className="outline-none">
-                <img
-                  src="/static/partnersPage/logo/CoordinationalCenterRuLogo.png"
-                  alt="Координационный центр доменов .ru/.рф"
-                  className="absolute bottom-[30px]"
-                />
-              </a>
+                <a href="https://cctld.ru/" className="outline-none">
+                  <img
+                    src="/static/partnersPage/logo/UserGateLogo.png"
+                    alt="UserGate"
+                    className="absolute bottom-[-15px] right-[-100px]"
+                  />
+                </a>
+              </div>
             </div>
 
             <div className="relative p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
@@ -167,8 +163,8 @@ const PartnersWidgets = () => {
             </div>
           </div>
 
-          <div className="relative flex justify-between mt-[20px] w-full h-[600px]">
-            <div className="relative p-[20px] w-[32%] h-[620px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px]">
+          <div className="relative flex justify-between mt-[20px] w-full h-[340px]">
+            <div className="relative p-[20px] w-[32%] h-[340px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px]">
               <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
                 Информационные партнеры
               </h3>
@@ -180,56 +176,32 @@ const PartnersWidgets = () => {
                   className="mt-[80px] ml-[20px]"
                 />
               </a>
-
-              <a href="https://vk.com/" className="outline-none">
-                <img
-                  src="/static/partnersPage/logo/VkontakteLogo.png"
-                  alt="Вконтакте"
-                  className="mt-[90px] ml-[20px]"
-                />
-              </a>
-
-              <a href="https://codeby.net/" className="outline-none">
-                <img
-                  src="/static/partnersPage/logo/CodebyLogo.png"
-                  alt="Codeby.net"
-                  className="absolute bottom-[100px] right-[40px]"
-                />
-              </a>
             </div>
 
             <div className="relative p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
               <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
-                Технологические партнеры
+                Партнеры
               </h3>
 
-              <a href="https://edgecenter.ru/" className="outline-none">
+              <a>
                 <img
-                  src="/static/partnersPage/logo/EdgeCenterLogo.png"
-                  alt="Edge центр"
-                  className="mt-[80px] ml-[60px]"
+                  src="/static/partnersPage/logo/CoordinationalCenterRuLogo.png"
+                  alt="Координационный центр домена .RU .РФ"
+                  className="mt-[30px] ml-[5px] scale-[0.9]"
                 />
               </a>
 
-              <a href="https://www.usergate.com/ru" className="outline-none">
+              <a>
                 <img
-                  src="/static/partnersPage/logo/UserGateLogo.png"
-                  alt="User Gate"
-                  className="mt-[50px]"
-                />
-              </a>
-
-              <a href="https://cbsctf.ru/" className="outline-none">
-                <img
-                  src="/static/partnersPage/logo/CBSLogo.png"
-                  alt="CBS"
-                  className="absolute bottom-[50px] right-[40px]"
+                  src="/static/partnersPage/logo/202ALogo.png"
+                  alt="202А"
+                  className="absolute bottom-[20px] right-[30px]"
                 />
               </a>
             </div>
 
-            <div className="w-[32%] h-[320px]">
-              <div className="relative p-[20px] w-full h-[300px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+            <div className="w-[32%] h-full">
+              <div className="relative p-[20px] w-full h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
                 <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
                   Генеральный информационный партнер
                 </h3>
@@ -242,59 +214,117 @@ const PartnersWidgets = () => {
                   />
                 </a>
               </div>
-
-              <div className="relative mt-[20px] p-[20px] w-full h-[300px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px] z-20">
-                {/*Нижние 2 div-а необходимы для создания скоса*/}
-
-                <div className="absolute mt-[272.5px] ml-[calc(-29px+0.3%)] w-[7.5px] h-[7.5px] bg-[rgba(255,255,255,0.04)] z-[25]"></div>
-
-                <div className="absolute mt-[270px] ml-[-30px] w-[10px] h-[10px] bg-[#0d0d0d] rounded-br-[20px] z-[25]"></div>
-
-                <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
-                  При поддержке
-                </h3>
-
-                <div className="flex justify-between items-center mt-[30px] w-[95%]">
-                  <img
-                    src="/static/partnersPage/logo/GerbLogo1.png"
-                    alt="Герб1"
-                  />
-
-                  <img
-                    src="/static/partnersPage/logo/GerbLogo2.png"
-                    alt="Герб2"
-                  />
-                </div>
-
-                <img
-                  src="/static/partnersPage/logo/GerbLogo3.png"
-                  alt="Герб3"
-                  className="ml-[50px]"
-                />
-              </div>
             </div>
           </div>
 
-          <div className="relative flex justify-between w-full h-[300px]">
-            <div className="relative mt-[20px] p-[20px] w-[32%] h-[300px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm">
+          <div className="relative flex justify-between mt-[0px] w-full h-[490px]">
+            <div className="relative mt-[0px] p-[20px] w-[32%] h-[510px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm z-20">
+              <a href="https://vk.com/" className="outline-none">
+                <img
+                  src="/static/partnersPage/logo/VkontakteLogo.png"
+                  alt="Вконтакте"
+                  className="mt-[-20px] ml-[20px]"
+                />
+              </a>
+
+              <a href="https://codeby.net/" className="outline-none">
+                <img
+                  src="/static/partnersPage/logo/CodebyLogo.png"
+                  alt="Codeby.net"
+                  className="mt-[110px] ml-[15px]"
+                />
+              </a>
+
               <a href="https://www.globalcio.ru" className="outline-none">
                 <img
                   src="/static/partnersPage/logo/GlobalCIOLogo.png"
                   alt="GlobalCIO"
-                  className="mt-[-20px] ml-[15px] scale-[0.9]"
-                />
-              </a>
-
-              <a href="https://securitymedia.org/" className="outline-none">
-                <img
-                  src="/static/partnersPage/logo/CyberMediaLogo.png"
-                  alt="Cyber Media"
-                  className="absolute bottom-[10px] right-[20px]"
+                  className="mt-[110px] ml-[15px] scale-[0.9]"
                 />
               </a>
             </div>
 
-            <div className="relative mt-[20px] p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-tl-[20px]">
+            <div className="relative mt-[20px] p-[20px] w-[32%] h-[470px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px] z-20">
+              <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
+                Технологические партнеры
+              </h3>
+
+              <a href="https://edgecenter.ru/" className="outline-none">
+                <img
+                  src="/static/partnersPage/logo/EdgeCenterLogo.png"
+                  alt="Edge центр"
+                  className="mt-[70px] ml-[50px]"
+                />
+              </a>
+
+              <a href="https://cbsctf.ru/" className="outline-none">
+                <img
+                  src="/static/partnersPage/logo/CBSLogo.png"
+                  alt="CBS"
+                  className="absolute bottom-[50px] right-[40px]"
+                />
+              </a>
+            </div>
+
+            <div className="relative mt-[20px] p-[20px] w-[32%] h-[490px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px] z-20">
+              <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
+                При поддержке
+              </h3>
+
+              <div className="flex justify-between items-center mt-[30px] w-[90%]">
+                <img
+                  src="/static/partnersPage/logo/GerbLogo1.png"
+                  alt="Герб1"
+                  className="ml-[20px] scale-[1.25]"
+                />
+
+                <img
+                  src="/static/partnersPage/logo/GerbLogo2.png"
+                  alt="Герб2"
+                  className="mt-[10px] scale-[1.25]"
+                />
+              </div>
+
+              <img
+                src="/static/partnersPage/logo/GerbLogo3.png"
+                alt="Герб3"
+                className="mt-[50px] ml-[50px] scale-[1.25]"
+              />
+
+              <img
+                src="/static/partnersPage/logo/FSPLogo.png"
+                alt="ФСП"
+                className="mt-[60px] ml-[50px] scale-[1.1]"
+              />
+            </div>
+
+            {/*Нижние 2 div-а необходимы для создания скоса*/}
+
+            <div className="absolute mt-[272.5px] ml-[calc(-29px+0.3%)] w-[7.5px] h-[7.5px] bg-[rgba(255,255,255,0.04)] z-[25]"></div>
+
+            <div className="absolute mt-[270px] ml-[-30px] w-[10px] h-[10px] bg-[#0d0d0d] rounded-br-[20px] z-[25]"></div>
+          </div>
+
+          <div className="relative flex justify-between mt-[20px] w-full h-[340px]">
+            <div className="relative p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] z-20">
+              <a href="https://securitymedia.org/" className="outline-none">
+                <img
+                  src="/static/partnersPage/logo/CyberMediaLogo.png"
+                  alt="Cyber Media"
+                  className="mt-[-120px] ml-[70px]"
+                />
+              </a>
+
+              <a href="https://it-planet.org/" className="outline-none">
+                <img
+                  src="/static/partnersPage/logo/ITPlanetLogo.png"
+                  alt="IT Планета"
+                  className="absolute bottom-[60px] right-[50px]"
+                />
+              </a>
+            </div>
+
+            <div className="relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-tl-[20px]">
               <div className="flex justify-between items-center mt-[20px] mx-[2.5%] w-[95%]">
                 <img
                   src="/static/partnersPage/logo/BankOfRussiaLogo.png"
@@ -307,7 +337,7 @@ const PartnersWidgets = () => {
                 />
               </div>
 
-              <div className="flex justify-between items-center mt-[50px] ml-[-5px] w-[95%]">
+              <div className="flex justify-between items-center mt-[80px] ml-[-5px] w-[95%]">
                 <img
                   src="/static/partnersPage/logo/MinCifriRossiiLogo.png"
                   alt="Минцифры России"
@@ -321,44 +351,34 @@ const PartnersWidgets = () => {
             </div>
           </div>
 
-          <div className="relative flex justify-between mt-[20px] w-full h-[150px]">
-            <div className="relative p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] z-[10]">
-              <a href="https://it-planet.org/" className="outline-none">
-                <img
-                  src="/static/partnersPage/logo/ITPlanetLogo.png"
-                  alt="IT Планета"
-                  className="mt-[-20px] ml-[50px]"
-                />
-              </a>
+          <div className="relative flex justify-between w-full h-[170px]">
+            <div className="relative mt-[20px] p-[20px] w-[32%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-t-[20px] z-20">
+              <img
+                src="/static/partnersPage/logo/CTFCupVIILogo.png"
+                alt="VII Кубок CTF 2023"
+                className="mt-[20px] ml-[10px]"
+              />
             </div>
 
-            <div className="relative p-[20px] w-[66%] h-[150px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] z-[20]">
-              <div className="flex justify-between items-center mx-[2.5%] w-[95%]">
+            <div className="relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] z-20">
+              <div className="flex justify-between items-center mt-[10px] mx-[2.5%] w-[95%]">
                 <img
                   src="/static/partnersPage/logo/SystemLogo.png"
                   alt="Система - акционерная финансовая корпорация"
-                  className="ml-[10px]"
+                  className="ml-[60px] scale-[1.1]"
                 />
-
-                <img src="/static/partnersPage/logo/FSPLogo.png" alt="ФСП" />
 
                 <img
                   src="/static/partnersPage/logo/GoznakLogo.png"
                   alt="Гознак"
-                  className="mr-[50px]"
+                  className="mr-[120px]"
                 />
               </div>
             </div>
           </div>
 
-          <div className="relative mt-[20px] p-[30px] w-full h-[300px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px] z-[5]">
-            <img
-              src="/static/partnersPage/logo/CTFCupVIILogo.png"
-              alt="VII Кубок CTF 2023"
-              className="mt-[0px] ml-[10px]"
-            />
-
-            <p className='mt-[30px] text-[#4f4f4f] text-[1rem] font-["Good_Timing_Regular"] font-regular'>
+          <div className="relative mt-[20px] p-[30px] w-full h-[170px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] rounded-tr-[20px] z-[5]">
+            <p className='mt-[10px] text-[#4f4f4f] text-[1rem] font-["Good_Timing_Regular"] font-regular'>
               Кубок CTF ежегодно собирает несколько тысяч молодых
               айти-специалистов: в отборочном туре участвует свыше 300 команд
               студентов и молодых профессионалов, а финал помогает выявить самых
