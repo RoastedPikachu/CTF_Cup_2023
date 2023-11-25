@@ -100,14 +100,14 @@ const TheHeader = () => {
         <>
           <a
             href="https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/"
-            className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+            className='text-[#bf5af2] text-[1rem] msmall:text-[0.875rem] font-["Good_Timing"] font-semibold outline-none no-underline'
           >
             регистрация
           </a>
 
           <Link
             href="/personnelReserve"
-            className='text-[#bf5af2] text-[1rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+            className='text-[#bf5af2] text-[1rem] msmall:text-[0.875rem] font-["Good_Timing"] font-semibold outline-none no-underline'
           >
             кадровый резерв
           </Link>
@@ -118,7 +118,7 @@ const TheHeader = () => {
           >
             <img
               src="/static/header/icon/HamburgerMenuIcon.svg"
-              alt="Гамбургер меню"
+              alt="Кнопка: Открыть меню с ссылками"
               className="w-[20px] h-[20px]"
             />
           </button>
@@ -151,7 +151,7 @@ const TheHeader = () => {
 
                 <Link
                   href="/personnelReserve"
-                  className='text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+                  className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
                 >
                   кадровый резерв
                 </Link>

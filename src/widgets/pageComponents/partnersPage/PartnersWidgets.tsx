@@ -500,7 +500,7 @@ const PartnersWidgets = () => {
             </a>
           </div>
 
-          <div className="relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[280px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+          <div className="relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[360px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
             <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
               Партнеры
             </h3>
@@ -509,12 +509,20 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/CoordinationalCenterRuLogo.png"
                 alt="Координационный центр доменов .ru/.рф"
-                className="absolute bottom-[40px] right-[20px] mmedium:right-[10px] msmall:right-0 scale-[0.95] mmedium:scale-[0.85]"
+                className="mt-[40px] left-[20px] scale-[0.95] mmedium:scale-[0.85]"
+              />
+            </a>
+
+            <a>
+              <img
+                src="/static/partnersPage/logo/202ALogo.png"
+                alt="202А"
+                className="absolute bottom-[30px] right-[40px]"
               />
             </a>
           </div>
 
-          <div className="relative mt-[20px] p-[20px] msmall:p-[20px] w-full h-[320px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+          <div className="relative mt-[20px] p-[20px] msmall:p-[20px] w-full h-[360px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
             <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
               Партнер призового фонда
             </h3>
@@ -523,7 +531,15 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/NTCVulkanLogo.png"
                 alt="НТЦ Вулкан"
-                className="absolute bottom-[30px] right-[30px]"
+                className="mt-[40px] ml-[90px] mmedium:ml-[70px]"
+              />
+            </a>
+
+            <a href="https://www.usergate.com/ru" className="outline-none">
+              <img
+                src="/static/partnersPage/logo/UserGateLogo.png"
+                alt="User Gate"
+                className="absolute bottom-[30px] right-[25px] mmedium:right-[5px] msmall:right-0"
               />
             </a>
           </div>
@@ -542,7 +558,7 @@ const PartnersWidgets = () => {
             </a>
           </div>
 
-          <div className="relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[650px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+          <div className="relative mt-[20px] p-[30px] msmall:p-[20px] w-full h-[500px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
             <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
               Технологические партнеры
             </h3>
@@ -552,14 +568,6 @@ const PartnersWidgets = () => {
                 src="/static/partnersPage/logo/EdgeCenterLogo.png"
                 alt="Edge центр"
                 className="mt-[80px] ml-[50px] mmedium:ml-[30px]"
-              />
-            </a>
-
-            <a href="https://www.usergate.com/ru" className="outline-none">
-              <img
-                src="/static/partnersPage/logo/UserGateLogo.png"
-                alt="User Gate"
-                className="mt-[70px]"
               />
             </a>
 
