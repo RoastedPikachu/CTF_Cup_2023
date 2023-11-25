@@ -300,9 +300,9 @@ const PartnersWidgets = () => {
 
             {/*Нижние 2 div-а необходимы для создания скоса*/}
 
-            <div className="absolute mt-[272.5px] ml-[calc(-29px+0.3%)] w-[7.5px] h-[7.5px] bg-[rgba(255,255,255,0.04)] z-[25]"></div>
+            <div className="absolute mt-[502.5px] right-[calc(328.5px+0.3%)] w-[7.5px] h-[7.5px] bg-[rgba(255,255,255,0.04)] z-[25]"></div>
 
-            <div className="absolute mt-[270px] ml-[-30px] w-[10px] h-[10px] bg-[#0d0d0d] rounded-br-[20px] z-[25]"></div>
+            <div className="absolute mt-[500px] right-[332.5px] w-[10px] h-[10px] bg-[#0d0d0d] rounded-br-[20px] z-[25]"></div>
           </div>
 
           <div className="relative flex justify-between mt-[20px] w-full h-[340px]">
@@ -358,6 +358,12 @@ const PartnersWidgets = () => {
                 alt="VII Кубок CTF 2023"
                 className="mt-[20px] ml-[10px]"
               />
+
+              {/*Нижние 2 div-а необходимы для создания скоса*/}
+
+              <div className="absolute mt-[3.5px] ml-[calc(311px+0.3%)] w-[7.5px] h-[7.5px] bg-[rgba(255,255,255,0.04)] z-[25]"></div>
+
+              <div className="absolute mt-[0px] ml-[313px] w-[10px] h-[10px] bg-[#0d0d0d] rounded-bl-[20px] z-[25]"></div>
             </div>
 
             <div className="relative p-[20px] w-[66%] h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-b-[20px] z-20">
