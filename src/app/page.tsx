@@ -21,7 +21,7 @@ export default function Home() {
           <img
             src="/static/homePage/text/KubokCTFText.svg"
             alt="Кубок CTF 2023"
-            className="mt-[calc(50%-400px)] mlarge:mt-[calc(50%-140px)] mmedium:mt-[calc(50%-120px)] h-[450px] mlarge:h-[400px] scale-[0.75] mlarge:scale-[1.3]"
+            className="mt-[calc(50%-400px)] mlarge:mt-[calc(50%-190px)] mmedium:mt-[calc(50%-160px)] h-[450px] mlarge:h-[400px] scale-[0.75] mlarge:scale-[1.3]"
           />
 
           <div className="relative mt-[100px] mlarge:mt-[-20px] h-[100px]">
