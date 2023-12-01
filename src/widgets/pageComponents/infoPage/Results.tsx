@@ -201,7 +201,7 @@ const Results = () => {
       <img
         src="/static/infoPage/text/ResultsText.png"
         alt="Итоги отборочного этапа"
-        className="mt-[200px] mlarge:mt-[100px] w-[45%] mlarge:w-[50%] mmedium:w-[60%]"
+        className="mt-[150px] mlarge:mt-[100px] w-[45%] mlarge:w-[50%] mmedium:w-[60%]"
       />
 
       <div className="mt-[100px] mlarge:mt-[50px]">
