@@ -54,7 +54,7 @@ const PartnersWidgets = () => {
                 Организаторы
               </h3>
 
-              <div className="flex justify-between items-center mt-[50px] ml-[120px] w-[70%]">
+              <div className="flex justify-between items-center mt-[50px] ml-[30px] w-[90%]">
                 <a
                   href="https://xn--80aagyaaanwdoxgiag.xn--p1ai/"
                   className="outline-none"
@@ -62,6 +62,7 @@ const PartnersWidgets = () => {
                   <img
                     src="/static/partnersPage/logo/CoachesOfRussiaLogo.png"
                     alt="Наставники России"
+                    className="w-[100px] h-[130px]"
                   />
                 </a>
 
@@ -69,7 +70,15 @@ const PartnersWidgets = () => {
                   <img
                     src="/static/partnersPage/logo/ArsibLogo.png"
                     alt="Арсиб"
-                    className="scale-[1.1]"
+                    className="w-[220px] h-[130px]"
+                  />
+                </a>
+
+                <a href="https://sk.ru" className="outline-none">
+                  <img
+                    src="/static/partnersPage/logo/SkolkovoLogo.png"
+                    alt="Сколково"
+                    className="w-[170px] h-[150px]"
                   />
                 </a>
               </div>
@@ -441,7 +450,7 @@ const PartnersWidgets = () => {
             </a>
           </div>
 
-          <div className="relative mt-[20px] p-[30px] w-full h-[400px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
+          <div className="relative mt-[20px] p-[30px] w-full h-[580px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
             <h3 className='text-[#ffffff] text-[1.5rem] font-["Good_Timing"] font-bold'>
               Организаторы
             </h3>
@@ -461,7 +470,15 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/ArsibLogo.png"
                 alt="Арсиб"
-                className="absolute right-[20px] mmedium:right-[10px] msmall:right-[0px] scale-[0.8] mmedium:scale-[0.75]"
+                className="mt-[10px] msmall:mt-[20px] ml-[20px] mmedium:ml-[5px] scale-[0.9] mmedium:scale-[0.85]"
+              />
+            </a>
+
+            <a href="https://sk.ru" className="outline-none">
+              <img
+                src="/static/partnersPage/logo/SkolkovoLogo.png"
+                alt="Сколково"
+                className="absolute bottom-[20px] right-[20px] mmedium:right-[10px] scale-[0.9] mmedium:scale-[0.8]"
               />
             </a>
           </div>
