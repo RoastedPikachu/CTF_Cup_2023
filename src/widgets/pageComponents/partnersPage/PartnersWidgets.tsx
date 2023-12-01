@@ -223,7 +223,7 @@ const PartnersWidgets = () => {
                 <img
                   src="/static/partnersPage/logo/VkontakteLogo.png"
                   alt="Вконтакте"
-                  className="mt-[-20px] ml-[20px]"
+                  className="mt-[-50px] ml-[20px]"
                 />
               </a>
 
@@ -231,7 +231,15 @@ const PartnersWidgets = () => {
                 <img
                   src="/static/partnersPage/logo/CodebyLogo.png"
                   alt="Codeby.net"
-                  className="mt-[110px] ml-[15px]"
+                  className="mt-[90px] ml-[25px]"
+                />
+              </a>
+
+              <a href="https://ocs-radio.com/" className="outline-none">
+                <img
+                  src="/static/partnersPage/logo/MooseEchoLogo.png"
+                  alt="Эхо лосей. Проект OCS Distribution"
+                  className="mt-[80px] ml-[30px]"
                 />
               </a>
 
@@ -239,7 +247,7 @@ const PartnersWidgets = () => {
                 <img
                   src="/static/partnersPage/logo/GlobalCIOLogo.png"
                   alt="GlobalCIO"
-                  className="mt-[110px] ml-[15px] scale-[0.9]"
+                  className="mt-[90px] ml-[15px] scale-[0.9]"
                 />
               </a>
             </div>
@@ -311,7 +319,7 @@ const PartnersWidgets = () => {
                 <img
                   src="/static/partnersPage/logo/CyberMediaLogo.png"
                   alt="Cyber Media"
-                  className="mt-[-120px] ml-[70px]"
+                  className="mt-[-70px] ml-[70px]"
                 />
               </a>
 
@@ -319,7 +327,7 @@ const PartnersWidgets = () => {
                 <img
                   src="/static/partnersPage/logo/ITPlanetLogo.png"
                   alt="IT Планета"
-                  className="absolute bottom-[60px] right-[50px]"
+                  className="absolute bottom-[50px] right-[50px]"
                 />
               </a>
             </div>
@@ -611,7 +619,7 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/VkontakteLogo.png"
                 alt="Вконтакте"
-                className="mt-[110px] ml-[15px] mmedium:ml-[0px] scale-[1.05] mmedium:scale-[1.05]"
+                className="mt-[80px] ml-[15px] mmedium:ml-[0px] scale-[1.05] mmedium:scale-[1.05]"
               />
             </a>
 
@@ -619,7 +627,15 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/CodebyLogo.png"
                 alt="Codeby.net"
-                className="mt-[120px] mmedium:mt-[130px] ml-[20px] mmedium:ml-0 scale-[1.05] mmedium:scale-[1.05]"
+                className="mt-[100px] mmedium:mt-[100px] ml-[20px] mmedium:ml-0 scale-[1.05] mmedium:scale-[1.05]"
+              />
+            </a>
+
+            <a href="https://ocs-radio.com/" className="outline-none">
+              <img
+                src="/static/partnersPage/logo/MooseEchoLogo.png"
+                alt="Эхо лосей. Проект OCS Distribution"
+                className="mt-[90px] ml-[20px] mmedium:ml-0"
               />
             </a>
 
@@ -627,7 +643,7 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/GlobalCIOLogo.png"
                 alt="GlobalCIO"
-                className="mt-[120px] ml-[10px] mmedium:ml-[5px] msmall:ml-[0px] scale-[0.9]"
+                className="mt-[90px] ml-[10px] mmedium:ml-[5px] msmall:ml-[0px] scale-[0.9]"
               />
             </a>
 
@@ -635,7 +651,7 @@ const PartnersWidgets = () => {
               <img
                 src="/static/partnersPage/logo/CyberMediaLogo.png"
                 alt="Cyber Media"
-                className="mt-[40px] ml-[30px] msmall:ml-[10px]"
+                className="mt-[10px] ml-[30px] msmall:ml-[10px]"
               />
             </a>
 
