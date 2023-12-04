@@ -64,12 +64,10 @@ export default function Home() {
             </p>
 
             <iframe
+              src="https://vk.com/video_ext.php?oid=-153821859&id=456239049"
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/Sv3cxIWXR0g?si=ELWfjKJE7ti-SvF2"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
+              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
               className="mmedium:w-[99.9%] rounded-[25px]"
             ></iframe>
           </div>
