@@ -114,7 +114,7 @@ const Page = () => {
           imgPath={"/static/juryPage/avatars/MichailenkoNatalyaAvatar.png"}
           personDescription={"Михайленко Наталья"}
           personText={
-            "Доцент кафедры противодействия преступлениям в сфере ИТТ, Московский университет МВД России им. В.Я. Кикотя"
+            "Доцент кафедры противодействия преступлениям в сфере ИТТ, Московский университет МВД России им. В.Я. Кикотя, кандидат юридических наук, доцент <br/> Вице-президент Московского регионального отделения Международной полицейской ассоциации"
           }
           styles={
             "mt-[50px] mlarge:mt-[50px] ml-[750px] deskWide:ml-[900px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]"
@@ -127,7 +127,7 @@ const Page = () => {
           personText={
             "Заместитель начальника центрального вычислительного центра, Главный информационно-аналитический центр МВД России"
           }
-          styles={"mt-[-180px] mlarge:mt-[50px] ml-0 deskWide:ml-[50px]"}
+          styles={"mt-[-180px] mlarge:mt-[100px] mmedium:mt-[150px] msmall:mt-[200px] ml-0 deskWide:ml-[50px]"}
         />
 
         <PersonInfo

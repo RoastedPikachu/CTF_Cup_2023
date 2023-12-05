@@ -339,6 +339,24 @@ const Page = () => {
               "mt-[-20px] mlarge:mt-[50px] ml-[600px] deskWide:ml-[650px] mlarge:ml-0"
             }
           />
+
+          <PersonInfo
+              imgPath={"/static/teamPage/avatars/project/GalileaAnriAvatar.png"}
+              personDescription={"Галилея Анри"}
+              personText={"Мангака"}
+              styles={
+                "mt-[-60px] mlarge:mt-[50px] ml-[-50px] deskWide:ml-[-50px] mlarge:ml-[25%] mmedium:ml-[20%] msmall:ml-[12.5%]"
+              }
+          />
+
+          <PersonInfo
+              imgPath={"/static/teamPage/avatars/project/OlgaZelentsovaAvatar.png"}
+              personDescription={"Ольга Зеленцова"}
+              personText={"Организатор"}
+              styles={
+                "mt-[-20px] mlarge:mt-[50px] ml-[400px] deskWide:ml-[400px] mlarge:ml-0"
+              }
+          />
         </section>
       </main>
 
