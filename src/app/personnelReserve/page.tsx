@@ -69,7 +69,7 @@ const Page = () => {
             />
 
             <a
-              href="https://aciso.timepad.ru/event/2688041/"
+              href="https://aciso.timepad.ru/event/2694853/"
               className="absolute bottom-[20px] mlarge:bottom-[30px] mx-0 deskWide:mx-[5%] flex items-center justify-center pb-[7.5px] w-[calc(100%-60px)] msmall:w-[calc(100%-40px)] deskWide:w-[calc(90%-60px)] h-[47.5px] deskWide:h-[52.5px] bg-[#d27aff] rounded-[25px] text-[#ffffff] text-[1.625rem] deskWide:text-[1.75rem] mmedium:text-[1.5rem] msmall:text-[1.25rem] text-center font-['Good_Timing_Regular'] outline-none"
             >
               заполнить анкету
