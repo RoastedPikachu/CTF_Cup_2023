@@ -145,7 +145,7 @@ const PartnersWidgets = () => {
                   />
                 </a>
 
-                <a href="https://cctld.ru/" className="outline-none">
+                <a href="https://www.usergate.com/ru" className="outline-none">
                   <img
                     src="/static/partnersPage/logo/UserGateLogo.png"
                     alt="UserGate"

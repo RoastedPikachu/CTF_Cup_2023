@@ -59,18 +59,18 @@ const TheHeader = () => {
               height={50}
             />
 
-            <a
-              href="https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/"
-              className='ml-[15px] deskWide:ml-[20px] text-[#bf5af2] text-[1rem] deskWide:text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
-            >
-              регистрация
-            </a>
-
             <Link
               href="/personnelReserve"
-              className='ml-[35px] deskWide:ml-[40px] text-[#bf5af2] text-[1rem] deskWide:text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+              className='ml-[15px] deskWide:ml-[20px] text-[#bf5af2] text-[1rem] deskWide:text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
             >
               кадровый резерв
+            </Link>
+
+            <Link
+              href="/legend"
+              className='ml-[35px] deskWide:ml-[40px] text-[#bf5af2] text-[1rem] deskWide:text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+            >
+              легенда
             </Link>
           </div>
 
@@ -98,18 +98,18 @@ const TheHeader = () => {
         </>
       ) : (
         <>
-          <a
-            href="https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/"
-            className='text-[#bf5af2] text-[1rem] msmall:text-[0.875rem] font-["Good_Timing"] font-semibold outline-none no-underline'
-          >
-            регистрация
-          </a>
-
           <Link
             href="/personnelReserve"
             className='text-[#bf5af2] text-[1rem] msmall:text-[0.875rem] font-["Good_Timing"] font-semibold outline-none no-underline'
           >
             кадровый резерв
+          </Link>
+
+          <Link
+            href="/legend"
+            className='text-[#bf5af2] text-[1rem] msmall:text-[0.875rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+          >
+            легенда
           </Link>
 
           <button
@@ -142,18 +142,18 @@ const TheHeader = () => {
               />
 
               <nav className='flex flex-wrap mt-[50px] w-full h-[300px] text-[#ffffff] text-[1.125rem] text-right font-["Good_Timing"] font-semibold'>
-                <a
-                  href="https://forms.yandex.ru/u/64fca2a6d0468870ebb9e8ac/"
-                  className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
-                >
-                  регистрация
-                </a>
-
                 <Link
                   href="/personnelReserve"
                   className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
                 >
                   кадровый резерв
+                </Link>
+
+                <Link
+                  href="/legend"
+                  className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
+                >
+                  легенда
                 </Link>
 
                 <Link href="/" className="w-full outline-none no-underline">
