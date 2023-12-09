@@ -64,7 +64,7 @@ export default function Home() {
             </p>
 
             <iframe
-              src="https://vk.com/video_ext.php?oid=-153821859&id=456239049"
+              src="https://vk.com/video_ext.php?oid=-153821859&id=456239050"
               width="100%"
               height="100%"
               allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
