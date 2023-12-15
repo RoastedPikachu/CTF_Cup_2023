@@ -2,8 +2,9 @@ import React from "react";
 
 import TheHeader from "@/widgets/shared/TheHeader";
 import TheFooter from "@/widgets/shared/TheFooter";
-import TheExpirationAlert from "@/widgets/shared/TheExpirationAlert";
+// import TheExpirationAlert from "@/widgets/shared/TheExpirationAlert";
 
+import Broadcast from "@/widgets/pageComponents/homePage/Broadcast";
 import Itinerary from "@/widgets/pageComponents/homePage/Itinerary";
 import Address from "@/widgets/pageComponents/homePage/Address";
 import OfficialDocsImages from "@/widgets/pageComponents/homePage/OfficialDocsImages";
@@ -57,19 +58,57 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-[200px] px-[10%] mlarge:px-[5%] w-full h-[800px] mlarge:h-[450px] msmall:h-[400px] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.89)_16.01%,#000_28.81%,#000_100%)]">
-          <div className="relative w-full h-[500px] mlarge:h-[210px] mmedium:h-[190px] msmall:h-[160px] border-[1px] border-[#ffffff] rounded-[25px]">
-            <p className='absolute top-[-20px] mlarge:top-[-15px] left-[30px] mlarge:left-[20px] py-[5px] px-[20px] mlarge:px-[15px] bg-[#111111] border-[1px] border-[#ffffff] rounded-[40px] text-[#ffffff] text-[1rem] mlarge:text-[0.875rem] font-["Good_Timing"] font-bold'>
-              online
-            </p>
+        <Broadcast />
 
-            <iframe
-              src="https://vk.com/video_ext.php?oid=-153821859&id=456239050"
-              width="100%"
-              height="100%"
-              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
-              className="mmedium:w-[99.9%] rounded-[25px]"
-            ></iframe>
+        <section className="relative mt-[50px] deskWide:mt-[-50px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[620px] mlarge:h-[1320px] msmall:h-[1120px]">
+          <img
+            src="/static/homePage/text/WinnersText.png"
+            alt="Победители"
+            className="relative mt-[100px] mlarge:mt-[50px] w-[85vw] h-[120px] mlarge:h-[45px] msmall:h-[40px]"
+          />
+
+          <div className="relative flex mlarge:block justify-between items-center mt-[30px] w-full">
+            <div className="relative w-[31%] mlarge:w-[95%] h-[380px] msmall:h-[320px] bg-[#191919] rounded-[20px] overflow-hidden">
+              <p className="absolute top-[20px] right-[30px] text-[#ffffff] text-[1.75rem] mmedium:text-[1.5rem] font-['Good_Timing_Regular']">
+                команда
+              </p>
+
+              <h3 className="mt-[80px] mx-[30px] w-[calc(100%-60px)] text-[#82ffac] text-[2.75rem] mmedium:text-[2.5rem] msmall:text-[2rem] text-right font-['Good_Timing']">
+                NO@NAME
+              </h3>
+
+              <p className="absolute bottom-0 py-[20px] w-full h-[80px] msmall:h-[70px] bg-[rgba(120,255,165,0.88)] text-[#ffffff] text-[1.375rem] mmedium:text-[1.25rem] msmall:text-[1.125rem] text-center font-['Good_Timing_Regular']">
+                Академический зачет
+              </p>
+            </div>
+
+            <div className="relative mlarge:mt-[40px] w-[31%] mlarge:w-[95%] h-[380px] msmall:h-[320px] bg-[#191919] rounded-[20px] overflow-hidden">
+              <p className="absolute top-[20px] right-[30px] text-[#ffffff] text-[1.75rem] mmedium:text-[1.5rem] font-['Good_Timing_Regular']">
+                команда
+              </p>
+
+              <h3 className="mt-[80px] mx-[30px] w-[calc(100%-60px)] text-[#9493ff] text-[2.75rem] mmedium:text-[2.5rem] msmall:text-[2rem] text-right font-['Good_Timing']">
+                SPRUSH
+              </h3>
+
+              <p className="absolute bottom-0 py-[20px] w-full h-[80px] msmall:h-[70px] bg-[#9493ff] text-[#ffffff] text-[1.375rem] mmedium:text-[1.25rem] msmall:text-[1.125rem] text-center font-['Good_Timing_Regular']">
+                Смешанный зачет
+              </p>
+            </div>
+
+            <div className="relative mlarge:mt-[40px] w-[31%] mlarge:w-[95%] h-[380px] msmall:h-[320px] bg-[#191919] rounded-[20px] overflow-hidden">
+              <p className="absolute top-[20px] right-[30px] text-[#ffffff] text-[1.75rem] mmedium:text-[1.5rem] font-['Good_Timing_Regular']">
+                команда
+              </p>
+
+              <h3 className="mt-[80px] mx-[30px] w-[calc(100%-60px)] text-[#d27aff] text-[2.75rem] mmedium:text-[2.5rem] msmall:text-[2rem] text-right font-['Good_Timing']">
+                ЕНОТИКИ
+              </h3>
+
+              <p className="absolute bottom-0 py-[20px] w-full h-[80px] msmall:h-[70px] bg-[#d27aff] text-[#ffffff] text-[1.375rem] mmedium:text-[1.25rem] msmall:text-[1.125rem] text-center font-['Good_Timing_Regular']">
+                Школьный зачет
+              </p>
+            </div>
           </div>
         </section>
 
