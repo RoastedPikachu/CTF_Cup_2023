@@ -60,11 +60,11 @@ export default function Home() {
 
         <Broadcast />
 
-        <section className="relative mt-[50px] deskWide:mt-[-50px] mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[620px] mlarge:h-[1320px] msmall:h-[1120px]">
+        <section className="relative mlarge:mt-[0px] px-[15%] mlarge:px-[7.5%] w-full h-[550px] mlarge:h-[1320px] msmall:h-[1120px]">
           <img
             src="/static/homePage/text/WinnersText.png"
             alt="Победители"
-            className="relative mt-[100px] mlarge:mt-[50px] w-[85vw] h-[120px] mlarge:h-[45px] msmall:h-[40px]"
+            className="relative mt-[60px] mlarge:mt-[50px] w-[85vw] h-[120px] mlarge:h-[45px] msmall:h-[40px]"
           />
 
           <div className="relative flex mlarge:block justify-between items-center mt-[30px] w-full">

@@ -32,7 +32,7 @@ const BgImages = () => {
       )}
 
       {window.innerWidth > 1550 && (
-        <div className="absolute mt-[810px] w-full h-[800px] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.89)_16.01%,#000_28.81%,#000_100%)]"></div>
+        <div className="absolute mt-[810px] w-full h-[800px] deskWide:h-[1060px] bg-[linear-gradient(180deg,rgba(0,0,0,0.00)_0%,rgba(0,0,0,0.89)_16.01%,#000_28.81%,#000_100%)]"></div>
       )}
     </>
   );
