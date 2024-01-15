@@ -22,7 +22,7 @@ const BgImages = () => {
       </div>
 
       {!isMobile && (
-        <div className="absolute mt-[2930px] deskWide:mx-[calc((100%-1440px)/2)] w-full max-w-[1440px] h-[2800px] overflow-y-hidden">
+        <div className="absolute mt-[2860px] deskWide:mx-[calc((100%-1440px)/2)] w-full max-w-[1440px] h-[2800px] overflow-y-hidden">
           <img
             src="/static/homePage/background/WaterCoolingImage.png"
             alt="Водянка задний фон"

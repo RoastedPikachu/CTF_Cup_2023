@@ -14,7 +14,7 @@ const Page = () => {
     <>
       <TheHeader />
 
-      <main className="relative mt-[80px] deskWide:mx-[calc((100%-1440px)/2)] px-[10%] deskWide:px-0 mlarge:px-[5%] pb-[100px] w-full max-w-[1440px] h-auto min-h-[800px] mlarge:min-h-[1200px] overflow-hidden">
+      <main className="relative mt-[80px] deskWide:mx-[calc((100%-1440px)/2)] px-[10%] deskWide:px-0 mlarge:px-[5%] pb-[100px] w-full max-w-[1440px] h-auto min-h-[850px] mlarge:min-h-[1100px] msmall:min-h-[1080px] mlarge:overflow-hidden">
         <img
           src="/static/personnelReservePage/background/FirstBackgroundImage.png"
           alt=""
@@ -30,7 +30,7 @@ const Page = () => {
         <section
           className={`relative ${
             !isMobile ? "flex" : "block"
-          } justify-between mt-[50px] w-[85%] mlarge:w-full h-[460px] deskWide:h-[500px]`}
+          } justify-between pt-[50px] w-[85%] mlarge:w-full h-[460px] deskWide:h-[500px]`}
         >
           <div className="relative w-[58%] mlarge:w-full h-full">
             <div className="relative py-[30px] px-[40px] msmall:px-[20px] w-full h-[58%] mlarge:h-[250px] bg-[rgba(255,255,255,0.04)] backdrop-blur-sm rounded-[20px]">
