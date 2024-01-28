@@ -50,7 +50,7 @@ const TheHeader = () => {
       } fixed flex justify-between items-center px-[10%] deskWide:px-[calc((100%-1440px)/2)] mlarge:px-[5%] w-full h-[80px] duration-[400ms] ease-in-out z-30`}
     >
       {!isMobile ? (
-        <>
+        <nav className="flex justify-between items-center w-full">
           <div className="flex items-center">
             <Image
               src="/static/header/logo/CTFCupPurpleLogo.svg"
@@ -72,9 +72,13 @@ const TheHeader = () => {
             >
               легенда
             </Link>
+
+            <a href="https://dzen.ru/a/ZaTfTur8P2mqCdJo?share_to=link" className='ml-[35px] deskWide:ml-[40px] text-[#bf5af2] text-[1rem] deskWide:text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'>
+              отчет
+            </a>
           </div>
 
-          <nav className='flex justify-between w-[53%] mlarge:w-[100%] text-[#ffffff] text-[1rem] deskWide:text-[1.125rem] mlarge:text-[0.75rem] font-["Good_Timing"] font-semibold'>
+          <div className='flex justify-between w-[53%] mlarge:w-[100%] text-[#ffffff] text-[1rem] deskWide:text-[1.125rem] mlarge:text-[0.75rem] font-["Good_Timing"] font-semibold'>
             <Link href="/" className="outline-none no-underline">
               главная
             </Link>
@@ -94,8 +98,8 @@ const TheHeader = () => {
             <Link href="/partners" className="outline-none no-underline">
               партнеры
             </Link>
-          </nav>
-        </>
+          </div>
+        </nav>
       ) : (
         <>
           <Link
@@ -132,16 +136,20 @@ const TheHeader = () => {
           >
             <div
               ref={nodeRef}
-              className="fixed ml-[calc(-5%)] py-[25px] px-[20px] w-full h-[100vh] bg-[#0d0d0d] z-30 ease-in-out"
+              className="fixed ml-[calc(-5%)] py-[35px] px-[30px] w-full h-[100vh] bg-[#0d0d0d] z-30 ease-in-out"
             >
               <img
                 src="/static/header/icon/XMarkIcon.svg"
                 alt="Закрыть"
                 onClick={() => setIsModalWindowActive(false)}
-                className="absolute top-[25px] right-[20px] w-[20px] h-[17.5px]"
+                className="absolute top-[35px] right-[30px] w-[25px] h-[25px]"
               />
 
-              <nav className='flex flex-wrap mt-[50px] w-full h-[300px] text-[#ffffff] text-[1.125rem] text-right font-["Good_Timing"] font-semibold'>
+              <nav className='flex flex-wrap mt-[60px] w-full h-[380px] text-[#ffffff] text-[1.125rem] text-right font-["Good_Timing"] font-semibold'>
+                <a href="https://dzen.ru/a/ZaTfTur8P2mqCdJo?share_to=link" className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'>
+                  отчет
+                </a>
+
                 <Link
                   href="/personnelReserve"
                   className='w-full text-[#bf5af2] text-[1.125rem] font-["Good_Timing"] font-semibold outline-none no-underline'
