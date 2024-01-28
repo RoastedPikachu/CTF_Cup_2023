@@ -10,12 +10,12 @@ const Page = () => {
     <>
       <TheHeader />
 
-      <main className="mt-[130px] mlarge:mt-[0px] deskWide:mx-[calc((100%-1440px)/2)] px-[10%] deskWide:px-[0px] mlarge:px-[5%] w-full max-w-[1440px] h-auto">
+      <main className="mt-[130px] deskWide:mx-[calc((100%-1440px)/2)] px-[10%] deskWide:px-[0px] mlarge:px-[5%] w-full max-w-[1440px] h-auto">
         <section>
           <img
             src="/static/teamPage/text/KomandaOrgText.png"
             alt="Команда/оргкомитет"
-            className="mt-[50px] mlarge:mt-[20px] mmedium:mt-[15px] msmall:mt-[10px] w-[85%] h-[100px] deskWide:h-[120px] mlarge:h-[50px] mmedium:h-[45px] msmall:h-[40px]"
+            className="mt-[50px] mlarge:mt-[20px] mmedium:mt-[15px] msmall:mt-[10px] w-[85%] mlarge:w-[95%] h-[100px] deskWide:h-[120px] mlarge:h-[50px] mmedium:h-[45px] msmall:h-[40px]"
           />
 
           <PersonInfo
